@@ -1,0 +1,54 @@
+name: Panel operativo diario por email
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 23 * * 1-5"
+      timezone: "Europe/Madrid"
+
+jobs:
+  ejecutar-y-enviar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Preparar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: >-
+          pip install yfinance pandas numpy matplotlib python-dateutil
+          jupyter nbconvert ipykernel
+
+      - name: Ejecutar panel operativo
+        run: >-
+          jupyter nbconvert --to notebook --execute
+          "Vers_Operativa_Basada en 2_2_Config Multimercado.ipynb"
+          --output "Resultado_Operativo_Diario.ipynb"
+          --ExecutePreprocessor.timeout=180
+
+      - name: Enviar resumen por correo
+        env:
+          SMTP_HOST: smtp.gmail.com
+          SMTP_PORT: "465"
+          SMTP_USERNAME: ${{ secrets.SMTP_USERNAME }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python enviar_resumen_operativo.py
+
+      - name: Guardar diagnóstico si falla o para consulta
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: panel-operativo-diario
+          path: |
+            Resultado_Operativo_Diario.ipynb
+            salida_operativa/
+          retention-days: 7
+          if-no-files-found: warn
