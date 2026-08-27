@@ -1,0 +1,225 @@
+{
+  "META": {
+    "resultados": [
+      {
+        "fecha": "2026-07-29",
+        "resumen": [
+          {
+            "etiqueta": "Comunicado",
+            "texto": "Resultados de los metainformes del segundo trimestre de 2026"
+          },
+          {
+            "etiqueta": "Reuters",
+            "texto": "Meta cráteres de flujo de efectivo a medida que Zuckerberg duplica el gasto en IA"
+          },
+          {
+            "etiqueta": "CNBC",
+            "texto": "El mercado está reaccionando de forma exagerada a las ganancias y la orientación de Meta. Este es nuestro plan"
+          },
+          {
+            "etiqueta": "WSJ",
+            "texto": "Las Meta Stock caen un 10% en los costes de IA de Steeper, previsión perdida"
+          }
+        ],
+        "comunicado": {
+          "fecha": "2026-07-29",
+          "fuente": "Meta Investor Relations",
+          "titulo": "Meta Reports Second Quarter 2026 Results - Meta Investor Relations",
+          "enlace": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdng4QXNhRWdnc3ZqNjNLZFBoZFFZS0Q4MTA0ZEZoYUpPYnFNT1J1REQzRDlJVkdZZERQVjk5TkNDcmh5SElKdmpQUndFc3dpc0o2NFNtWjBhODROdlc0UzVfQTY3UjUxeVQtQTVNRHRtb3BsZklzUkJWdDUwcF9sdHdtRkxHT1RScnFxa2x2elRYcUZ4ZFN2RUw3UkhaNERnNGdxdjllOEVWVFBONzU1TUZfVldWYnQ5OS1hSTF0WQ?oc=5"
+        },
+        "prensa": [
+          {
+            "fecha": "2026-07-29",
+            "fuente": "Reuters",
+            "titulo": "Meta cash flow craters as Zuckerberg doubles down on AI spending - Reuters",
+            "enlace": "https://news.google.com/rss/articles/CBMingFBVV95cUxPZVVsNHpKWUwyNmRVZlB2Zml0d0QtZ0U5YTdKeDlIVXNISWdsajRiUE1vQU9JaHlUeDFWRjNUTGw0Y01TTHRiTlZjRDhJUFFSWXA4aktubGNNeURsSWtVTlJMaExmVFRCTFh6U3RKdWZnQnU1dzRTbzR5dTVWNHNkMTV3V3U3a0xxQWNjTnVPMHZCOE01dmt2TWQzZTBUUQ?oc=5"
+          },
+          {
+            "fecha": "2026-07-29",
+            "fuente": "CNBC",
+            "titulo": "The market is overreacting to Meta's earnings and guidance. Here's our plan - CNBC",
+            "enlace": "https://news.google.com/rss/articles/CBMingFBVV95cUxQUEk3NWdQMkliZXJmSHpXVnJzN25WblVjdWE1Ty0zcks5QTc0UWRkaEpfVnItRERPUTBRVUZQTHJtQW5QNmZ0UGplUGx2dEtsd3NxQ1BOTTZjQWZmR3pyeXpMdmk0bzBrNDBNN1hDN1ZyeGhVQ2c2QW5mMUxLTEZzWW5uaUdwVXNxM2hWbWZRTS1FUm9ZQ284TjlORmt3Zw?oc=5"
+          },
+          {
+            "fecha": "2026-07-29",
+            "fuente": "WSJ",
+            "titulo": "Meta Stock Drops 10% on Steeper AI Costs, Missed Forecast - WSJ",
+            "enlace": "https://news.google.com/rss/articles/CBMie0FVX3lxTE50ZmttOTNyTEl1LXZjY0d0d085WlJwQTl6M2ZqMUpRV2tsYTJXcWZSSzBDUXN5THFfTDE5cm5mX21pMEp3NWM2cF9HUmw1bmt1c1hJc1MyZHJyRTNrMUUxa2hSQUhyZVdWam5qSk1pQzZRSXhfLU42OFgySQ?oc=5"
+          }
+        ]
+      },
+      {
+        "fecha": "2026-04-29",
+        "resumen": [
+          {
+            "etiqueta": "Comunicado",
+            "texto": "Resultados del primer trimestre de 2026 de Meta Reports"
+          },
+          {
+            "etiqueta": "Reuters",
+            "texto": "Las acciones de Meta caen por las preocupaciones sobre el gasto en IA y el escrutinio legal"
+          },
+          {
+            "etiqueta": "WSJ",
+            "texto": "Meta Reportes Gran Salto de Ingresos y Aumento de Gasto Proyectado"
+          },
+          {
+            "etiqueta": "U.S. News & World Report",
+            "texto": "Meta supera las expectativas de ingresos y aumenta la previsión de gasto de capital para 2026"
+          }
+        ],
+        "comunicado": {
+          "fecha": "2026-04-29",
+          "fuente": "PR Newswire",
+          "titulo": "Meta Reports First Quarter 2026 Results - PR Newswire",
+          "enlace": "https://news.google.com/rss/articles/CBMimwFBVV95cUxON1YwNWxBdnJibk9qNWQ4UVBVV1dpLXBHalpnMEQ4djJkaVVwUnpya1FYX1lqMXJDZVNVSmVBTFdSeWlJSUlPMGZoYWtSaXJpSHl6X2tTZTMwNXJIZThoMmJjZWsyQjRkb1ZCZ2lLcXpwZEZCVEphZ0ttY3FIcndxdEM0aEcyTnFMWkw3dXBGQXY0aHhYdmVKWjhFbw?oc=5"
+        },
+        "prensa": [
+          {
+            "fecha": "2026-04-29",
+            "fuente": "Reuters",
+            "titulo": "Meta shares fall on concerns over AI spending, legal scrutiny - Reuters",
+            "enlace": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNFNSQmtUam5teWJnNHNkcDVSSHVwbGl4d0luVzYwSUxaVnVpcVNmcW9LcXFGZ1IyWWxsZ1VPbmJ4N0FrR1ZXbkFfZG16cUJYQUFSdnhmdU95TUVXaUstaWF3M1drcXVDbHRjVlZVMTUwY3h0VnhhMVEycnRWbC1TNElfamZrNDlXQjNGbTg0dGN0MEN6ZDYwSDgtLUV6MW5HcXlDdlEtQmxJQQ?oc=5"
+          },
+          {
+            "fecha": "2026-04-29",
+            "fuente": "WSJ",
+            "titulo": "Meta Reports Big Revenue Jump and Projected Spending Increase - WSJ",
+            "enlace": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNY3BKQmlyRHhON210Mmx6VW9QRTIxOHE0d0hzRHhVNnhvMzc4bk5UWFBMWEVFOERENDU1dWswZnhjeGhOTTlFMkJzLTFnRlk2T0dzTVdvUFl3VHVsOWxrSUVCSmNqV2F1S1RwT0Y4YXZWU3V5akdRQmxzc25Mejh5a3h2SHNuUU0?oc=5"
+          },
+          {
+            "fecha": "2026-04-29",
+            "fuente": "U.S. News & World Report",
+            "titulo": "Meta Beats Revenue Expectations, Boosts Capital Spending Forecast for 2026 - U.S. News & World Report",
+            "enlace": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOd3haQTlHclFfcE5pTDJRbGVIVkNVMmMzb2F0OUZDaVVNcTM3MTFLM2FuMS1wWTlBekdTVkVRUjgtSUJldl91c3RzVS1EWTMxMjl5YTh1U0czUF9QWWhWNm5CdlQtMGtId1B3Z3FHQUN0ZEVoeld2N2JTU3R6cGtSZnBWM1RqRklaRzJHSlZtV21FUmlHUE1KYmhFajMxRmpCMG0yZk0xNmlNdGNDT05DZmpzYzdoRkVSM2JySUJJRl84ZVV6ZGpEaExiY1NuWnlwcnVKNmRKRmNwZjBP?oc=5"
+          }
+        ]
+      }
+    ],
+    "proxima_fecha": "2026-10-28",
+    "tipo": "Aproximada",
+    "traducciones": {
+      "Meta Reports Second Quarter 2026 Results": "Resultados de los metainformes del segundo trimestre de 2026",
+      "Meta cash flow craters as Zuckerberg doubles down on AI spending": "Meta cráteres de flujo de efectivo a medida que Zuckerberg duplica el gasto en IA",
+      "The market is overreacting to Meta's earnings and guidance. Here's our plan": "El mercado está reaccionando de forma exagerada a las ganancias y la orientación de Meta. Este es nuestro plan",
+      "Meta Stock Drops 10% on Steeper AI Costs, Missed Forecast": "Las Meta Stock caen un 10% en los costes de IA de Steeper, previsión perdida",
+      "Meta Reports First Quarter 2026 Results": "Resultados del primer trimestre de 2026 de Meta Reports",
+      "Meta shares fall on concerns over AI spending, legal scrutiny": "Las acciones de Meta caen por las preocupaciones sobre el gasto en IA y el escrutinio legal",
+      "Meta Reports Big Revenue Jump and Projected Spending Increase": "Meta Reportes Gran Salto de Ingresos y Aumento de Gasto Proyectado",
+      "Meta Beats Revenue Expectations, Boosts Capital Spending Forecast for 2026": "Meta supera las expectativas de ingresos y aumenta la previsión de gasto de capital para 2026"
+    },
+    "consultado": "2026-08-27T17:54:02"
+  },
+  "SHOP": {
+    "resultados": [
+      {
+        "fecha": "2026-08-05",
+        "resumen": [
+          {
+            "etiqueta": "Comunicado",
+            "texto": "Shopify ofrece grandes beneficios: +30% de crecimiento en GMV, ingresos, beneficios brutos y flujo de caja libre"
+          },
+          {
+            "etiqueta": "Reuters",
+            "texto": "TSX alcanza un nivel récord a medida que Shopify y los mineros de metales aumentan"
+          },
+          {
+            "etiqueta": "CNBC",
+            "texto": "Las acciones de Shopify se disparan, ya que el pronóstico muestra que la IA está impulsando el negocio, no interrumpiendo"
+          },
+          {
+            "etiqueta": "MarketWatch",
+            "texto": "Las acciones de Shopify se dirigen al mejor día en un año después de que la empresa \"no dejara dudas\" sobre su trayectoria de crecimiento"
+          }
+        ],
+        "comunicado": {
+          "fecha": "2026-08-05",
+          "fuente": "Shopify",
+          "titulo": "Shopify Delivers Big: 30%+ Growth Across GMV, Revenue, Gross Profit, and Free Cash Flow - Shopify",
+          "enlace": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBES3Y1X2JjWnRhaHpPYnNTZHRzT3F5R2RGcm83LUtRSTBYUmpVQlBaWVhCZ3dwa3NuQzRMVzdTS3ZBNUNCT0FVc1FTUDNoMDNXME9ycWwtSXBMcUlSNGhjY1dGSl9MVG1qVnk0OWViTQ?oc=5"
+        },
+        "prensa": [
+          {
+            "fecha": "2026-08-05",
+            "fuente": "Reuters",
+            "titulo": "TSX hits record high as Shopify and metal miners surge - Reuters",
+            "enlace": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWjQzR2tSZlJZNDhuWkZ2ZTZGZ183RkxMV0YwT2Uzd1NUbWxoSm0xQnQ2ajhiSjJFa0h0N2tRNDd6Z0xSdHdaR2MzbVJrM2o4N0wzeHdFN2JKM01iT0NhcWlrRWQ2bF9yWXFpM0RMaVFjR04wbVRMZllXZ2M3Z0dTMldiQjZwbXlQVVFGSHpFcXVKQzVIQkRnQQ?oc=5"
+          },
+          {
+            "fecha": "2026-08-05",
+            "fuente": "CNBC",
+            "titulo": "Shopify shares soar as forecast shows AI is boosting business, not disrupting - CNBC",
+            "enlace": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQb2VFcWxTNXJtVTllR0xtT2VsUEs1UURTeEFKLXBwRXlMQmhPakdnMDkwRnhWZG1RTVdySUlHRHdpbXlpZldKVzlWNzZ3Y19WcElMbUUzZ2sxNGk1UHpWQ2M5VXJ3WU14dWl5bnVYU2hENDh1TkRSSkVGQUM3TTJSYmRmcUw0TFFmeVBjX0E4emlBdlpyc1kxYWZOQXE3TmR2S2tJcW5Sa2FrM19iYV9SeVlMd9IBuAFBVV95cUxPaGFuNjJwV0xzQ2g4QUVHWnNBS3lROFJOZVQ0cnF2UktQN3JtVlVkaHd2d29qTHR4SmkyQ0ZFbnBtM0RqMWdHNzFROTVfR1BWVGZMWm9wZEZOX1dKYWRyZC1iOEUtUlA0MXdpTm5YaW1zaG1mMmJVeF9oWHhrN2VXRlVSLWpONlI3ZVhJbHBvVUZLYnczajd0WVVsSlc2SDRXNUhwX0w4UEFVZ2FnWU1aZG1jQnp4bDRO?oc=5"
+          },
+          {
+            "fecha": "2026-08-05",
+            "fuente": "MarketWatch",
+            "titulo": "Shopify’s stock heads for best day in a year after the company ‘left no doubt’ about its growth trajectory - MarketWatch",
+            "enlace": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQY1ZOSXg1cndqblRjazVjYTh1RjVLTWdHbHl5bmplSW1mZEhhWTBQOVU1eHNHLXE4V2VtNDNsWnFmXzJzV2tpVFdMNWlTUDdmQWg5ZW9xZWJSWE5WbnA2Sk1OVXJzU3RpUlcxYUZFdDNTVW1wdjRsclBLMFVNdVVuQk9kOGpycVpJLWIzVTB0a0NpakFhYzJZNzg5NlA4bDJLVGFTT000OGNwRHFlZ2VjSVZIZzI0UlBhMVFBRjJUY2hSeTRoOFpDdXphVW5RcXlzdUpNeGNkWVJmRjcxb0pz?oc=5"
+          }
+        ]
+      },
+      {
+        "fecha": "2026-05-05",
+        "resumen": [
+          {
+            "etiqueta": "Comunicado",
+            "texto": "Shopify entrega de nuevo a medida que los establecimientos obtienen $ 100 mil millones en el primer trimestre de GMV"
+          },
+          {
+            "etiqueta": "Reuters",
+            "texto": "El lanzamiento de IA de Shopify no logra subir las acciones después de un pronóstico tibio"
+          },
+          {
+            "etiqueta": "CNBC",
+            "texto": "Harley Finkelstein, presidenta de Shopify: la IA hace que el emprendimiento sea \"dramáticamente más accesible\""
+          },
+          {
+            "etiqueta": "WSJ",
+            "texto": "Guías de Shopify para una rentabilidad más débil en el segundo trimestre en medio de gastos crecientes"
+          }
+        ],
+        "comunicado": {
+          "fecha": "2026-05-05",
+          "fuente": "Shopify",
+          "titulo": "Shopify Delivers Again as Merchants Clear $100 Billion in Q1 GMV - Shopify",
+          "enlace": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQM0tnZ0E5alF3YmdtNUhSa1BiaFlySE9FVzBpTEJDMjY1MWZUazU5OEk5Q1ZPMWtmVk5zU0VCNW5WTHpIY3NScjRzVXBDaEJlY3FSeE9hOXMzaVZKUGNSWmhnNDRDQ0c2Sm1oWHRhbHpSZUFoclJibVBXYS1LUVpTWjNvRnUyU29VVHVtUFo0QjI3ZHV1V3FhZ0NuYVVsZXJqYXJCa2xGbDIxQQ?oc=5"
+        },
+        "prensa": [
+          {
+            "fecha": "2026-05-05",
+            "fuente": "Reuters",
+            "titulo": "Shopify's AI pitch fails to lift shares after lukewarm forecast - Reuters",
+            "enlace": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZEN2M0c2R25DOU1BaWJEM3BqU3BPaW5kXzJiSlFBNmpTeTBHS0RWU3hfbmQwSVRyUzN1S1NCY09ENzNiNXIzanU2VGllZk5mQ0tYOTVJMWtRbEl5TkZBbGtnbzg2dFJ3Y3R0WnZzeGt3ZUdwYWdUbFA3cTRfVWw2VUdxenZRMEk2ZnhFQzBQM3FuQmpmTXhucQ?oc=5"
+          },
+          {
+            "fecha": "2026-05-05",
+            "fuente": "CNBC",
+            "titulo": "Shopify President Harley Finkelstein: AI makes entrepreneurship ‘dramatically more accessible’ - CNBC",
+            "enlace": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNeDFuTWxwbVpqZWdtTWh6dlpwcjRKWU4xVkNEbTNBTGhobWhfY3dkcU9QZ3ZRTjRDZjFiNHJzVUZYTDhNc2lGN1NnQmVqYmxISHFPWEdtNzIzMUMtTHhIeGROeWtIVk4xTUtCU2Y0RUpoM0VRREFtTVE3N0dTV1dBMTFMTzVFVXdQWU5WazN4Z2xnVGRFWnJGQ0lqMUFGcUk5RkR4R0lLYWowNVRtSmtBQ0RHdktqVEtKanBwVzlPT2t2UEVlZ05sVDFhR05kcUU?oc=5"
+          },
+          {
+            "fecha": "2026-05-05",
+            "fuente": "WSJ",
+            "titulo": "Shopify Guides for Weaker Second-Quarter Profitability Amid Climbing Expenses - WSJ",
+            "enlace": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPYV9TRHlsTmM3YWV4WnU4cFQ0eENTazBVWER2dExlS3pYZDMwUmFlY2lLbVpMU25rWXhIQ2xTOTBZSmpJR1RCSWd5dDZNTk5QeF9KU29TVndTLTAxSDZGVkozVk9DVi1WMjhja0hxYWVVTm44UVFJWFFGMTRVU3c4RExQcU1QQmJ5bGYyU2xueFkyWXJyUmtKSGhjdGkwZWN5dGhZ?oc=5"
+          }
+        ]
+      }
+    ],
+    "proxima_fecha": "2026-11-03",
+    "tipo": "Aproximada",
+    "traducciones": {
+      "Shopify Delivers Big: 30%+ Growth Across GMV, Revenue, Gross Profit, and Free Cash Flow": "Shopify ofrece grandes beneficios: +30% de crecimiento en GMV, ingresos, beneficios brutos y flujo de caja libre",
+      "Shopify shares soar as forecast shows AI is boosting business, not disrupting": "Las acciones de Shopify se disparan, ya que el pronóstico muestra que la IA está impulsando el negocio, no interrumpiendo",
+      "Shopify’s stock heads for best day in a year after the company ‘left no doubt’ about its growth trajectory": "Las acciones de Shopify se dirigen al mejor día en un año después de que la empresa \"no dejara dudas\" sobre su trayectoria de crecimiento",
+      "Shopify Signals Revenue Acceleration as AI Tools, Merchant Growth Drive Results": "Shopify señala la aceleración de los ingresos como herramientas de IA, el crecimiento de los comercios impulsa los resultados",
+      "Shopify Delivers Again as Merchants Clear $100 Billion in Q1 GMV": "Shopify entrega de nuevo a medida que los establecimientos obtienen $ 100 mil millones en el primer trimestre de GMV",
+      "Shopify's AI pitch fails to lift shares after lukewarm forecast": "El lanzamiento de IA de Shopify no logra subir las acciones después de un pronóstico tibio",
+      "Shopify President Harley Finkelstein: AI makes entrepreneurship ‘dramatically more accessible’": "Harley Finkelstein, presidenta de Shopify: la IA hace que el emprendimiento sea \"dramáticamente más accesible\"",
+      "Shopify Guides for Weaker Second-Quarter Profitability Amid Climbing Expenses": "Guías de Shopify para una rentabilidad más débil en el segundo trimestre en medio de gastos crecientes",
+      "TSX hits record high as Shopify and metal miners surge": "TSX alcanza un nivel récord a medida que Shopify y los mineros de metales aumentan"
+    },
+    "consultado": "2026-08-27T17:54:05"
+  }
+}

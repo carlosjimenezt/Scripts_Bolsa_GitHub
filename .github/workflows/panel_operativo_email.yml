@@ -9,7 +9,7 @@ on:
 jobs:
   ejecutar-y-enviar:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
 
     steps:
       - name: Descargar repositorio
@@ -25,12 +25,20 @@ jobs:
       - name: Instalar dependencias
         run: pip install -r requirements.txt
 
-      - name: Ejecutar panel operativo
+      - name: Recuperar caché del calendario
+        uses: actions/cache@v4
+        with:
+          path: salida_operativa/calendario_resultados/estado_fechas_v2_4.json
+          key: calendario-resultados-v24-${{ github.run_id }}
+          restore-keys: |
+            calendario-resultados-v24-
+
+      - name: Ejecutar panel operativo V2.4
         run: >-
           jupyter nbconvert --to notebook --execute
-          "Vers_Operativa_Basada en 2_2_Config Multimercado.ipynb"
-          --output "Resultado_Operativo_Diario.ipynb"
-          --ExecutePreprocessor.timeout=180
+          "Vers_Operativa_Basada en 2_4_Config Multimercado.ipynb"
+          --output "Resultado_Operativo_Diario_V2_4.ipynb"
+          --ExecutePreprocessor.timeout=600
 
       - name: Enviar resumen por correo
         env:
@@ -47,7 +55,7 @@ jobs:
         with:
           name: panel-operativo-diario
           path: |
-            Resultado_Operativo_Diario.ipynb
+            Resultado_Operativo_Diario_V2_4.ipynb
             salida_operativa/
           retention-days: 7
           if-no-files-found: warn
