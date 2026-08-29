@@ -1,47 +1,161 @@
 <!doctype html><html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Calendario de resultados V2.4</title><style>
+<title>Calendario dinámico de eventos V2.4</title><style>
  body { margin:0;color:#202124;background:#fff;font-family:Arial,sans-serif }
- .calendario { max-width:1600px;margin:0 auto;padding:9px } h2 { font-size:17px;margin:0 0 4px }
- .leyenda { color:#5f6368;font-size:11px;margin:0 0 8px }
- .tabla-wrap { overflow-x:auto;border:1px solid #dadce0;border-radius:6px }
- table { width:100%;border-collapse:collapse;font-size:10.5px;line-height:1.23 }
- th { background:#f6f8fa;color:#3c4043;text-align:left;padding:6px;border-bottom:1px solid #cfd4da;white-space:nowrap }
- td { padding:5px 6px;border-bottom:1px solid #eceff1;vertical-align:top }
+ .calendario { max-width:1500px;margin:0 auto;padding:10px }
+ h2 { font-size:18px;margin:0 0 4px }
+ .leyenda,.nota { color:#5f6368;font-size:11px;margin:4px 0 10px }
+ .bloque { border:1px solid #d8dee4;border-radius:9px;padding:10px;margin:12px 0 18px;
+            box-shadow:0 1px 2px rgba(0,0,0,.05) }
+ h3 { font-size:18px;margin:0 0 8px;color:#174ea6 }
+ h4 { font-size:12px;margin:5px 0;color:#3c4043 } .proximos-titulo { margin-top:12px }
+ .tabla-wrap { overflow-x:auto;border:1px solid #e3e7eb;border-radius:6px }
+ table { width:100%;border-collapse:collapse;font-size:11px;line-height:1.3 }
+ th { background:#f6f8fa;color:#3c4043;text-align:left;padding:7px;
+       border-bottom:1px solid #cfd4da;white-space:nowrap }
+ td { padding:7px;border-bottom:1px solid #eceff1;vertical-align:top }
  tbody tr:last-child td { border-bottom:0 } tbody tr:hover { background:#f8fbff }
- .valor { font-weight:700;white-space:nowrap } .fecha { white-space:nowrap }
- .resumen { min-width:260px;max-width:390px } .resumen div+div,.fuente div { margin-top:3px }
- .impacto { width:30px;text-align:center;vertical-align:middle }
- .impacto span { display:inline-block;font-size:24px;font-weight:800;line-height:1;cursor:help }
- .fuente { min-width:145px } .fuente a { white-space:nowrap }
- .estado { display:inline-block;padding:2px 6px;border-radius:10px;white-space:nowrap;font-size:10px;font-weight:700 }
- .oficial { color:#137333;background:#e6f4ea } .aproximada { color:#8a4b00;background:#fef7e0 }
- .sin-fecha { color:#5f6368;background:#f1f3f4 } a { color:#1967d2;text-decoration:none }
- a:hover { text-decoration:underline } .nota { color:#6b7280;font-size:10px;margin:6px 1px 0 }
+ .fecha { width:94px;white-space:nowrap;font-weight:600 }
+ .resumen { min-width:360px } .resumen div+div { margin-top:4px }
+ .impacto { width:100px;white-space:nowrap;font-size:13px;font-weight:800;text-align:center }
+ .fuente { min-width:120px } .fuente a { white-space:nowrap }
+ .tipo,.certeza { display:inline-block;padding:2px 7px;border-radius:10px;
+                   white-space:nowrap;font-size:10px;font-weight:700 }
+ .pasado { color:#3c4043;background:#eef1f4 } .futuro { color:#174ea6;background:#e8f0fe }
+ .certeza { color:#8a4b00;background:#fef7e0;white-space:normal }
+ .vacio { color:#6b7280;font-style:italic } a { color:#1967d2;text-decoration:none }
+ a:hover { text-decoration:underline }
 </style></head><body><div class="calendario">
- <h2>Calendario dinámico de resultados — 27/08/2026</h2>
- <p class="leyenda"><span style="color:#188038">↑ positivo (&gt;3 %)</span> ·
- <span style="color:#d93025">↓ negativo (&lt;-3 %)</span> ·
- <span style="color:#80868b">→ neutral (±3 %)</span></p>
- <div class="tabla-wrap"><table><thead><tr>
-  <th>Valor</th><th>Último resultado</th><th>Noticias (español)</th><th>Bolsa</th>
-  <th>Resultado anterior</th><th>Noticias anteriores (español)</th><th>Bolsa</th>
-  <th>Próximo resultado</th><th>Confirmación</th><th>Fuentes</th>
- </tr></thead><tbody>
-      <tr title="">
-        <td class="valor">META</td>
-        <td class="fecha">29/07/2026</td><td class="resumen"><div><b>Comunicado:</b> Resultados de los metainformes del segundo trimestre de 2026</div><div><b>Reuters:</b> Meta cráteres de flujo de efectivo a medida que Zuckerberg duplica el gasto en IA</div><div><b>CNBC:</b> El mercado está reaccionando de forma exagerada a las ganancias y la orientación de Meta. Este es nuestro plan</div><div><b>WSJ:</b> Las Meta Stock caen un 10% en los costes de IA de Steeper, previsión perdida</div></td><td class="impacto"><span title="Reacción negativa: -9.16 %" aria-label="Reacción negativa: -9.16 %" style="color:#d93025">&#8595;</span></td><td class="fecha">29/04/2026</td><td class="resumen"><div><b>Comunicado:</b> Resultados del primer trimestre de 2026 de Meta Reports</div><div><b>Reuters:</b> Las acciones de Meta caen por las preocupaciones sobre el gasto en IA y el escrutinio legal</div><div><b>WSJ:</b> Meta Reportes Gran Salto de Ingresos y Aumento de Gasto Proyectado</div><div><b>U.S. News &amp; World Report:</b> Meta supera las expectativas de ingresos y aumenta la previsión de gasto de capital para 2026</div></td><td class="impacto"><span title="Reacción negativa: -8.85 %" aria-label="Reacción negativa: -8.85 %" style="color:#d93025">&#8595;</span></td>
-        <td class="fecha">28/10/2026</td>
-        <td><span class="estado aproximada">Aproximada</span></td>
-        <td class="fuente"><a href="https://investor.atmeta.com/investor-events/default.aspx" target="_blank" rel="noopener noreferrer">Web oficial</a> · <a href="https://finance.yahoo.com/quote/META/analysis/" target="_blank" rel="noopener noreferrer">Fecha estimada</a><div><b>Último:</b> <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxPdng4QXNhRWdnc3ZqNjNLZFBoZFFZS0Q4MTA0ZEZoYUpPYnFNT1J1REQzRDlJVkdZZERQVjk5TkNDcmh5SElKdmpQUndFc3dpc0o2NFNtWjBhODROdlc0UzVfQTY3UjUxeVQtQTVNRHRtb3BsZklzUkJWdDUwcF9sdHdtRkxHT1RScnFxa2x2elRYcUZ4ZFN2RUw3UkhaNERnNGdxdjllOEVWVFBONzU1TUZfVldWYnQ5OS1hSTF0WQ?oc=5" target="_blank" rel="noopener noreferrer">Comunicado</a> · <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxPZVVsNHpKWUwyNmRVZlB2Zml0d0QtZ0U5YTdKeDlIVXNISWdsajRiUE1vQU9JaHlUeDFWRjNUTGw0Y01TTHRiTlZjRDhJUFFSWXA4aktubGNNeURsSWtVTlJMaExmVFRCTFh6U3RKdWZnQnU1dzRTbzR5dTVWNHNkMTV3V3U3a0xxQWNjTnVPMHZCOE01dmt2TWQzZTBUUQ?oc=5" target="_blank" rel="noopener noreferrer">Reuters</a> · <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxQUEk3NWdQMkliZXJmSHpXVnJzN25WblVjdWE1Ty0zcks5QTc0UWRkaEpfVnItRERPUTBRVUZQTHJtQW5QNmZ0UGplUGx2dEtsd3NxQ1BOTTZjQWZmR3pyeXpMdmk0bzBrNDBNN1hDN1ZyeGhVQ2c2QW5mMUxLTEZzWW5uaUdwVXNxM2hWbWZRTS1FUm9ZQ284TjlORmt3Zw?oc=5" target="_blank" rel="noopener noreferrer">CNBC</a> · <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE50ZmttOTNyTEl1LXZjY0d0d085WlJwQTl6M2ZqMUpRV2tsYTJXcWZSSzBDUXN5THFfTDE5cm5mX21pMEp3NWM2cF9HUmw1bmt1c1hJc1MyZHJyRTNrMUUxa2hSQUhyZVdWam5qSk1pQzZRSXhfLU42OFgySQ?oc=5" target="_blank" rel="noopener noreferrer">WSJ</a></div><div><b>Anterior:</b> <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxON1YwNWxBdnJibk9qNWQ4UVBVV1dpLXBHalpnMEQ4djJkaVVwUnpya1FYX1lqMXJDZVNVSmVBTFdSeWlJSUlPMGZoYWtSaXJpSHl6X2tTZTMwNXJIZThoMmJjZWsyQjRkb1ZCZ2lLcXpwZEZCVEphZ0ttY3FIcndxdEM0aEcyTnFMWkw3dXBGQXY0aHhYdmVKWjhFbw?oc=5" target="_blank" rel="noopener noreferrer">Comunicado</a> · <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNFNSQmtUam5teWJnNHNkcDVSSHVwbGl4d0luVzYwSUxaVnVpcVNmcW9LcXFGZ1IyWWxsZ1VPbmJ4N0FrR1ZXbkFfZG16cUJYQUFSdnhmdU95TUVXaUstaWF3M1drcXVDbHRjVlZVMTUwY3h0VnhhMVEycnRWbC1TNElfamZrNDlXQjNGbTg0dGN0MEN6ZDYwSDgtLUV6MW5HcXlDdlEtQmxJQQ?oc=5" target="_blank" rel="noopener noreferrer">Reuters</a> · <a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNY3BKQmlyRHhON210Mmx6VW9QRTIxOHE0d0hzRHhVNnhvMzc4bk5UWFBMWEVFOERENDU1dWswZnhjeGhOTTlFMkJzLTFnRlk2T0dzTVdvUFl3VHVsOWxrSUVCSmNqV2F1S1RwT0Y4YXZWU3V5akdRQmxzc25Mejh5a3h2SHNuUU0?oc=5" target="_blank" rel="noopener noreferrer">WSJ</a> · <a href="https://news.google.com/rss/articles/CBMi3AFBVV95cUxOd3haQTlHclFfcE5pTDJRbGVIVkNVMmMzb2F0OUZDaVVNcTM3MTFLM2FuMS1wWTlBekdTVkVRUjgtSUJldl91c3RzVS1EWTMxMjl5YTh1U0czUF9QWWhWNm5CdlQtMGtId1B3Z3FHQUN0ZEVoeld2N2JTU3R6cGtSZnBWM1RqRklaRzJHSlZtV21FUmlHUE1KYmhFajMxRmpCMG0yZk0xNmlNdGNDT05DZmpzYzdoRkVSM2JySUJJRl84ZVV6ZGpEaExiY1NuWnlwcnVKNmRKRmNwZjBP?oc=5" target="_blank" rel="noopener noreferrer">U.S. News &amp; World Report</a></div></td>
-      </tr>
-      <tr title="">
-        <td class="valor">SHOP</td>
-        <td class="fecha">05/08/2026</td><td class="resumen"><div><b>Comunicado:</b> Shopify ofrece grandes beneficios: +30% de crecimiento en GMV, ingresos, beneficios brutos y flujo de caja libre</div><div><b>Reuters:</b> TSX alcanza un nivel récord a medida que Shopify y los mineros de metales aumentan</div><div><b>CNBC:</b> Las acciones de Shopify se disparan, ya que el pronóstico muestra que la IA está impulsando el negocio, no interrumpiendo</div><div><b>MarketWatch:</b> Las acciones de Shopify se dirigen al mejor día en un año después de que la empresa &quot;no dejara dudas&quot; sobre su trayectoria de crecimiento</div></td><td class="impacto"><span title="Reacción positiva: +19.58 %" aria-label="Reacción positiva: +19.58 %" style="color:#188038">&#8593;</span></td><td class="fecha">05/05/2026</td><td class="resumen"><div><b>Comunicado:</b> Shopify entrega de nuevo a medida que los establecimientos obtienen $ 100 mil millones en el primer trimestre de GMV</div><div><b>Reuters:</b> El lanzamiento de IA de Shopify no logra subir las acciones después de un pronóstico tibio</div><div><b>CNBC:</b> Harley Finkelstein, presidenta de Shopify: la IA hace que el emprendimiento sea &quot;dramáticamente más accesible&quot;</div><div><b>WSJ:</b> Guías de Shopify para una rentabilidad más débil en el segundo trimestre en medio de gastos crecientes</div></td><td class="impacto"><span title="Reacción negativa: -17.33 %" aria-label="Reacción negativa: -17.33 %" style="color:#d93025">&#8595;</span></td>
-        <td class="fecha">03/11/2026</td>
-        <td><span class="estado aproximada">Aproximada</span></td>
-        <td class="fuente"><a href="https://www.shopify.com/investors/events" target="_blank" rel="noopener noreferrer">Web oficial</a> · <a href="https://finance.yahoo.com/quote/SHOP/analysis/" target="_blank" rel="noopener noreferrer">Fecha estimada</a><div><b>Último:</b> <a href="https://news.google.com/rss/articles/CBMib0FVX3lxTFBES3Y1X2JjWnRhaHpPYnNTZHRzT3F5R2RGcm83LUtRSTBYUmpVQlBaWVhCZ3dwa3NuQzRMVzdTS3ZBNUNCT0FVc1FTUDNoMDNXME9ycWwtSXBMcUlSNGhjY1dGSl9MVG1qVnk0OWViTQ?oc=5" target="_blank" rel="noopener noreferrer">Comunicado</a> · <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPWjQzR2tSZlJZNDhuWkZ2ZTZGZ183RkxMV0YwT2Uzd1NUbWxoSm0xQnQ2ajhiSjJFa0h0N2tRNDd6Z0xSdHdaR2MzbVJrM2o4N0wzeHdFN2JKM01iT0NhcWlrRWQ2bF9yWXFpM0RMaVFjR04wbVRMZllXZ2M3Z0dTMldiQjZwbXlQVVFGSHpFcXVKQzVIQkRnQQ?oc=5" target="_blank" rel="noopener noreferrer">Reuters</a> · <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQb2VFcWxTNXJtVTllR0xtT2VsUEs1UURTeEFKLXBwRXlMQmhPakdnMDkwRnhWZG1RTVdySUlHRHdpbXlpZldKVzlWNzZ3Y19WcElMbUUzZ2sxNGk1UHpWQ2M5VXJ3WU14dWl5bnVYU2hENDh1TkRSSkVGQUM3TTJSYmRmcUw0TFFmeVBjX0E4emlBdlpyc1kxYWZOQXE3TmR2S2tJcW5Sa2FrM19iYV9SeVlMd9IBuAFBVV95cUxPaGFuNjJwV0xzQ2g4QUVHWnNBS3lROFJOZVQ0cnF2UktQN3JtVlVkaHd2d29qTHR4SmkyQ0ZFbnBtM0RqMWdHNzFROTVfR1BWVGZMWm9wZEZOX1dKYWRyZC1iOEUtUlA0MXdpTm5YaW1zaG1mMmJVeF9oWHhrN2VXRlVSLWpONlI3ZVhJbHBvVUZLYnczajd0WVVsSlc2SDRXNUhwX0w4UEFVZ2FnWU1aZG1jQnp4bDRO?oc=5" target="_blank" rel="noopener noreferrer">CNBC</a> · <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxQY1ZOSXg1cndqblRjazVjYTh1RjVLTWdHbHl5bmplSW1mZEhhWTBQOVU1eHNHLXE4V2VtNDNsWnFmXzJzV2tpVFdMNWlTUDdmQWg5ZW9xZWJSWE5WbnA2Sk1OVXJzU3RpUlcxYUZFdDNTVW1wdjRsclBLMFVNdVVuQk9kOGpycVpJLWIzVTB0a0NpakFhYzJZNzg5NlA4bDJLVGFTT000OGNwRHFlZ2VjSVZIZzI0UlBhMVFBRjJUY2hSeTRoOFpDdXphVW5RcXlzdUpNeGNkWVJmRjcxb0pz?oc=5" target="_blank" rel="noopener noreferrer">MarketWatch</a></div><div><b>Anterior:</b> <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQM0tnZ0E5alF3YmdtNUhSa1BiaFlySE9FVzBpTEJDMjY1MWZUazU5OEk5Q1ZPMWtmVk5zU0VCNW5WTHpIY3NScjRzVXBDaEJlY3FSeE9hOXMzaVZKUGNSWmhnNDRDQ0c2Sm1oWHRhbHpSZUFoclJibVBXYS1LUVpTWjNvRnUyU29VVHVtUFo0QjI3ZHV1V3FhZ0NuYVVsZXJqYXJCa2xGbDIxQQ?oc=5" target="_blank" rel="noopener noreferrer">Comunicado</a> · <a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPZEN2M0c2R25DOU1BaWJEM3BqU3BPaW5kXzJiSlFBNmpTeTBHS0RWU3hfbmQwSVRyUzN1S1NCY09ENzNiNXIzanU2VGllZk5mQ0tYOTVJMWtRbEl5TkZBbGtnbzg2dFJ3Y3R0WnZzeGt3ZUdwYWdUbFA3cTRfVWw2VUdxenZRMEk2ZnhFQzBQM3FuQmpmTXhucQ?oc=5" target="_blank" rel="noopener noreferrer">Reuters</a> · <a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxNeDFuTWxwbVpqZWdtTWh6dlpwcjRKWU4xVkNEbTNBTGhobWhfY3dkcU9QZ3ZRTjRDZjFiNHJzVUZYTDhNc2lGN1NnQmVqYmxISHFPWEdtNzIzMUMtTHhIeGROeWtIVk4xTUtCU2Y0RUpoM0VRREFtTVE3N0dTV1dBMTFMTzVFVXdQWU5WazN4Z2xnVGRFWnJGQ0lqMUFGcUk5RkR4R0lLYWowNVRtSmtBQ0RHdktqVEtKanBwVzlPT2t2UEVlZ05sVDFhR05kcUU?oc=5" target="_blank" rel="noopener noreferrer">CNBC</a> · <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPYV9TRHlsTmM3YWV4WnU4cFQ0eENTazBVWER2dExlS3pYZDMwUmFlY2lLbVpMU25rWXhIQ2xTOTBZSmpJR1RCSWd5dDZNTk5QeF9KU29TVndTLTAxSDZGVkozVk9DVi1WMjhja0hxYWVVTm44UVFJWFFGMTRVU3c4RExQcU1QQmJ5bGYyU2xueFkyWXJyUmtKSGhjdGkwZWN5dGhZ?oc=5" target="_blank" rel="noopener noreferrer">WSJ</a></div></td>
-      </tr></tbody></table></div>
- <p class="nota">Se muestran los dos últimos resultados publicados de cada valor seleccionado en ACTIVOS.
- La reacción compara el cierre previo con el cierre de la sesión posterior al anuncio.</p>
+ <h2>Calendario dinámico de eventos — 29/08/2026</h2>
+ <p class="leyenda">Cada valor tiene su propio bloque. El histórico incluye todas las presentaciones
+ de resultados y las sesiones cuya variación cierre a cierre superó el 7 %. Los eventos futuros
+ pueden tener fecha exacta o aproximada.</p>
+
+      <section class="bloque" title="">
+        <h3>META</h3>
+        <h4>Eventos pasados — últimos seis meses</h4>
+        <div class="tabla-wrap"><table>
+          <thead><tr><th>Fecha del evento</th><th>Tipo</th><th>Resumen del evento</th>
+          <th>Impacto bursátil</th><th>Fuentes</th></tr></thead>
+          <tbody>
+          <tr>
+            <td class="fecha">29/07/2026</td>
+            <td><span class="tipo pasado">Presentación de resultados</span></td>
+            <td class="resumen"><div><b>Evento:</b> Presentación de resultados trimestrales.</div><div><b>Comunicado:</b> Meta presenta los resultados del segundo trimestre de 2026</div><div><b>Reuters:</b> El flujo de caja de Meta se desploma a medida que Zuckerberg duplica el gasto en IA</div><div><b>WSJ:</b> La acción de Meta cae un 10 % por mayores costes de IA y una previsión incumplida</div></td>
+            <td class="impacto" style="color:#d93025" title="Bajada">↓ -7.95 %</td>
+            <td class="fuente"><a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxPdng4QXNhRWdnc3ZqNjNLZFBoZFFZS0Q4MTA0ZEZoYUpPYnFNT1J1REQzRDlJVkdZZERQVjk5TkNDcmh5SElKdmpQUndFc3dpc0o2NFNtWjBhODROdlc0UzVfQTY3UjUxeVQtQTVNRHRtb3BsZklzUkJWdDUwcF9sdHdtRkxHT1RScnFxa2x2elRYcUZ4ZFN2RUw3UkhaNERnNGdxdjllOEVWVFBONzU1TUZfVldWYnQ5OS1hSTF0WQ?oc=5" target="_blank" rel="noopener noreferrer">Meta Investor Relations</a> · <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxPZVVsNHpKWUwyNmRVZlB2Zml0d0QtZ0U5YTdKeDlIVXNISWdsajRiUE1vQU9JaHlUeDFWRjNUTGw0Y01TTHRiTlZjRDhJUFFSWXA4aktubGNNeURsSWtVTlJMaExmVFRCTFh6U3RKdWZnQnU1dzRTbzR5dTVWNHNkMTV3V3U3a0xxQWNjTnVPMHZCOE01dmt2TWQzZTBUUQ?oc=5" target="_blank" rel="noopener noreferrer">Reuters</a> · <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE50ZmttOTNyTEl1LXZjY0d0d085WlJwQTl6M2ZqMUpRV2tsYTJXcWZSSzBDUXN5THFfTDE5cm5mX21pMEp3NWM2cF9HUmw1bmt1c1hJc1MyZHJyRTNrMUUxa2hSQUhyZVdWam5qSk1pQzZRSXhfLU42OFgySQ?oc=5" target="_blank" rel="noopener noreferrer">WSJ</a></td>
+          </tr>
+          <tr>
+            <td class="fecha">01/07/2026</td>
+            <td><span class="tipo pasado">Movimiento diario superior al 7 %</span></td>
+            <td class="resumen"><div><b>CNBC:</b> El plan de Meta para lanzar un negocio en la nube alivia la mayor sobrecarga en las acciones</div><div><b>Barron&#x27;s:</b> Por qué el paso de Meta a la nube es un gran problema y malas noticias para CoreWeave y Nebius</div><div><b>Yahoo Finance:</b> ¿Por qué las (META) acciones de Meta se disparan hoy?</div></td>
+            <td class="impacto" style="color:#188038" title="Subida">↑ +8.81 %</td>
+            <td class="fuente"><a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPOE9CSEhUblNsdkdPT01HazdxV3F3NlBfODd3SjMxbnJUMThQVks5SEptblJCSF85UGg5TWdsUHVNeWRyaDByWWlrWmhWNjJlU2M2MHJMR1lnbGVsZkgzXzlqaDIxZEpPeFZNN3pmMFNNQ1VVLThrUnVUODl2dXZBYkVVT1JRNTdFWmZSUEdvTjdZaHpSTDRUbGV1YzBmbVhnODVXb2dYTFQ3NC1rRmNwREw3eFg?oc=5" target="_blank" rel="noopener noreferrer">CNBC</a> · <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxNaTI0bWdTNFdLenJMZkx3SlhUZGxZWWJJRENXdWdLWmZlQVZGdXA2ak9VN1c4czdSSGtpYlhQM1lEaHNsWHptOEZCRlFtRjNORUZ3M0ZuYVYwYi0yU2lORmYtWGFZSkM2dGRpUXQxXzgybEh6Z0VYR2J3M18ydDRXRjlUX0k?oc=5" target="_blank" rel="noopener noreferrer">Barron&#x27;s</a> · <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxOT2wyclZ4X1RLQ2tNVUxWM0g5Y2g4RnhwcENzcVlrTVg5elU5MnF4cG1UaHEtRkllUGtTOFBkYmZTbEp6TmhRWjZ5eXlqdFZxc2NIMXJDSHJnc2w4dVhsWlNUc25ud25qZWlCZVVQY3gyY3pNbld2OGhzMGE3Tk5JcjhhbGFvaFFDUVJLSGQxejZYd19KVnIw?oc=5" target="_blank" rel="noopener noreferrer">Yahoo Finance</a></td>
+          </tr>
+          <tr>
+            <td class="fecha">29/04/2026</td>
+            <td><span class="tipo pasado">Presentación de resultados</span></td>
+            <td class="resumen"><div><b>Evento:</b> Presentación de resultados trimestrales.</div><div><b>Comunicado:</b> Meta presenta los resultados del primer trimestre de 2026</div><div><b>Reuters:</b> Las acciones de Meta caen por las preocupaciones sobre el gasto en IA y el escrutinio legal</div><div><b>AP News:</b> Meta supera las expectativas de ingresos y aumenta la previsión de gasto de capital para 2026</div></td>
+            <td class="impacto" style="color:#d93025" title="Bajada">↓ -8.55 %</td>
+            <td class="fuente"><a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxON1YwNWxBdnJibk9qNWQ4UVBVV1dpLXBHalpnMEQ4djJkaVVwUnpya1FYX1lqMXJDZVNVSmVBTFdSeWlJSUlPMGZoYWtSaXJpSHl6X2tTZTMwNXJIZThoMmJjZWsyQjRkb1ZCZ2lLcXpwZEZCVEphZ0ttY3FIcndxdEM0aEcyTnFMWkw3dXBGQXY0aHhYdmVKWjhFbw?oc=5" target="_blank" rel="noopener noreferrer">PR Newswire</a> · <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPNFNSQmtUam5teWJnNHNkcDVSSHVwbGl4d0luVzYwSUxaVnVpcVNmcW9LcXFGZ1IyWWxsZ1VPbmJ4N0FrR1ZXbkFfZG16cUJYQUFSdnhmdU95TUVXaUstaWF3M1drcXVDbHRjVlZVMTUwY3h0VnhhMVEycnRWbC1TNElfamZrNDlXQjNGbTg0dGN0MEN6ZDYwSDgtLUV6MW5HcXlDdlEtQmxJQQ?oc=5" target="_blank" rel="noopener noreferrer">Reuters</a> · <a href="https://news.google.com/rss/articles/CBMimgFBVV95cUxPM1QydENOdERSbHl6ZHE0Q3E4NTVPeWVMdktBUDlZVDdMQzZ1dVNyVTFVU1BxY08xTVdsZk5PMWZJOVl1bllodG1Bb1RzNGQ3Z0VWcWhKUmZsNHpUMjFaZy1TNU1kU1VZQnpSSFhrMXJhT3VBb2RqRU9VM01DR25ySGhvaFAyYnZwV3BkWkloaTQ4SkZUWFdsZnRn?oc=5" target="_blank" rel="noopener noreferrer">AP News</a></td>
+          </tr>
+          <tr>
+            <td class="fecha">26/03/2026</td>
+            <td><span class="tipo pasado">Movimiento diario superior al 7 %</span></td>
+            <td class="resumen"><div><b>Reuters:</b> Las acciones de Meta caen ante los temores de que los veredictos de EE. UU. abran la puerta a una avalancha</div><div><b>Barron&#x27;s:</b> El ARCA de Cathie Wood vende acciones de Meta. En su lugar, está comprando estas acciones de IA.</div><div><b>Yahoo Finance:</b> La acción de Meta se sumergen en territorio sobrevendido a medida que las Meta Plataformas pierden en un ensayo clave de adicción a las redes sociales</div></td>
+            <td class="impacto" style="color:#d93025" title="Bajada">↓ -7.96 %</td>
+            <td class="fuente"><a href="https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSWVSbzlGUFpXUkFyV1N0Rm5TVWJWN1lnR0dONzBfWVpTV3lIeUJQZE5mQjhuWlY1SldQWlpicTRoX3NNcFV4cVRabTdkMWVwZkNBWjhkZ244Ulh3OFk1eDRQZ01HVF9ySlZ6X1F1bjI3QWZXSHpKTDJIRGlBeDlhYVRUQmU5X0hhUTEwTmY2TEh5Wk94VEE4amJtVzc3a1hMUHd2c3VjbE1PQjZQZTFUNVBkazFnVm9hZnhpSkloeFpjdw?oc=5" target="_blank" rel="noopener noreferrer">Reuters</a> · <a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxOcGFZY0htLVVvdHBrTWNJZDVEZE5qdlNLdkNkNXk3eVUtanRkMTM5Y2t5MHFfSlF3WUVGSHVUQktmcUFla0ZpYWJwa0dEM2xSN3g3TnlMUXZWSmNqS3MyLXZ0bEJrdl8wRUU1Q0VRMGh4bTRheV9BZmdMeUhhMlhPYzVZTEpHRXpyUVJfTURDclN3dw?oc=5" target="_blank" rel="noopener noreferrer">Barron&#x27;s</a> · <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPd0d0M1JlVVBKbjcwNVhkTG1QUWlVOGVZSVZ3cDJ3empzVlQwVHJ4SF8xSkxlMFcyX2dZblNxWG15RnhTTzJKZUZBR21QWnZkX1VnUjJrWUNyV01hNnpfZ29vdGxKYTF0Ym1GSy0yWXpCODNxZFpjNk5DbENwX0pLbEhtQTZmZFFuYk5KelpTTkZ4eUZkRXNMdXN3YngxaFZnYWJzUw?oc=5" target="_blank" rel="noopener noreferrer">Yahoo Finance</a></td>
+          </tr></tbody>
+        </table></div>
+        <h4 class="proximos-titulo">Próximos eventos importantes — dos meses</h4>
+        <div class="tabla-wrap"><table>
+          <thead><tr><th>Fecha prevista</th><th>Tipo</th><th>Evento próximo</th>
+          <th>Precisión</th><th>Fuente</th></tr></thead>
+          <tbody>
+          <tr>
+            <td class="fecha">08/09/2026</td>
+            <td><span class="tipo futuro">Juicio / procedimiento regulatorio</span></td>
+            <td class="resumen">El juicio en el caso del Fiscal General de Nuevo México, que se ha ampliado para incluir varias reclamaciones relacionadas con cuestiones de moderación de contenido, está programado para comenzar el 8 de septiembre de 2026</td>
+            <td><span class="certeza">Exacta — último informe SEC; confirmar posibles cambios</span></td>
+            <td class="fuente"><a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm" target="_blank"
+              rel="noopener noreferrer">Fuente</a></td>
+          </tr>
+          <tr>
+            <td class="fecha">28/10/2026</td>
+            <td><span class="tipo futuro">Juicio / procedimiento regulatorio</span></td>
+            <td class="resumen">Las próximas dos pruebas de referencia para usuarios están programadas para comenzar el 28 de octubre de 2026</td>
+            <td><span class="certeza">Exacta — último informe SEC; confirmar posibles cambios</span></td>
+            <td class="fuente"><a href="https://www.sec.gov/Archives/edgar/data/1326801/000162828026050705/meta-20260630.htm" target="_blank"
+              rel="noopener noreferrer">Fuente</a></td>
+          </tr>
+          <tr>
+            <td class="fecha">28/10/2026</td>
+            <td><span class="tipo futuro">Presentación de resultados</span></td>
+            <td class="resumen">Próxima presentación de resultados.</td>
+            <td><span class="certeza">Aproximada</span></td>
+            <td class="fuente"><a href="https://finance.yahoo.com/quote/META/analysis/" target="_blank"
+              rel="noopener noreferrer">Fuente</a></td>
+          </tr></tbody>
+        </table></div>
+      </section>
+      <section class="bloque" title="">
+        <h3>SHOP</h3>
+        <h4>Eventos pasados — últimos seis meses</h4>
+        <div class="tabla-wrap"><table>
+          <thead><tr><th>Fecha del evento</th><th>Tipo</th><th>Resumen del evento</th>
+          <th>Impacto bursátil</th><th>Fuentes</th></tr></thead>
+          <tbody>
+          <tr>
+            <td class="fecha">05/08/2026</td>
+            <td><span class="tipo pasado">Presentación de resultados</span></td>
+            <td class="resumen"><div><b>Evento:</b> Presentación de resultados trimestrales.</div><div><b>Reuters:</b> Las acciones de Shopify se disparan, ya que el pronóstico muestra que la IA está impulsando el negocio, no interrumpiendo</div><div><b>MarketWatch:</b> Las acciones de Shopify se dirigen al mejor día en un año después de que la empresa &quot;no dejara dudas&quot; sobre su trayectoria de crecimiento</div><div><b>WSJ:</b> Shopify señala la aceleración de los ingresos como herramientas de IA, el crecimiento de los comercios impulsa los resultados</div></td>
+            <td class="impacto" style="color:#188038" title="Subida">↑ +16.98 %</td>
+            <td class="fuente"><a href="https://news.google.com/rss/articles/CBMipwFBVV95cUxPS3oxM2ZIMHFhQmM0WU5DTjhDblM3aXF0OUFNRzZKX1lHdDd5UXhtUnNiSGFJWGNmRVQ0dTRDVS1UWURqcGNjcThlSEJkS01Sb3YtMU5HV25KT1Z2WGFrMFItVmFvZE84Y2FIanNNREVkakZidGpTMzdOeHhScDkzVUxoQS1wcnZFUU5MRHN6MmtxRHhvZGYtRElfRHRON2ptaml1eEZSRQ?oc=5" target="_blank" rel="noopener noreferrer">Reuters</a> · <a href="https://news.google.com/rss/articles/CBMi3wFBVV95cUxQY1ZOSXg1cndqblRjazVjYTh1RjVLTWdHbHl5bmplSW1mZEhhWTBQOVU1eHNHLXE4V2VtNDNsWnFmXzJzV2tpVFdMNWlTUDdmQWg5ZW9xZWJSWE5WbnA2Sk1OVXJzU3RpUlcxYUZFdDNTVW1wdjRsclBLMFVNdVVuQk9kOGpycVpJLWIzVTB0a0NpakFhYzJZNzg5NlA4bDJLVGFTT000OGNwRHFlZ2VjSVZIZzI0UlBhMVFBRjJUY2hSeTRoOFpDdXphVW5RcXlzdUpNeGNkWVJmRjcxb0pz?oc=5" target="_blank" rel="noopener noreferrer">MarketWatch</a> · <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxQczVVRUo0X1BGUmdjZG1nVFVsbmhQV3BQZ3Rad0pvTHM5RnVtVUJJOWN1eHU3ZHA5TXhSQ2laVDlOWjdpa0tqNGthQW9mVmtOZGtCTjNhY21hNUo2OTZpeHZXbS1sRm9WWnYxaFJ6X1I5Ml9rUDNyNUc5T0dDa1UzUnEwUHRuS21UajdVenJoOXM0ZlhnMWFKWS1abXh3QklVd0RjYkNvRmZWZW5RbFNDVUJkRU1vVXpV?oc=5" target="_blank" rel="noopener noreferrer">WSJ</a></td>
+          </tr>
+          <tr>
+            <td class="fecha">27/07/2026</td>
+            <td><span class="tipo pasado">Movimiento diario superior al 7 %</span></td>
+            <td class="resumen"><div><b>Yahoo Finance:</b> Conjunto de acciones de la TIENDA para el mejor día en un año: RBC dice que Shopify tiene una &quot;gran capacidad de defensa&quot; contra la interrupción de la IA</div><div><b>MarketWatch:</b> Las acciones de Shopify Inc. Cl A suben el martes, superan al mercado</div></td>
+            <td class="impacto" style="color:#188038" title="Subida">↑ +11.54 %</td>
+            <td class="fuente"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxOaUpTVktNSmNxNndfY0FpVkk5OXVTSTFWakFDYkxoa3VIS2x6eG9OQVRQaUZpMUM1SjVZeDdyNjdaSHlMeWtuc0JKMFdGZE5UWXhJSlduQ2ZSenB6U3RXajJObkIxMlR6WXA4VXY1ZFNra2h3bEQtVWQxcFI4VEhRenQ5M3loT0Y1Q1ZwcUdTZk0zdw?oc=5" target="_blank" rel="noopener noreferrer">Yahoo Finance</a> · <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxOR1ZxNS1nQjBKeUpMSmxJMWFwVHhlY1ZqSHhnNER1UnpGRDQxdXNZVlFINF9YTm96Q3Z4M2Y5SlNmR3hJVUpuLTJVN3lvNmprN2pmaXBFQ05rbW1rWThITk0yTlVveUxkbzJ0TmlyMHcySlVQUkd0ZFFqUkxaY2V5LUdjTk1scjRJMmVpNkJBajFqU1AteDJveXdiWmtmSm90aUdJLThvYjFfX3pmU3RfQjM5aXo5Zw?oc=5" target="_blank" rel="noopener noreferrer">MarketWatch</a></td>
+          </tr>
+          <tr>
+            <td class="fecha">28/05/2026</td>
+            <td><span class="tipo pasado">Movimiento diario superior al 7 %</span></td>
+            <td class="resumen"><div><b>Yahoo Finance:</b> Por qué las existencias de Shopify (SHOP) están disponibles hoy</div><div><b>MarketWatch:</b> Las acciones de Shopify Inc. Cl A suben el viernes, superan al mercado</div></td>
+            <td class="impacto" style="color:#188038" title="Subida">↑ +7.91 %</td>
+            <td class="fuente"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxNTGtUUW9rTWl4cjliN2NBVTJUV19heDdJd2NjeHNQbHhDZmhqMXlBeHZvNEpOckpIazZydDV3NmFyOWtjNkstMnZMNHJiU00xUFFEb3pFX3o5c0ZGb0lKcVpsUmlJUmdhb0p0dlAyWDRoQmR3Z19kb0IycnJjS3J0VC1pNzVDbm55NVQ0Y2w4T1hOMkFDTENwVw?oc=5" target="_blank" rel="noopener noreferrer">Yahoo Finance</a> · <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxNUUlSNTVETl9iSEZQR1hjVUc5TXRwNExIcC1sSFBRMVlwdGRnWl9jV3Z6RTRpdmNuWkd4aG9EOUQ2Z19VamUxM0ZlM3k1MDlSX2d4TmFvanhDNWJBWWpQZXBjeXpScGtmWUdMQnhSSjBWdFlkdWI5SDN0RUJDcnFIX2RaNWVhRkhHWkhMcGxXR0RNZVhhQmd1T28zY2NlV3NYS1VXY2hnbW95VURJWXFUUEFzdVY?oc=5" target="_blank" rel="noopener noreferrer">MarketWatch</a></td>
+          </tr>
+          <tr>
+            <td class="fecha">11/05/2026</td>
+            <td><span class="tipo pasado">Movimiento diario superior al 7 %</span></td>
+            <td class="resumen"><div><b>Yahoo Finance:</b> Esto es lo que debe saber más allá de por qué Shopify Inc. (SHOP) es una acción de tendencia</div><div><b>CNBC:</b> Jim Cramer echa un vistazo más de cerca a Shopify después de una caída en las acciones</div></td>
+            <td class="impacto" style="color:#d93025" title="Bajada">↓ -7.13 %</td>
+            <td class="fuente"><a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxQVFRRMWxaVkgwWnpHQlUxcVE2aHBmeGtLdFNTU0dxZy1vZmpnTEI5Ni1Id19qQ0tRQXJmajMwMkJsSm5Kbld5SWdGNzhJV1VVR3hNWkkwQnJfVzkxdEdqVDBWcG1EOTh6MUlaZ2ZZVjhhU1JsX2xkekZxMFFzbWpWQkp0dHNIdU43c1NwbHJkUjNPSkJCZ0lV?oc=5" target="_blank" rel="noopener noreferrer">Yahoo Finance</a> · <a href="https://news.google.com/rss/articles/CBMiswFBVV95cUxQUy1QT29ndE9USTg3WVNNUlotZGV0SnNRTUctU3hZMWF4ejREbFdqU1plMTgzZ3g5bFQwdnlXdzNaRWZ3LWtfVzFFTkVkQ2JrODNjZmhjREZmNngxaEE4TWs3UUpGRHQ5NmhKUG5pTldsMmV3VDc4TVFxTngyTWprcDhsaDJ2em90N0liOVRnc1R1VXRiajZzUE0yb01WZHZxR3cxZWtzREMtM2tjUEtsYTlKNA?oc=5" target="_blank" rel="noopener noreferrer">CNBC</a></td>
+          </tr>
+          <tr>
+            <td class="fecha">05/05/2026</td>
+            <td><span class="tipo pasado">Presentación de resultados</span></td>
+            <td class="resumen"><div><b>Evento:</b> Presentación de resultados trimestrales.</div><div><b>Reuters:</b> El lanzamiento de IA de Shopify no logra subir las acciones después de un pronóstico tibio</div><div><b>CNBC:</b> Harley Finkelstein, presidenta de Shopify: la IA hace que el emprendimiento sea &quot;dramáticamente más accesible&quot;</div><div><b>WSJ:</b> Guías de Shopify para una rentabilidad más débil en el segundo trimestre en medio de gastos crecientes</div></td>
+            <td class="impacto" style="color:#d93025" title="Bajada">↓ -15.62 %</td>
+            <td class="fuente"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxPZEN2M0c2R25DOU1BaWJEM3BqU3BPaW5kXzJiSlFBNmpTeTBHS0RWU3hfbmQwSVRyUzN1S1NCY09ENzNiNXIzanU2VGllZk5mQ0tYOTVJMWtRbEl5TkZBbGtnbzg2dFJ3Y3R0WnZzeGt3ZUdwYWdUbFA3cTRfVWw2VUdxenZRMEk2ZnhFQzBQM3FuQmpmTXhucQ?oc=5" target="_blank" rel="noopener noreferrer">Reuters</a> · <a href="https://news.google.com/rss/articles/CBMizwFBVV95cUxNeDFuTWxwbVpqZWdtTWh6dlpwcjRKWU4xVkNEbTNBTGhobWhfY3dkcU9QZ3ZRTjRDZjFiNHJzVUZYTDhNc2lGN1NnQmVqYmxISHFPWEdtNzIzMUMtTHhIeGROeWtIVk4xTUtCU2Y0RUpoM0VRREFtTVE3N0dTV1dBMTFMTzVFVXdQWU5WazN4Z2xnVGRFWnJGQ0lqMUFGcUk5RkR4R0lLYWowNVRtSmtBQ0RHdktqVEtKanBwVzlPT2t2UEVlZ05sVDFhR05kcUU?oc=5" target="_blank" rel="noopener noreferrer">CNBC</a> · <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPYV9TRHlsTmM3YWV4WnU4cFQ0eENTazBVWER2dExlS3pYZDMwUmFlY2lLbVpMU25rWXhIQ2xTOTBZSmpJR1RCSWd5dDZNTk5QeF9KU29TVndTLTAxSDZGVkozVk9DVi1WMjhja0hxYWVVTm44UVFJWFFGMTRVU3c4RExQcU1QQmJ5bGYyU2xueFkyWXJyUmtKSGhjdGkwZWN5dGhZ?oc=5" target="_blank" rel="noopener noreferrer">WSJ</a></td>
+          </tr>
+          <tr>
+            <td class="fecha">15/04/2026</td>
+            <td><span class="tipo pasado">Movimiento diario superior al 7 %</span></td>
+            <td class="resumen"><div><b>Yahoo Finance:</b> Acciones que hicieron grandes movimientos ayer: Globalstar, Tesla, HighPeak Energy, Shopify y TransDigm</div></td>
+            <td class="impacto" style="color:#188038" title="Subida">↑ +8.31 %</td>
+            <td class="fuente"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNZUZxM1pxbk1JQ280RklXNnR1NWt5WWxEWHpLTFBLYnpjQTRlc0Z2WWZQOUJrWVlrVTBvckVrb3lnU09EcEI4X1MyZWN0ZHB1cnI3WEdwUFNBSXlqdnZ1b29VQ25wQS16NHFhMjNKOG13cEExZ1NXbXJ0bTV1QVk2SlFlNGl5R2oxT1V3UFdvR2wxSjQwXzUyYURvc01OeXM?oc=5" target="_blank" rel="noopener noreferrer">Yahoo Finance</a></td>
+          </tr></tbody>
+        </table></div>
+        <h4 class="proximos-titulo">Próximos eventos importantes — dos meses</h4>
+        <div class="tabla-wrap"><table>
+          <thead><tr><th>Fecha prevista</th><th>Tipo</th><th>Evento próximo</th>
+          <th>Precisión</th><th>Fuente</th></tr></thead>
+          <tbody><tr><td colspan="5" class="vacio">No se localizaron eventos importantes publicados para los próximos dos meses.</td></tr></tbody>
+        </table></div>
+      </section>
+ <p class="nota">La reacción de resultados compara el cierre anterior con el primer cierre posterior
+ al anuncio; los demás impactos son variaciones de cierre a cierre. Una fecha futura no anticipa
+ la dirección del movimiento. Verifique siempre la fuente original.</p>
 </div></body></html>
