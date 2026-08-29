@@ -137,7 +137,7 @@
           },
           {
             "etiqueta": "Barron's",
-            "texto": "El ARCA de Cathie Wood vende acciones de Meta. En su lugar, está comprando estas acciones de IA."
+            "texto": "Meta, Google Stock Drop. Se enfrentan a un gran momento tabacalero."
           },
           {
             "etiqueta": "Yahoo Finance",
@@ -155,8 +155,8 @@
           {
             "fecha": "2026-03-26",
             "fuente": "Barron's",
-            "titulo": "Cathie Wood’s ARK Sells Meta Shares. It’s Buying This AI Stock Instead. - Barron's",
-            "enlace": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcGFZY0htLVVvdHBrTWNJZDVEZE5qdlNLdkNkNXk3eVUtanRkMTM5Y2t5MHFfSlF3WUVGSHVUQktmcUFla0ZpYWJwa0dEM2xSN3g3TnlMUXZWSmNqS3MyLXZ0bEJrdl8wRUU1Q0VRMGh4bTRheV9BZmdMeUhhMlhPYzVZTEpHRXpyUVJfTURDclN3dw?oc=5"
+            "titulo": "Meta, Google Stock Drop. They’re Facing a Big Tobacco Moment. - Barron's",
+            "enlace": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNVHI5UHVGVkc4QmEzMHRLTW1HaTBwMk1XS1V6dERIWUhRTTBxRGFQZmhEdVVnd1JiTndiWTFrWDQzaVdESVF0STdkOVcwTDJicW95M2Y2T0JodE96NER4RlBkV0pZT1E0cE1YX0pWSGlvWUQ0T3pFdVd6TlRvWEZsZ0JsQm03RmJRTmZrbzhfemwzNHE1RGV4SWFUX1dHdjBsVE1YZA?oc=5"
           },
           {
             "fecha": "2026-03-26",
@@ -192,14 +192,15 @@
       "v3|Why Is Meta (META) Stock Soaring Today": "¿Por qué las (META) acciones de Meta se disparan hoy?",
       "v3|Trial in the New Mexico Attorney General's case, which has expanded to include various claims related to content moderation issues, is scheduled to begin on September 8, 2026": "El juicio en el caso del Fiscal General de Nuevo México, que se ha ampliado para incluir varias reclamaciones relacionadas con cuestiones de moderación de contenido, está programado para comenzar el 8 de septiembre de 2026",
       "v3|On June 9, 2026, the district court continued the stay and ordered the parties to file a status update due the earlier of 30 days after a decision in the jurisdictional case, or September 8, 2026": "El 9 de junio de 2026, el tribunal de distrito continuó la suspensión y ordenó a las partes que presentaran una actualización de estado antes de 30 días después de una decisión en el caso jurisdiccional, o el 8 de septiembre de 2026",
-      "v3|The next two user bellwether trials are scheduled to begin on October 28, 2026": "Las próximas dos pruebas de referencia para usuarios están programadas para comenzar el 28 de octubre de 2026"
+      "v3|The next two user bellwether trials are scheduled to begin on October 28, 2026": "Las próximas dos pruebas de referencia para usuarios están programadas para comenzar el 28 de octubre de 2026",
+      "v3|Meta, Google Stock Drop. They’re Facing a Big Tobacco Moment.": "Meta, Google Stock Drop. Se enfrentan a un gran momento tabacalero."
     },
-    "consultado": "2026-08-29T02:39:18"
+    "consultado": "2026-08-30T00:24:35"
   },
-  "SHOP": {
+  "AAPL": {
     "eventos": [
       {
-        "fecha": "2026-08-05",
+        "fecha": "2026-07-30",
         "tipo": "Presentación de resultados",
         "resumen": [
           {
@@ -208,128 +209,41 @@
           },
           {
             "etiqueta": "Reuters",
-            "texto": "Las acciones de Shopify se disparan, ya que el pronóstico muestra que la IA está impulsando el negocio, no interrumpiendo"
-          },
-          {
-            "etiqueta": "MarketWatch",
-            "texto": "Las acciones de Shopify se dirigen al mejor día en un año después de que la empresa \"no dejara dudas\" sobre su trayectoria de crecimiento"
-          },
-          {
-            "etiqueta": "WSJ",
-            "texto": "Shopify señala la aceleración de los ingresos como herramientas de IA, el crecimiento de los comercios impulsa los resultados"
-          }
-        ],
-        "impacto": 16.98296992954351,
-        "noticias": [
-          {
-            "fecha": "2026-08-05",
-            "fuente": "Reuters",
-            "titulo": "Shopify shares soar as forecast shows AI is boosting business, not disrupting - Reuters",
-            "enlace": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPS3oxM2ZIMHFhQmM0WU5DTjhDblM3aXF0OUFNRzZKX1lHdDd5UXhtUnNiSGFJWGNmRVQ0dTRDVS1UWURqcGNjcThlSEJkS01Sb3YtMU5HV25KT1Z2WGFrMFItVmFvZE84Y2FIanNNREVkakZidGpTMzdOeHhScDkzVUxoQS1wcnZFUU5MRHN6MmtxRHhvZGYtRElfRHRON2ptaml1eEZSRQ?oc=5"
-          },
-          {
-            "fecha": "2026-08-05",
-            "fuente": "MarketWatch",
-            "titulo": "Shopify’s stock heads for best day in a year after the company ‘left no doubt’ about its growth trajectory - MarketWatch",
-            "enlace": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQY1ZOSXg1cndqblRjazVjYTh1RjVLTWdHbHl5bmplSW1mZEhhWTBQOVU1eHNHLXE4V2VtNDNsWnFmXzJzV2tpVFdMNWlTUDdmQWg5ZW9xZWJSWE5WbnA2Sk1OVXJzU3RpUlcxYUZFdDNTVW1wdjRsclBLMFVNdVVuQk9kOGpycVpJLWIzVTB0a0NpakFhYzJZNzg5NlA4bDJLVGFTT000OGNwRHFlZ2VjSVZIZzI0UlBhMVFBRjJUY2hSeTRoOFpDdXphVW5RcXlzdUpNeGNkWVJmRjcxb0pz?oc=5"
-          },
-          {
-            "fecha": "2026-08-05",
-            "fuente": "WSJ",
-            "titulo": "Shopify Signals Revenue Acceleration as AI Tools, Merchant Growth Drive Results - WSJ",
-            "enlace": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQczVVRUo0X1BGUmdjZG1nVFVsbmhQV3BQZ3Rad0pvTHM5RnVtVUJJOWN1eHU3ZHA5TXhSQ2laVDlOWjdpa0tqNGthQW9mVmtOZGtCTjNhY21hNUo2OTZpeHZXbS1sRm9WWnYxaFJ6X1I5Ml9rUDNyNUc5T0dDa1UzUnEwUHRuS21UajdVenJoOXM0ZlhnMWFKWS1abXh3QklVd0RjYkNvRmZWZW5RbFNDVUJkRU1vVXpV?oc=5"
-          }
-        ]
-      },
-      {
-        "fecha": "2026-07-27",
-        "tipo": "Movimiento diario superior al 7 %",
-        "resumen": [
-          {
-            "etiqueta": "Yahoo Finance",
-            "texto": "Conjunto de acciones de la TIENDA para el mejor día en un año: RBC dice que Shopify tiene una \"gran capacidad de defensa\" contra la interrupción de la IA"
-          },
-          {
-            "etiqueta": "MarketWatch",
-            "texto": "Las acciones de Shopify Inc. Cl A suben el martes, superan al mercado"
-          }
-        ],
-        "impacto": 11.54285472827954,
-        "noticias": [
-          {
-            "fecha": "2026-07-27",
-            "fuente": "Yahoo Finance",
-            "titulo": "SHOP Stock Set For Best Day In A Year — RBC Says Shopify Has 'Great Defensibility' Against AI Disruption - Yahoo Finance",
-            "enlace": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOaUpTVktNSmNxNndfY0FpVkk5OXVTSTFWakFDYkxoa3VIS2x6eG9OQVRQaUZpMUM1SjVZeDdyNjdaSHlMeWtuc0JKMFdGZE5UWXhJSlduQ2ZSenB6U3RXajJObkIxMlR6WXA4VXY1ZFNra2h3bEQtVWQxcFI4VEhRenQ5M3loT0Y1Q1ZwcUdTZk0zdw?oc=5"
-          },
-          {
-            "fecha": "2026-07-28",
-            "fuente": "MarketWatch",
-            "titulo": "Shopify Inc. Cl A stock rises Tuesday, outperforms market - MarketWatch",
-            "enlace": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOR1ZxNS1nQjBKeUpMSmxJMWFwVHhlY1ZqSHhnNER1UnpGRDQxdXNZVlFINF9YTm96Q3Z4M2Y5SlNmR3hJVUpuLTJVN3lvNmprN2pmaXBFQ05rbW1rWThITk0yTlVveUxkbzJ0TmlyMHcySlVQUkd0ZFFqUkxaY2V5LUdjTk1scjRJMmVpNkJBajFqU1AteDJveXdiWmtmSm90aUdJLThvYjFfX3pmU3RfQjM5aXo5Zw?oc=5"
-          }
-        ]
-      },
-      {
-        "fecha": "2026-05-28",
-        "tipo": "Movimiento diario superior al 7 %",
-        "resumen": [
-          {
-            "etiqueta": "Yahoo Finance",
-            "texto": "Por qué las existencias de Shopify (SHOP) están disponibles hoy"
-          },
-          {
-            "etiqueta": "MarketWatch",
-            "texto": "Las acciones de Shopify Inc. Cl A suben el viernes, superan al mercado"
-          }
-        ],
-        "impacto": 7.908067941691677,
-        "noticias": [
-          {
-            "fecha": "2026-05-28",
-            "fuente": "Yahoo Finance",
-            "titulo": "Why Shopify (SHOP) Stock Is Up Today - Yahoo Finance",
-            "enlace": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTGtUUW9rTWl4cjliN2NBVTJUV19heDdJd2NjeHNQbHhDZmhqMXlBeHZvNEpOckpIazZydDV3NmFyOWtjNkstMnZMNHJiU00xUFFEb3pFX3o5c0ZGb0lKcVpsUmlJUmdhb0p0dlAyWDRoQmR3Z19kb0IycnJjS3J0VC1pNzVDbm55NVQ0Y2w4T1hOMkFDTENwVw?oc=5"
-          },
-          {
-            "fecha": "2026-05-29",
-            "fuente": "MarketWatch",
-            "titulo": "Shopify Inc. Cl A stock rises Friday, outperforms market - MarketWatch",
-            "enlace": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUUlSNTVETl9iSEZQR1hjVUc5TXRwNExIcC1sSFBRMVlwdGRnWl9jV3Z6RTRpdmNuWkd4aG9EOUQ2Z19VamUxM0ZlM3k1MDlSX2d4TmFvanhDNWJBWWpQZXBjeXpScGtmWUdMQnhSSjBWdFlkdWI5SDN0RUJDcnFIX2RaNWVhRkhHWkhMcGxXR0RNZVhhQmd1T28zY2NlV3NYS1VXY2hnbW95VURJWXFUUEFzdVY?oc=5"
-          }
-        ]
-      },
-      {
-        "fecha": "2026-05-11",
-        "tipo": "Movimiento diario superior al 7 %",
-        "resumen": [
-          {
-            "etiqueta": "Yahoo Finance",
-            "texto": "Esto es lo que debe saber más allá de por qué Shopify Inc. (SHOP) es una acción de tendencia"
+            "texto": "Apple decepciona con el pronóstico perseguido por las luchas de la cadena de suministro"
           },
           {
             "etiqueta": "CNBC",
-            "texto": "Jim Cramer echa un vistazo más de cerca a Shopify después de una caída en las acciones"
-          }
-        ],
-        "impacto": -7.127979789464378,
-        "noticias": [
-          {
-            "fecha": "2026-05-11",
-            "fuente": "Yahoo Finance",
-            "titulo": "Here is What to Know Beyond Why Shopify Inc. (SHOP) is a Trending Stock - Yahoo Finance",
-            "enlace": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVFRRMWxaVkgwWnpHQlUxcVE2aHBmeGtLdFNTU0dxZy1vZmpnTEI5Ni1Id19qQ0tRQXJmajMwMkJsSm5Kbld5SWdGNzhJV1VVR3hNWkkwQnJfVzkxdEdqVDBWcG1EOTh6MUlaZ2ZZVjhhU1JsX2xkekZxMFFzbWpWQkp0dHNIdU43c1NwbHJkUjNPSkJCZ0lV?oc=5"
+            "texto": "Los traders de 'dinero rápido' reaccionan a las ganancias de Apple"
           },
           {
-            "fecha": "2026-05-12",
+            "etiqueta": "WSJ",
+            "texto": "Apple espera un crecimiento más lento después de que el auge de la IA eleve los costes"
+          }
+        ],
+        "impacto": -7.353864245054432,
+        "noticias": [
+          {
+            "fecha": "2026-07-30",
+            "fuente": "Reuters",
+            "titulo": "Apple disappoints with forecast dogged by supply chain struggles - Reuters",
+            "enlace": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPanFaaGdUMnRidmVSWXhQVXVDeG9fazRla240ZEFBdmhIcGJINkVvUVRhb1d0NGx2cEluMnlxYWdjVWpSWmJLbDdiWXE1LVVxVGR0Zm9yeVVfS1Z5RFN1cDB2M0ZRelQ2MnFhZHlfdm9ySHREOFhJVFFRc2xOMUowdzVISlY4aHpoQWRKYzcwN3ZQNV9mSFV6T3FPYjdobDFOdmF3WVRzODk5Z0Z0WF9mSW5xZS1IVXlM?oc=5"
+          },
+          {
+            "fecha": "2026-07-30",
             "fuente": "CNBC",
-            "titulo": "Jim Cramer takes a closer look at Shopify after a decline in the stock - CNBC",
-            "enlace": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUy1QT29ndE9USTg3WVNNUlotZGV0SnNRTUctU3hZMWF4ejREbFdqU1plMTgzZ3g5bFQwdnlXdzNaRWZ3LWtfVzFFTkVkQ2JrODNjZmhjREZmNngxaEE4TWs3UUpGRHQ5NmhKUG5pTldsMmV3VDc4TVFxTngyTWprcDhsaDJ2em90N0liOVRnc1R1VXRiajZzUE0yb01WZHZxR3cxZWtzREMtM2tjUEtsYTlKNA?oc=5"
+            "titulo": "'Fast Money' traders react to Apple earnings - CNBC",
+            "enlace": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMHBRUFEzWm0tZlBWYjdQVjJSVGxSR2EzcHZUazc5SVFGeUhvR0N1dEpHX1hMQllRbEZKQWgtX2ZyMFZNN1hwcWNIVWZYZUdGSmNiWHA4UEtRTENIOEtZbnpMMjJ0czBZOE42b05xX3g0Wl9fQlpNdEZKU1JlekZHdnpVUFgwY0pUN1pnNnVR?oc=5"
+          },
+          {
+            "fecha": "2026-07-30",
+            "fuente": "WSJ",
+            "titulo": "Apple Expects Slower Growth After AI Boom Drives Up Costs - WSJ",
+            "enlace": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MMnVFUzY0ZmZyaGVfVExYZEVqUUxTN1B3Mm40VFMwbkJUdjdGUFJCRVFXMnA1QkpBNzEyNVl1aU1ZUTcxSHpiTEFtUTd1cloybUMzYzhuczFxZmt2VE1uOVZaVWJ2cFkyM0NhVndQZDVQTWRlanowVmgzbjNaY3M?oc=5"
           }
         ]
       },
       {
-        "fecha": "2026-05-05",
+        "fecha": "2026-04-30",
         "tipo": "Presentación de resultados",
         "resumen": [
           {
@@ -337,88 +251,59 @@
             "texto": "Presentación de resultados trimestrales."
           },
           {
-            "etiqueta": "Reuters",
-            "texto": "El lanzamiento de IA de Shopify no logra subir las acciones después de un pronóstico tibio"
+            "etiqueta": "AP News",
+            "texto": "Apple supera las estimaciones de ganancias con el impulso continuo del iPhone"
           },
           {
             "etiqueta": "CNBC",
-            "texto": "Harley Finkelstein, presidenta de Shopify: la IA hace que el emprendimiento sea \"dramáticamente más accesible\""
+            "texto": "La guía de ingresos de Apple supera las estimaciones sobre la creciente demanda de iPhone y Mac"
           },
           {
             "etiqueta": "WSJ",
-            "texto": "Guías de Shopify para una rentabilidad más débil en el segundo trimestre en medio de gastos crecientes"
+            "texto": "Apple ve un aumento en las ventas, impulsado por el iPhone 17 y China"
           }
         ],
-        "impacto": -15.617409111512615,
+        "impacto": 3.6902693582498314,
         "noticias": [
           {
-            "fecha": "2026-05-05",
-            "fuente": "Reuters",
-            "titulo": "Shopify's AI pitch fails to lift shares after lukewarm forecast - Reuters",
-            "enlace": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZEN2M0c2R25DOU1BaWJEM3BqU3BPaW5kXzJiSlFBNmpTeTBHS0RWU3hfbmQwSVRyUzN1S1NCY09ENzNiNXIzanU2VGllZk5mQ0tYOTVJMWtRbEl5TkZBbGtnbzg2dFJ3Y3R0WnZzeGt3ZUdwYWdUbFA3cTRfVWw2VUdxenZRMEk2ZnhFQzBQM3FuQmpmTXhucQ?oc=5"
+            "fecha": "2026-04-30",
+            "fuente": "AP News",
+            "titulo": "Apple beats out earnings estimates with continued iPhone momentum - AP News",
+            "enlace": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVG5ranl1Q2hSZXZ5bVJEOFF5cnF3VHR4NWptdmVxek1TaEVya3VaNDhfQ3ZxZjdlWG9pak1pLXdPemYzUS0tZk00ZDNDczZMUFA3X3IxZUFtUUZ3a1ZBOWJjNE1HcmxoZi1NOFpUQnNHczNvVnN1SDlTSjM0Y241ZV9td1c4LVVNaEFLbkhRZVJKZEdhTHRJOHN3?oc=5"
           },
           {
-            "fecha": "2026-05-05",
+            "fecha": "2026-04-30",
             "fuente": "CNBC",
-            "titulo": "Shopify President Harley Finkelstein: AI makes entrepreneurship ‘dramatically more accessible’ - CNBC",
-            "enlace": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNeDFuTWxwbVpqZWdtTWh6dlpwcjRKWU4xVkNEbTNBTGhobWhfY3dkcU9QZ3ZRTjRDZjFiNHJzVUZYTDhNc2lGN1NnQmVqYmxISHFPWEdtNzIzMUMtTHhIeGROeWtIVk4xTUtCU2Y0RUpoM0VRREFtTVE3N0dTV1dBMTFMTzVFVXdQWU5WazN4Z2xnVGRFWnJGQ0lqMUFGcUk5RkR4R0lLYWowNVRtSmtBQ0RHdktqVEtKanBwVzlPT2t2UEVlZ05sVDFhR05kcUU?oc=5"
+            "titulo": "Apple revenue guidance tops estimates on booming iPhone, Mac demand - CNBC",
+            "enlace": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBsRlh3Y2VBMXRiWlN2T3UwdGxBV3pQZG5VUjNaLVBVX1E3U1JXeWtyeGY0MmxQTjU5ZEcybXNxeDZjSmtOTzdVc2FDVTZkTDYwb3phTzNUZ2NiamRaRnQxUU1iT3NGbnVObllJMUhjNWw0QUt0VkhLYV8wTdIBgAFBVV95cUxOb0NhQTN5VjI3SjV2d0wyUVUwYk5JMEtxa09SRmlfdGRGenJGcFRVZ0w1aVpTQXhBS2RNTVZseHc2Um1oeHdnSW1uNlR1am9YdEJ2UTRSTlNsdHdhY0UxSndUMXB5ZXhzRlM0YXNTR2gzN0JLZnBqT1QxRXZ4RDBBVw?oc=5"
           },
           {
-            "fecha": "2026-05-05",
+            "fecha": "2026-04-30",
             "fuente": "WSJ",
-            "titulo": "Shopify Guides for Weaker Second-Quarter Profitability Amid Climbing Expenses - WSJ",
-            "enlace": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPYV9TRHlsTmM3YWV4WnU4cFQ0eENTazBVWER2dExlS3pYZDMwUmFlY2lLbVpMU25rWXhIQ2xTOTBZSmpJR1RCSWd5dDZNTk5QeF9KU29TVndTLTAxSDZGVkozVk9DVi1WMjhja0hxYWVVTm44UVFJWFFGMTRVU3c4RExQcU1QQmJ5bGYyU2xueFkyWXJyUmtKSGhjdGkwZWN5dGhZ?oc=5"
-          }
-        ]
-      },
-      {
-        "fecha": "2026-04-15",
-        "tipo": "Movimiento diario superior al 7 %",
-        "resumen": [
-          {
-            "etiqueta": "Yahoo Finance",
-            "texto": "Acciones que hicieron grandes movimientos ayer: Globalstar, Tesla, HighPeak Energy, Shopify y TransDigm"
-          }
-        ],
-        "impacto": 8.305001974796532,
-        "noticias": [
-          {
-            "fecha": "2026-04-15",
-            "fuente": "Yahoo Finance",
-            "titulo": "Stocks making big moves yesterday: Globalstar, Tesla, HighPeak Energy, Shopify, and TransDigm - Yahoo Finance",
-            "enlace": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNZUZxM1pxbk1JQ280RklXNnR1NWt5WWxEWHpLTFBLYnpjQTRlc0Z2WWZQOUJrWVlrVTBvckVrb3lnU09EcEI4X1MyZWN0ZHB1cnI3WEdwUFNBSXlqdnZ1b29VQ25wQS16NHFhMjNKOG13cEExZ1NXbXJ0bTV1QVk2SlFlNGl5R2oxT1V3UFdvR2wxSjQwXzUyYURvc01OeXM?oc=5"
+            "titulo": "Apple Sees Sales Surge, Powered by iPhone 17 and China - WSJ",
+            "enlace": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9Ccy1EZ2gyeU5tdXJuUXZLSmE4UjREUjFKQlJ2WDZucUkzN19LRnMyak5CaTZlY2R3MGI3N2NMOWNCTXhCVjRqNWVBelJIbzBmV3RWYVEyeXFoWXc1VDlJak1MU0E2czkwcnNyLTQ0RmdWb2ItZWZUWTRtdWRnSHM?oc=5"
           }
         ]
       }
     ],
     "resultados": [
       {
-        "fecha": "2026-08-05"
+        "fecha": "2026-07-30"
       },
       {
-        "fecha": "2026-05-05"
+        "fecha": "2026-04-30"
       }
     ],
-    "proxima_fecha": null,
-    "tipo": "Sin anunciar",
+    "proxima_fecha": "2026-10-29",
+    "tipo": "Aproximada",
     "traducciones": {
-      "v3|Shopify shares soar as forecast shows AI is boosting business, not disrupting": "Las acciones de Shopify se disparan, ya que el pronóstico muestra que la IA está impulsando el negocio, no interrumpiendo",
-      "v3|Shopify’s stock heads for best day in a year after the company ‘left no doubt’ about its growth trajectory": "Las acciones de Shopify se dirigen al mejor día en un año después de que la empresa \"no dejara dudas\" sobre su trayectoria de crecimiento",
-      "v3|Shopify Signals Revenue Acceleration as AI Tools, Merchant Growth Drive Results": "Shopify señala la aceleración de los ingresos como herramientas de IA, el crecimiento de los comercios impulsa los resultados",
-      "v3|Is Shopify (SHOP) One of the Best Tech Stocks to Invest In on the Dip?": "¿Es Shopify (SHOP) una de las mejores acciones tecnológicas en las que invertir?",
-      "v3|Shopify (SHOP) Valuation Check As US$5b Buyback And AI Progress Revive Investor Focus": "Comprobación de valoración de Shopify (SHOP) a medida que la recompra de US$ 5b y el progreso de AI reviven el enfoque del inversor",
-      "v3|Shopify's AI pitch fails to lift shares after lukewarm forecast": "El lanzamiento de IA de Shopify no logra subir las acciones después de un pronóstico tibio",
-      "v3|Shopify President Harley Finkelstein: AI makes entrepreneurship ‘dramatically more accessible’": "Harley Finkelstein, presidenta de Shopify: la IA hace que el emprendimiento sea \"dramáticamente más accesible\"",
-      "v3|Shopify Guides for Weaker Second-Quarter Profitability Amid Climbing Expenses": "Guías de Shopify para una rentabilidad más débil en el segundo trimestre en medio de gastos crecientes",
-      "v3|Shopify’s Wacoal Win Highlights Enterprise Adoption And Valuation Trade Offs": "La victoria de Shopify en Wacoal destaca la adopción empresarial y las compensaciones de valoración",
-      "v3|Stocks making big moves yesterday: Globalstar, Tesla, HighPeak Energy, Shopify, and TransDigm": "Acciones que hicieron grandes movimientos ayer: Globalstar, Tesla, HighPeak Energy, Shopify y TransDigm",
-      "v3|Here is What to Know Beyond Why Shopify Inc. (SHOP) is a Trending Stock": "Esto es lo que debe saber más allá de por qué Shopify Inc. (SHOP) es una acción de tendencia",
-      "v3|Jim Cramer takes a closer look at Shopify after a decline in the stock": "Jim Cramer echa un vistazo más de cerca a Shopify después de una caída en las acciones",
-      "v3|Why Shopify (SHOP) Stock Is Up Today": "Por qué las existencias de Shopify (SHOP) están disponibles hoy",
-      "v3|Shopify Inc. Cl A stock rises Friday, outperforms market": "Las acciones de Shopify Inc. Cl A suben el viernes, superan al mercado",
-      "v3|SHOP Stock Set For Best Day In A Year — RBC Says Shopify Has 'Great Defensibility' Against AI Disruption": "Conjunto de acciones de la TIENDA para el mejor día en un año: RBC dice que Shopify tiene una \"gran capacidad de defensa\" contra la interrupción de la IA",
-      "v3|Shopify Inc. Cl A stock rises Tuesday, outperforms market": "Las acciones de Shopify Inc. Cl A suben el martes, superan al mercado"
+      "v3|Apple disappoints with forecast dogged by supply chain struggles": "Apple decepciona con el pronóstico perseguido por las luchas de la cadena de suministro",
+      "v3|'Fast Money' traders react to Apple earnings": "Los traders de 'dinero rápido' reaccionan a las ganancias de Apple",
+      "v3|Apple Expects Slower Growth After AI Boom Drives Up Costs": "Apple espera un crecimiento más lento después de que el auge de la IA eleve los costes",
+      "v3|Apple beats out earnings estimates with continued iPhone momentum": "Apple supera las estimaciones de ganancias con el impulso continuo del iPhone",
+      "v3|Apple revenue guidance tops estimates on booming iPhone, Mac demand": "La guía de ingresos de Apple supera las estimaciones sobre la creciente demanda de iPhone y Mac",
+      "v3|Apple Sees Sales Surge, Powered by iPhone 17 and China": "Apple ve un aumento en las ventas, impulsado por el iPhone 17 y China"
     },
-    "consultado": "2026-08-29T02:39:27"
+    "consultado": "2026-08-30T00:24:39"
   }
 }

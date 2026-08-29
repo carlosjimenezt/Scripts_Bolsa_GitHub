@@ -2,14 +2,17 @@
 
 from __future__ import annotations
 
+import base64
 from html import escape
 from pathlib import Path
+import re
 import tempfile
 from typing import Any, Iterable
 import warnings
 
 import matplotlib.dates as mdates
 import matplotlib.pyplot as plt
+from matplotlib.lines import Line2D
 import pandas as pd
 import yfinance as yf
 from dateutil.relativedelta import relativedelta
@@ -635,6 +638,7 @@ def _dibujar_periodo(
     titulo: str,
     fechas_resultados: Iterable[Any] | None = None,
     senales: Iterable[dict[str, Any]] | None = None,
+    eventos_calendario: Iterable[dict[str, Any]] | None = None,
 ) -> None:
     tramo = datos.loc[datos.index >= inicio]
     ax_volumen = ax_precio.twinx()
@@ -659,6 +663,28 @@ def _dibujar_periodo(
             color=color,
             annotation_clip=False,
         )
+    for evento in eventos_calendario or []:
+        marca = pd.Timestamp(evento["fecha"])
+        if marca < tramo.index.min() or marca > tramo.index.max():
+            continue
+        es_resultado = "resultado" in str(evento.get("tipo", "")).lower()
+        impacto = evento.get("impacto")
+        if not es_resultado and (impacto is None or pd.isna(impacto) or float(impacto) == 0):
+            continue
+        color = "#ef6c00" if es_resultado else "#111111"
+        grosor = 2.0 if es_resultado else 0.65
+        estilo = "--" if es_resultado else "-"
+        ax_precio.axvline(
+            marca, color=color, lw=grosor, ls=estilo,
+            alpha=0.95 if es_resultado else 0.72, zorder=5,
+        )
+        ax_precio.annotate(
+            str(evento.get("etiqueta") or evento.get("tipo", "Evento")),
+            xy=(marca, 0), xycoords=("data", "axes fraction"),
+            xytext=(2, -8), textcoords="offset points",
+            ha="left", va="top", rotation=45, fontsize=7, color=color,
+            annotation_clip=False,
+        )
     desplazamientos: dict[pd.Timestamp, int] = {}
     for senal in senales or []:
         marca = pd.Timestamp(senal["fecha"])
@@ -667,14 +693,16 @@ def _dibujar_periodo(
         precio = float(tramo.loc[marca, "Close"])
         accion = senal["accion"]
         lado = senal["lado"]
-        color = "#188038" if accion == "ENTRAR" else "#d93025"
-        marcador = "^" if (lado == "LONG") == (accion == "ENTRAR") else "v"
+        color, _, marcador, _ = _estilo_senal(lado, accion)
         repeticion = desplazamientos.get(marca, 0)
         desplazamientos[marca] = repeticion + 1
         desplazamiento_y = 13 + repeticion * 12 if marcador == "^" else -17 - repeticion * 12
-        ax_precio.scatter(marca, precio, marker=marcador, s=85, color=color, zorder=6)
+        ax_precio.scatter(
+            marca, precio, marker=marcador, s=135, color=color,
+            edgecolor="white", linewidth=0.8, zorder=6,
+        )
         ax_precio.annotate(
-            f"{lado[0]} {accion}",
+            f"{lado} {accion}",
             xy=(marca, precio),
             xytext=(0, desplazamiento_y),
             textcoords="offset points",
@@ -685,16 +713,114 @@ def _dibujar_periodo(
             color=color,
             annotation_clip=True,
         )
+    leyenda_senales = []
+    for lado, accion, texto in (
+        ("LONG", "ENTRAR", "LONG entrada ▼"),
+        ("LONG", "SALIR", "LONG salida ▲"),
+        ("SHORT", "ENTRAR", "SHORT entrada ▼"),
+        ("SHORT", "SALIR", "SHORT salida ▲"),
+    ):
+        color, _, marcador, _ = _estilo_senal(lado, accion)
+        leyenda_senales.append(
+            Line2D([0], [0], marker=marcador, color="none", markerfacecolor=color,
+                   markeredgecolor="white", markersize=9, label=texto)
+        )
+    ax_precio.legend(
+        handles=leyenda_senales, loc="upper left", ncol=2, fontsize=7,
+        frameon=True, framealpha=0.88, borderpad=0.5,
+    )
     ax_precio.set_title(titulo, fontsize=13, fontweight="bold")
     ax_precio.set_ylabel("Precio", color="#1769aa")
     ax_volumen.set_ylabel("Volumen", color="#66717c")
     ax_volumen.tick_params(axis="y", labelsize=8, colors="#66717c")
     ax_volumen.ticklabel_format(axis="y", style="sci", scilimits=(0, 0))
     ax_precio.grid(alpha=0.25)
-    ax_precio.xaxis.set_major_locator(mdates.AutoDateLocator(minticks=3, maxticks=7))
+    ax_precio.xaxis.set_major_locator(mdates.MonthLocator(bymonthday=(1, 15)))
     ax_precio.xaxis.set_major_formatter(mdates.DateFormatter("%d-%m-%Y"))
     ax_precio.tick_params(axis="x", rotation=38, labelsize=9)
     ax_precio.margins(x=0.03)
+
+
+def _estilo_senal(lado: str, accion: str) -> tuple[str, str, str, str]:
+    estilos = {
+        ("LONG", "ENTRAR"): ("#188038", "#e6f4ea", "v", "▼"),
+        ("LONG", "SALIR"): ("#f9ab00", "#fef7e0", "^", "▲"),
+        ("SHORT", "ENTRAR"): ("#1967d2", "#e8f0fe", "v", "▼"),
+        ("SHORT", "SALIR"): ("#d93025", "#fce8e6", "^", "▲"),
+    }
+    return estilos.get((lado, accion), ("#5f6368", "#f1f3f4", "o", "●"))
+
+
+def _etiqueta_evento_grafico(evento: dict[str, Any]) -> str:
+    tipo = str(evento.get("tipo", ""))
+    resumenes = [
+        str(item.get("texto", "")).strip()
+        for item in evento.get("resumen", [])
+        if str(item.get("texto", "")).strip()
+    ]
+    textos = " ".join(resumenes)
+    texto = f"{tipo} {textos}".lower()
+    if "resultado" in tipo.lower():
+        return "Resultados"
+    if "arancel" in texto and "trump" in texto:
+        return "Aranceles Trump"
+    if "arancel" in texto:
+        return "Nuevos aranceles"
+    if any(palabra in texto for palabra in ("juicio", "tribunal", "veredicto", "ensayo clave")):
+        return "Juicio / veredicto"
+    if "nube" in texto or "cloud" in texto:
+        return "Negocio en la nube"
+    if "inteligencia artificial" in texto or re.search(r"\bia\b", texto):
+        return "Impacto de IA"
+    if any(palabra in texto for palabra in ("antimonopolio", "regulador", "investigación sec")):
+        return "Investigación regulatoria"
+    if "demanda" in texto:
+        return "Demanda judicial"
+    if any(palabra in texto for palabra in ("previsión", "pronóstico", "perspectivas")):
+        return "Cambio de previsiones"
+
+    titular = next(
+        (valor for valor in resumenes if "presentación de resultados trimestrales" not in valor.lower()),
+        tipo or "Evento",
+    )
+    titular = re.split(r"[,;:]", titular, maxsplit=1)[0].strip("¿? .")
+    titular = re.sub(
+        r"^(las?|los?)\s+(acciones?|títulos?)\s+de\s+\S+\s+", "", titular,
+        flags=re.IGNORECASE,
+    )
+    palabras = titular.split()
+    return " ".join(palabras[:6]) + ("…" if len(palabras) > 6 else "")
+
+
+def _eventos_para_graficos(
+    ticker: str, filas_calendario: Iterable[dict[str, Any]] | None
+) -> list[dict[str, Any]]:
+    fila = next((f for f in filas_calendario or [] if f.get("ticker") == ticker), None)
+    if not fila:
+        return []
+    return [
+        {**evento, "etiqueta": _etiqueta_evento_grafico(evento)}
+        for evento in fila.get("historicos", [])
+    ]
+
+
+def _grafico_ampliable(ruta: Path, ticker: str) -> str:
+    imagen = base64.b64encode(ruta.read_bytes()).decode("ascii")
+    origen = f"data:image/png;base64,{imagen}"
+    archivo_local = escape(ruta.resolve().as_uri(), quote=True)
+    titulo = escape(f"{ticker} — pulsa para ampliar")
+    return f"""
+      <div style='position:relative;margin:8px 0 14px'>
+        <a href='{archivo_local}' target='_blank' rel='noopener'
+           style='display:block;text-decoration:none'>
+          <img src='{origen}' alt='{titulo}' title='{titulo}'
+               style='display:block;width:100%;height:auto;cursor:zoom-in;border:1px solid #d8dee4;
+                      border-radius:7px' />
+        </a>
+        <div style='font:12px Arial;color:#5f6368;margin-top:4px'>
+          Pulsa sobre el gráfico para abrirlo en una pestaña nueva y ampliarlo.
+        </div>
+      </div>"""
 
 
 def _alerta_resultados(ticker: str, fecha: pd.Timestamp, datos_alerta: dict[str, Any]) -> dict[str, str]:
@@ -919,6 +1045,9 @@ def _tabla_operaciones_virtuales(
         )
     filas = []
     for operacion in sorted(operaciones, key=lambda item: item["fecha_entrada"], reverse=True):
+        lado = operacion["lado"]
+        color_entrada, fondo_entrada, _, simbolo_entrada = _estilo_senal(lado, "ENTRAR")
+        color_salida, fondo_salida, _, simbolo_salida = _estilo_senal(lado, "SALIR")
         parametros_entrada = "; ".join(
             f"{'✓' if item['cumple'] else '✗'} {item['detalle']}"
             for item in operacion["parametros_entrada"]
@@ -926,8 +1055,9 @@ def _tabla_operaciones_virtuales(
         if operacion["fecha_salida"] is not None:
             activadores = ", ".join(operacion["activadores_salida"])
             salida = (
-                f"<span style='color:#b3261e;font-weight:800'>"
-                f"SALIR {operacion['fecha_salida']:%d/%m/%Y}</span> a "
+                f"<span style='display:inline-block;color:{color_salida};background:{fondo_salida};"
+                f"font-weight:900;padding:3px 7px;border-radius:10px'>"
+                f"{simbolo_salida} SALIR {operacion['fecha_salida']:%d/%m/%Y}</span> a "
                 f"{operacion['precio_salida']:,.2f}<br><small>Activó: {escape(activadores)}</small>"
             )
             parametros_salida = "; ".join(
@@ -940,7 +1070,8 @@ def _tabla_operaciones_virtuales(
         filas.append(
             "<tr>"
             f"<td><b>{escape(operacion['lado'])}</b></td><td>{escape(operacion['sistema'])}</td>"
-            f"<td><span style='color:#137333;font-weight:800'>ENTRAR "
+            f"<td><span style='display:inline-block;color:{color_entrada};background:{fondo_entrada};"
+            f"font-weight:900;padding:3px 7px;border-radius:10px'>{simbolo_entrada} ENTRAR "
             f"{operacion['fecha_entrada']:%d/%m/%Y}</span> a {operacion['precio_entrada']:,.2f}</td>"
             f"<td>{escape(parametros_entrada)}</td><td>{salida}</td>"
             f"<td>{escape(parametros_salida)}</td>"
@@ -973,7 +1104,12 @@ def _tarjeta_virtual(
     return f"""
     <section style='border:1px solid #d8dee4;border-radius:8px;padding:13px 15px;
                     margin:10px 0 26px;font-family:Arial;background:#fff'>
-      <div style='font-size:21px;font-weight:800'>{escape(ticker)} — señales virtuales independientes</div>
+      <div style='font-size:21px;font-weight:800'>
+        {escape(ticker)} — Señales — {fecha:%d-%m-%Y}
+      </div>
+      <div style='font-size:12px;color:#5f6368;margin-top:2px'>
+        Estrategias virtuales independientes
+      </div>
       <div style='font-size:14px;font-weight:700;color:{alerta["color"]};margin:4px 0 9px'>
         Alerta resultados: {escape(alerta["mensaje"])}.
       </div>
@@ -1021,6 +1157,7 @@ def generar_panel_senales(
     ventana_senales_dias: int = 30,
     fechas_resultados: dict[str, Iterable[Any]] | None = None,
     datos_alerta_resultados: dict[str, Any] | None = None,
+    filas_calendario_eventos: Iterable[dict[str, Any]] | None = None,
     carpeta_salida: str | Path = "salida_operativa",
     mostrar: bool = True,
 ) -> dict[str, Any]:
@@ -1169,29 +1306,27 @@ def generar_panel_senales(
     for ticker in tickers:
         tabla = datos[ticker]
         fin = tabla.index[-1]
-        fig, axes = plt.subplots(2, 2, figsize=(19, 11))
-        axes = axes.ravel()
+        eventos_grafico = _eventos_para_graficos(ticker, filas_calendario_eventos)
+        fig, axes = plt.subplots(1, 3, figsize=(25, 7.5))
         _dibujar_periodo(
-            axes[0], tabla, fin - pd.Timedelta(days=7), "Última semana", senales=historiales[ticker]
+            axes[0], tabla, fin - relativedelta(months=1), "Último mes",
+            senales=historiales[ticker], eventos_calendario=eventos_grafico
         )
         _dibujar_periodo(
-            axes[1], tabla, fin - relativedelta(months=1), "Último mes", senales=historiales[ticker]
+            axes[1], tabla, fin - relativedelta(months=3), "Últimos 3 meses",
+            senales=historiales[ticker], eventos_calendario=eventos_grafico
         )
         _dibujar_periodo(
-            axes[2], tabla, fin - relativedelta(months=3), "Últimos 3 meses",
-            fechas_resultados.get(ticker, []), historiales[ticker]
-        )
-        _dibujar_periodo(
-            axes[3], tabla, fin - relativedelta(months=6), "Últimos 6 meses",
-            fechas_resultados.get(ticker, []), historiales[ticker]
+            axes[2], tabla, fin - relativedelta(months=6), "Últimos 6 meses",
+            senales=historiales[ticker], eventos_calendario=eventos_grafico
         )
         fig.suptitle(f"{ticker} — precio y volumen hasta {fin:%Y-%m-%d}", fontsize=17, fontweight="bold")
-        fig.subplots_adjust(left=0.06, right=0.95, top=0.92, bottom=0.09, hspace=0.42, wspace=0.22)
-        fig.savefig(salida / f"{ticker}_panel_v2_5.png", dpi=145, bbox_inches="tight")
+        fig.subplots_adjust(left=0.045, right=0.97, top=0.88, bottom=0.20, wspace=0.28)
+        ruta_grafico = salida / f"{ticker}_panel_v2_5.png"
+        fig.savefig(ruta_grafico, dpi=170, bbox_inches="tight")
+        plt.close(fig)
         if mostrar:
-            plt.show()
-        else:
-            plt.close(fig)
+            display(HTML(_grafico_ampliable(ruta_grafico, ticker)))
         tarjeta = _tarjeta_virtual(
             ticker, estados[ticker], operaciones_ventana[ticker], ventana_senales_dias,
             fin, float(tabla["Close"].iloc[-1]), datos_alerta_resultados

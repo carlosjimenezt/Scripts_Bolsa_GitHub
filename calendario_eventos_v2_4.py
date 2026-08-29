@@ -678,17 +678,17 @@ def _bloque_html(fila: dict[str, Any]) -> str:
     return f"""
       <section class="bloque" title="{escape(aviso)}">
         <h3>{escape(fila['ticker'])}</h3>
-        <h4>Eventos pasados — últimos seis meses</h4>
-        <div class="tabla-wrap"><table>
-          <thead><tr><th>Fecha del evento</th><th>Tipo</th><th>Resumen del evento</th>
-          <th>Impacto bursátil</th><th>Fuentes</th></tr></thead>
-          <tbody>{''.join(historicos_html)}</tbody>
-        </table></div>
-        <h4 class="proximos-titulo">Próximos eventos importantes — dos meses</h4>
+        <h4>Próximos eventos importantes — dos meses</h4>
         <div class="tabla-wrap"><table>
           <thead><tr><th>Fecha prevista</th><th>Tipo</th><th>Evento próximo</th>
           <th>Precisión</th><th>Fuente</th></tr></thead>
           <tbody>{''.join(proximos_html)}</tbody>
+        </table></div>
+        <h4 class="proximos-titulo">Eventos pasados — últimos seis meses</h4>
+        <div class="tabla-wrap"><table>
+          <thead><tr><th>Fecha del evento</th><th>Tipo</th><th>Resumen del evento</th>
+          <th>Impacto bursátil</th><th>Fuentes</th></tr></thead>
+          <tbody>{''.join(historicos_html)}</tbody>
         </table></div>
       </section>"""
 
