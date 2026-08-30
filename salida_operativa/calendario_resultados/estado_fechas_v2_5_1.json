@@ -1,0 +1,280 @@
+{
+  "_version": 3,
+  "NVDA": {
+    "eventos": [
+      {
+        "fecha": "2026-08-26",
+        "tipo": "Presentación de resultados",
+        "resumen": [
+          {
+            "etiqueta": "Evento",
+            "texto": "Presentación de resultados trimestrales."
+          },
+          {
+            "etiqueta": "Comunicado",
+            "texto": "NVIDIA anuncia los resultados financieros del segundo trimestre fiscal de 2027"
+          },
+          {
+            "etiqueta": "Reuters",
+            "texto": "Las acciones de Nvidia se fijan para una oscilación de precios de $ 280 mil millones después de las ganancias, muestran las opciones"
+          },
+          {
+            "etiqueta": "CNBC",
+            "texto": "Así es como los traders piensan que Nvidia se moverá de las ganancias, y en qué dirección"
+          }
+        ],
+        "impacto": 8.73795275466771,
+        "noticias": [
+          {
+            "fecha": "2026-08-26",
+            "fuente": "NVIDIA Newsroom",
+            "titulo": "NVIDIA Announces Financial Results for Second Quarter Fiscal 2027 - NVIDIA Newsroom",
+            "enlace": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOcjZPeVV6eC01Z2tWOHlyVEhmMG9uZDgyaXdvVTV3MVVMWGdKVVhJdlNiRHBvejd0UnlSNFJfTFA4dXAxUk9fVi1RQ2h2VU1kd2FkSUoydEJheDVMNWRnYUdMa2RFcG8zcTROTl9ZX1lJQ0tRU1VZR2pkQjFRdEtkM0tpUUlOcXhsYTFGcGY5RHFQYWZyNkh6LXVCSmN0Y1J3WWc?oc=5"
+          },
+          {
+            "fecha": "2026-08-26",
+            "fuente": "Reuters",
+            "titulo": "Nvidia shares set for $280 billion price swing after earnings, options show - Reuters",
+            "enlace": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPa182VERRNl9ULTg3MXh0Z004aGNnVW9HQW9TLTI3R01YZzRMeWZEMFhramsxeHVLNGE1ZXAwYTRZcWxMbGF5YTB5dkl6OHVyT2FrTks2ODRFdlNPSTNmUE1MM0ZhaF9LT1JRZEdVX1ZJU2NMNlZiQWlQZ0toUWk1WmVSbXdYTWJva3NxTG92LVJrczhfQzVnLTZ4aE1yYTAwVHVucFNQbHRxSDN6OGJZcjZNVHo?oc=5"
+          },
+          {
+            "fecha": "2026-08-26",
+            "fuente": "CNBC",
+            "titulo": "Here's how much traders think Nvidia will move off earnings — and in which direction - CNBC",
+            "enlace": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdmw1d2ZKTzBOTWNRWjY4ekV5VzJrODFUWEpVMjAzZmdZalhQYV85cHlZMldRSS1vbjdRRFVHalcxZ3NoaUtPdW84b2lXWTJUazIyVTFmNV9WVG9xMVlOb0tVYms2ZkNXUmdDbkdLdFJlRVVUWjBSOERTNDE0dktXclVnRHJ3enQ5Ylk0eXV5Q0diaUFjbnFPMVpOZTRKWk9SemlEdWl2UllJZy1LaFhtai1PWEdQXzRoalHSAb8BQVVfeXFMTi05bmJ3NmZJaXdtb1hnOXJyOWxDc1BGNUxPbU05RUlnaHliaWxXOGVQQ0tfd2JmV3JhYkdLQlBJMXhjcjFnT2FOS20wQ0tQaHRlNDh2WEd4TVVmTkRleDd5TW1BT3g3U2c5QnZHT3psYUwwUWdpU2liZjljcmxkbnpZSEEzTC1ab2I3dDUwSjVuVjdZdVcyYXI2eE1saWdkV1BTZHZyNlRQVTBNMUFYdUlkZjVZbTF1OHBJOGNtWG8?oc=5"
+          }
+        ]
+      },
+      {
+        "fecha": "2026-06-05",
+        "tipo": "Movimiento diario entre el 5 % y el 7 %",
+        "resumen": [
+          {
+            "etiqueta": "Barron's",
+            "texto": "La revelación del chip para PC de Nvidia oscurece un catalizador más grande para el stock"
+          },
+          {
+            "etiqueta": "Morningstar",
+            "texto": "Nvidia vs. Salesforce vs. Marvell Technology: ¿Cuál es la mejor acción para comprar?"
+          },
+          {
+            "etiqueta": "Yahoo Finance",
+            "texto": "Por qué las acciones de Nvidia (NVDA) se están borrando hoy"
+          }
+        ],
+        "impacto": -6.2014073591381225,
+        "noticias": [
+          {
+            "fecha": "2026-06-05",
+            "fuente": "Barron's",
+            "titulo": "Nvidia’s PC Chip Reveal Obscures a Bigger Catalyst for the Stock - Barron's",
+            "enlace": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQR0hYVkk1Ukl6RGo5M3h4THdqNjhKX2toUS0zVGtOWURNbmx0aG5NTzVwZVhmX2tNYVlzMTZRYmRCVGN3b043TmQwak1wZklHR3FqZ1MwWkloNjdnWnkyNV9ORGt3bUpQNXN4UFE0M3ZGV3pfaEFPRlJRM3ByT215Vg?oc=5"
+          },
+          {
+            "fecha": "2026-06-05",
+            "fuente": "Morningstar",
+            "titulo": "Nvidia vs. Salesforce vs. Marvell Technology: Which Is the Best Stock to Buy? - Morningstar",
+            "enlace": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObXlQaFNORlByVVg5SV92VERCdUg0RnpqQmxCTHI1cDlVM2pVVDVCZEUtMWlzNnFfNVMtSm5HT1IxSzZQWHpDa21wdGJTZ1JaTTV2X0p6c2FPSkNOdFcxZV8xYXhZS3dkRDhGV2pWZ3lYTDdPSWc4UDg4TFNJb3hVeEVJbldGd09wRWY2SjhoeGZTOFkzNWVreGZrV0ZCSzB0a1IxTkcwanZ0T1gyT1Fz?oc=5"
+          },
+          {
+            "fecha": "2026-06-05",
+            "fuente": "Yahoo Finance",
+            "titulo": "Why Nvidia (NVDA) Shares Are Getting Obliterated Today - Yahoo Finance",
+            "enlace": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUllMMEpvYV9wQVdkYXNjZG94SnZOcTJNa1hMRWRjWlJrcTRuUXFHMEFJWldITXlTam5HNHVwOENtZHN6UVlHemt0M01uME5LM3pkZWZiMnRLOGRidXpEdWZhQ2lfenpWdzBRUDlVWVlxNnlJYVhLbkJlM3NNVldyd05IWGpkMkxxY1liX0E2NzhLbFBvSENnbVA2SQ?oc=5"
+          }
+        ]
+      },
+      {
+        "fecha": "2026-06-01",
+        "tipo": "Movimiento diario entre el 5 % y el 7 %",
+        "resumen": [
+          {
+            "etiqueta": "Reuters",
+            "texto": "Samsung y LG comparten un rally antes de las reuniones del CEO de Nvidia con ejecutivos coreanos"
+          },
+          {
+            "etiqueta": "CNBC",
+            "texto": "Jim Cramer resume los aspectos más destacados del discurso Computex del CEO de Nvidia, Jensen Huang"
+          },
+          {
+            "etiqueta": "Barron's",
+            "texto": "¿Por qué el stock de ARM está en ritmo para alcanzar un récord en el anuncio de chips de Nvidia?"
+          }
+        ],
+        "impacto": 6.261249056985307,
+        "noticias": [
+          {
+            "fecha": "2026-06-01",
+            "fuente": "Reuters",
+            "titulo": "Samsung, LG shares rally ahead of Nvidia CEO meetings with Korean executives - Reuters",
+            "enlace": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbEpOLWNDOFpkWFJ6Ti1VT0xfTnRrTkN6UGV1WU5kZ0xTQjRkcXQyOWNPamt5UUt2bldNVDloVU5pUURtVEk5cFpJYkFBNzRDR0tMZGNRdlpfOFZOS3RFZXdXV1VPZEdhaWlESmdBUkdVbWh1aldBcm4wMFpIajJWekFIRkI2YzU0TXl1ZDNZLU1XT0FldlpGYkVWYzJrZw?oc=5"
+          },
+          {
+            "fecha": "2026-06-01",
+            "fuente": "CNBC",
+            "titulo": "Jim Cramer recaps highlights from Nvidia CEO Jensen Huang's Computex speech - CNBC",
+            "enlace": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNVy05SHpPUzA0eTNtWGs3X05CNjcxTkJBUTdlUnBKT1YxZS1WQWc3Z1pxQUJWNkZJWVAwMWl6WUtWeVBWU2tZajI3SzlDUUZrMlJWQ2pZVUV2eXRSMlI5UGg2a2RvaXY0SEo3bWxoOXU1WU5JVmNMMWFPdDhuekc2NVZsUURQQUJnMEt0azkxX3lQR3ZfYkZSbHpjZjZWRE9Iby1ZV1dPOEJHZUh5QW4xbXRvLWRsTGxl?oc=5"
+          },
+          {
+            "fecha": "2026-06-01",
+            "fuente": "Barron's",
+            "titulo": "Why Arm Stock Is on Pace for Record High on Nvidia’s Chip Announcement - Barron's",
+            "enlace": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1ZNzZBckhoOXk0V3VIS3NlUzhKeGVMTml3cWpFOEFTbm9kbHV6Z0xEVUlsYTdhbzlWME1KN25RVEdMTUV0a3BwcHkyQ2UwYWp6eUwtTmpIRWM3dDFQWXFmYlk5Tndhdy1oVHE0NjYtc0NXT05WRXZrNA?oc=5"
+          }
+        ]
+      },
+      {
+        "fecha": "2026-05-20",
+        "tipo": "Presentación de resultados",
+        "resumen": [
+          {
+            "etiqueta": "Evento",
+            "texto": "Presentación de resultados trimestrales."
+          },
+          {
+            "etiqueta": "Comunicado",
+            "texto": "NVIDIA anuncia los resultados financieros del primer trimestre fiscal de 2027"
+          },
+          {
+            "etiqueta": "Reuters",
+            "texto": "Wall St sube un 1% con el repunte de las acciones de chips antes de los resultados de Nvidia"
+          },
+          {
+            "etiqueta": "AP News",
+            "texto": "Los resultados del primer trimestre de Nvidia superan las expectativas de Wall Street gracias a la enorme demanda de chips de IA"
+          }
+        ],
+        "impacto": -0.49862023501757724,
+        "noticias": [
+          {
+            "fecha": "2026-05-20",
+            "fuente": "NVIDIA Newsroom",
+            "titulo": "NVIDIA Announces Financial Results for First Quarter Fiscal 2027 - NVIDIA Newsroom",
+            "enlace": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdC1rUGZycU5DWDhBdkJvNTYyeGl1d0lyV2J2VFlRRkdNZno4d0dWRE1QbHNGc2JOQ1NqUkNQZXA2XzMtTUp6d1hwOVc1RXhsY0p5WnpPX3NCcTFYYjNYS0dOeUlnYXNwWTlBQkNhT016MUZIeUx6b2d5VUJYLTFOSnBIRFY1U2Q2X3hBTmdlY2VwNUlHYlJ1eDJZSFZOZ1RJ?oc=5"
+          },
+          {
+            "fecha": "2026-05-20",
+            "fuente": "Reuters",
+            "titulo": "Wall St climbs 1% with chip stocks rallying before Nvidia results - Reuters",
+            "enlace": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPWVR5TjBBVTlmVVVNanRmaUZVaDVsMFNaR0FTMUE0MlByMXpCdlR5TW9aQ3ZHWVJ6c0l4REtMSkNrWndxc3NqT2FqaklnbVlvb3drZi14RjRiWjZjRU8tSlZTVlJpRXBjaXlnU2I4RE9IdmxPQklVQWVoVlZqbldLQW1Uem9xQ0VFOElmZGRuWlB6LTNnbTRnV2RTTDJ2b2d4UWZYUHM1MlFpT2hH?oc=5"
+          },
+          {
+            "fecha": "2026-05-20",
+            "fuente": "AP News",
+            "titulo": "Nvidia Q1 results surpass Wall Street expectations thanks to massive AI chip demand - AP News",
+            "enlace": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNX3dFQ3p2Qmg3bFJXVHFZOGhIMmg4Sl9ZcDhZWkhaS0QwbzA4SDdFLUpqOG5zcUtNNGhvZ1hfeGVlVUZaWnV6UGQzcUloZWVsYWhXd3dqOEN3YTEwVnJCbWFVSk92bHlmTTN3NnpheE4xZ1ZYYklyanEwVTV4ZzNVOTFET0xaWFpMYVR2Ykg1cw?oc=5"
+          }
+        ]
+      },
+      {
+        "fecha": "2026-05-06",
+        "tipo": "Movimiento diario entre el 5 % y el 7 %",
+        "resumen": [
+          {
+            "etiqueta": "CNBC",
+            "texto": "Los traders de 'dinero rápido' hablan del día récord para las semi acciones y dónde encaja Nvidia"
+          },
+          {
+            "etiqueta": "WSJ",
+            "texto": "Nvidia invertirá 500 millones de $ en Corning y ampliará la fabricación de fibra óptica"
+          },
+          {
+            "etiqueta": "Barron's",
+            "texto": "Las acciones de Nvidia están teniendo un gran día. Sigue siendo uno de los peores del año en acciones de chips."
+          }
+        ],
+        "impacto": 5.765904239722497,
+        "noticias": [
+          {
+            "fecha": "2026-05-06",
+            "fuente": "CNBC",
+            "titulo": "'Fast Money' traders talk the record day for semi stocks and where Nvidia fits in - CNBC",
+            "enlace": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNaDczYUV3SC13NWQxR2I5bWo1anU5dHBJbTJvckxEU09sTWM1TVZmRU9iUVNXTkJaeW9FQVpoSUx5ZEQwdWc4cDFudUFGUWR3VXA1NkRsTUNYN00xRXlWazd6Wnh5QmdxdmN2anlweVVHZ0RhcjJWRzdTY191a2c4RE5QQ1lURjlrd05zWHBwNS1iX2J3WUdUcXFwR29NbkF4T3ZrcFROZk1ka2pCQkdtc0dVY0JtcW4zalR2ellvTQ?oc=5"
+          },
+          {
+            "fecha": "2026-05-06",
+            "fuente": "WSJ",
+            "titulo": "Nvidia to Invest $500 Million in Corning, Expand Fiber Optic Manufacturing - WSJ",
+            "enlace": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPS0s5bVFxRUhPeUx1U0RlSktzZHF2OVJFQVpneW1wVmFSTmZ4OXlfek94VVlLNWVQYS1xTWlQckk0YXhEN2tJNGxITk4tMmxZWXM2aUxTMVJOSnhXOFp4dlkxRl9Hb0VPbFdLeVRfOGZtczZZSTBNbExXUVV1dzFlZXJ0bHh4ZkNiTGNJTjFKcVpfLWhSMENxVDc1OGg3OUw0RGVj?oc=5"
+          },
+          {
+            "fecha": "2026-05-06",
+            "fuente": "Barron's",
+            "titulo": "Nvidia Shares Are Having a Great Day. It’s Still One of the Year’s Worst in Chip Stocks. - Barron's",
+            "enlace": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVG1JYVJJRlM1UjZBei1zOEZUdkljbzFlOGZBeWd1SVJfTkNpQkEzRGRiS0g3WW5jdC1LeXJZbzFRbHIwbWtiRTkwc1l4bW5HbUN6bWNGcmZkSVdodnFWZi1zZjRWX0ZSRnhudlNzV01LbUVPbjUxbndQX0M4Q2dUU18tWEphRklh?oc=5"
+          }
+        ]
+      },
+      {
+        "fecha": "2026-03-31",
+        "tipo": "Movimiento diario entre el 5 % y el 7 %",
+        "resumen": [
+          {
+            "etiqueta": "Reuters",
+            "texto": "Nvidia apuesta $ 2 mil millones a Marvell a medida que la creciente adopción de IA alimenta la competencia"
+          },
+          {
+            "etiqueta": "CNBC",
+            "texto": "Las acciones de Marvell suben un 13% cuando Nvidia toma una participación de $ 2 mil millones, continuando con apuestas similares"
+          },
+          {
+            "etiqueta": "Barron's",
+            "texto": "Marvell recibe una inversión de $ 2 mil millones de Nvidia. El stock se dispara."
+          }
+        ],
+        "impacto": 5.588179348466227,
+        "noticias": [
+          {
+            "fecha": "2026-03-31",
+            "fuente": "Reuters",
+            "titulo": "Nvidia bets $2 billion on Marvell as rising AI adoption fuels competition - Reuters",
+            "enlace": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPSmh3NHVnejF0NmZSS0FhOXdHdUZ6bW5EdlpBODZ1YzN2b2swbG9WSkJYVW40MWNVN3IzRVk5S0VOeEJNS2g4TEoyVk50MkFVZXVPRk5tSFN5aFU0WWNSMVhGd0hFTXJkbEw2RDQta3FPa0dSamdPX2lMZ291bDNrMTk1eEpWSmY0NTBZNUl5SnJ6WGQ1N2toOHEwYVpuU2FYT1g1ellB?oc=5"
+          },
+          {
+            "fecha": "2026-03-31",
+            "fuente": "CNBC",
+            "titulo": "Marvell stock pops 13% as Nvidia takes $2 billion stake, continuing run of similar bets - CNBC",
+            "enlace": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1XMktGMUszZ2JrMHQwMVZtcGY0VkRfYnZQM1J0QjBMeThEcnR0MDlrMEg1ZjByc3I4NmhSUzFGMnVxR3FmNVNfa0dUM0I4a0ktZzBEQTIwWDNXa0k0b3ZhTnFkRDVSa1JnMEk3RGFqS1PSAXZBVV95cUxOR1VkNnljYTdvQjBSaktlY1EzZHBmbWlXM3pLUjRvYVdFSjc2RjRpbVNHSzRKTzlfYXZrTWVuMGkzbk9iTG1OcWNLZVFxLVRsbklTUXhfUFZJck9nMlhnYzVqTmNPWGprYy13UVFSeUt5ZkRjSi1B?oc=5"
+          },
+          {
+            "fecha": "2026-03-31",
+            "fuente": "Barron's",
+            "titulo": "Marvell Gets a $2 Billion Investment From Nvidia. The Stock Soars. - Barron's",
+            "enlace": "https://news.google.com/rss/articles/CBMihgFBVV95cUxONEpOMnVqd0RiTWJkR1ZsZEFrcVU4TFRGTGM2anVNUzhDNVA5YkFYTGM5Snk2SFZvanFwRnB6eHpXREFSWHZBeWVTM3I4Q1AzUEQtYW9ubl9qUlRRQjlsOUs4ejZUSVdGODBEbmhFNThwNVhScG5ZVlk3U25QVGFCc25zOEdlUQ?oc=5"
+          }
+        ]
+      }
+    ],
+    "resultados": [
+      {
+        "fecha": "2026-08-26"
+      },
+      {
+        "fecha": "2026-05-20"
+      }
+    ],
+    "proxima_fecha": null,
+    "tipo": "Sin anunciar",
+    "traducciones": {
+      "v3|NVIDIA Announces Financial Results for Second Quarter Fiscal 2027": "NVIDIA anuncia los resultados financieros del segundo trimestre fiscal de 2027",
+      "v3|Nvidia shares set for $280 billion price swing after earnings, options show": "Las acciones de Nvidia se fijan para una oscilación de precios de $ 280 mil millones después de las ganancias, muestran las opciones",
+      "v3|Here's how much traders think Nvidia will move off earnings — and in which direction": "Así es como los traders piensan que Nvidia se moverá de las ganancias, y en qué dirección",
+      "v3|NVIDIA Announces Financial Results for First Quarter Fiscal 2027": "NVIDIA anuncia los resultados financieros del primer trimestre fiscal de 2027",
+      "v3|Wall St climbs 1% with chip stocks rallying before Nvidia results": "Wall St sube un 1% con el repunte de las acciones de chips antes de los resultados de Nvidia",
+      "v3|Nvidia Q1 results surpass Wall Street expectations thanks to massive AI chip demand": "Los resultados del primer trimestre de Nvidia superan las expectativas de Wall Street gracias a la enorme demanda de chips de IA",
+      "v3|Nvidia bets $2 billion on Marvell as rising AI adoption fuels competition": "Nvidia apuesta $ 2 mil millones a Marvell a medida que la creciente adopción de IA alimenta la competencia",
+      "v3|Marvell stock pops 13% as Nvidia takes $2 billion stake, continuing run of similar bets": "Las acciones de Marvell suben un 13% cuando Nvidia toma una participación de $ 2 mil millones, continuando con apuestas similares",
+      "v3|Marvell Gets a $2 Billion Investment From Nvidia. The Stock Soars.": "Marvell recibe una inversión de $ 2 mil millones de Nvidia. El stock se dispara.",
+      "v3|'Fast Money' traders talk the record day for semi stocks and where Nvidia fits in": "Los traders de 'dinero rápido' hablan del día récord para las semi acciones y dónde encaja Nvidia",
+      "v3|Nvidia to Invest $500 Million in Corning, Expand Fiber Optic Manufacturing": "Nvidia invertirá 500 millones de $ en Corning y ampliará la fabricación de fibra óptica",
+      "v3|Nvidia Shares Are Having a Great Day. It’s Still One of the Year’s Worst in Chip Stocks.": "Las acciones de Nvidia están teniendo un gran día. Sigue siendo uno de los peores del año en acciones de chips.",
+      "v3|Samsung, LG shares rally ahead of Nvidia CEO meetings with Korean executives": "Samsung y LG comparten un rally antes de las reuniones del CEO de Nvidia con ejecutivos coreanos",
+      "v3|Jim Cramer recaps highlights from Nvidia CEO Jensen Huang's Computex speech": "Jim Cramer resume los aspectos más destacados del discurso Computex del CEO de Nvidia, Jensen Huang",
+      "v3|Why Arm Stock Is on Pace for Record High on Nvidia’s Chip Announcement": "¿Por qué el stock de ARM está en ritmo para alcanzar un récord en el anuncio de chips de Nvidia?",
+      "v3|Nvidia’s PC Chip Reveal Obscures a Bigger Catalyst for the Stock": "La revelación del chip para PC de Nvidia oscurece un catalizador más grande para el stock",
+      "v3|Nvidia vs. Salesforce vs. Marvell Technology: Which Is the Best Stock to Buy?": "Nvidia vs. Salesforce vs. Marvell Technology: ¿Cuál es la mejor acción para comprar?",
+      "v3|Why Nvidia (NVDA) Shares Are Getting Obliterated Today": "Por qué las acciones de Nvidia (NVDA) se están borrando hoy"
+    },
+    "consultado": "2026-08-31T00:44:48"
+  }
+}
