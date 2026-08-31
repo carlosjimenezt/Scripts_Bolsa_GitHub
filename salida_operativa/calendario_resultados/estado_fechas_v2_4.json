@@ -50,26 +50,20 @@
         "tipo": "Movimiento diario superior al 7 %",
         "resumen": [
           {
-            "etiqueta": "CNBC",
-            "texto": "El plan de Meta para lanzar un negocio en la nube alivia la mayor sobrecarga en las acciones"
-          },
-          {
             "etiqueta": "Barron's",
             "texto": "Por qué el paso de Meta a la nube es un gran problema y malas noticias para CoreWeave y Nebius"
           },
           {
             "etiqueta": "Yahoo Finance",
             "texto": "¿Por qué las (META) acciones de Meta se disparan hoy?"
+          },
+          {
+            "etiqueta": "Reuters",
+            "texto": "Meta crea un negocio en la nube para vender el exceso de capacidad de IA, informa Bloomberg News"
           }
         ],
         "impacto": 8.808961112881498,
         "noticias": [
-          {
-            "fecha": "2026-07-01",
-            "fuente": "CNBC",
-            "titulo": "Meta's plan to launch a cloud business eases the biggest overhang on the stock - CNBC",
-            "enlace": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPOE9CSEhUblNsdkdPT01HazdxV3F3NlBfODd3SjMxbnJUMThQVks5SEptblJCSF85UGg5TWdsUHVNeWRyaDByWWlrWmhWNjJlU2M2MHJMR1lnbGVsZkgzXzlqaDIxZEpPeFZNN3pmMFNNQ1VVLThrUnVUODl2dXZBYkVVT1JRNTdFWmZSUEdvTjdZaHpSTDRUbGV1YzBmbVhnODVXb2dYTFQ3NC1rRmNwREw3eFg?oc=5"
-          },
           {
             "fecha": "2026-07-01",
             "fuente": "Barron's",
@@ -81,6 +75,12 @@
             "fuente": "Yahoo Finance",
             "titulo": "Why Is Meta (META) Stock Soaring Today - Yahoo Finance",
             "enlace": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOT2wyclZ4X1RLQ2tNVUxWM0g5Y2g4RnhwcENzcVlrTVg5elU5MnF4cG1UaHEtRkllUGtTOFBkYmZTbEp6TmhRWjZ5eXlqdFZxc2NIMXJDSHJnc2w4dVhsWlNUc25ud25qZWlCZVVQY3gyY3pNbld2OGhzMGE3Tk5JcjhhbGFvaFFDUVJLSGQxejZYd19KVnIw?oc=5"
+          },
+          {
+            "fecha": "2026-07-02",
+            "fuente": "Reuters",
+            "titulo": "Meta building cloud business to sell excess AI capacity, Bloomberg News reports - Reuters",
+            "enlace": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQRTFZdGllTTA5UmJ6WmxLYjRDUHJ4RWg1U3dCOEVGTElDMUJlNWQwOTg0VWZxTGUxSWVPaEJqTjJ0TTZsRHk5Ynh4RC15a0ZVQkdxQVVGdTl0UXRZZ3NBLVZWZVQxcWJQSEoyQ01LZ3F3V0FnWFZucTNibm9nTm9DZlVfNzAxaW14LXFYQXRxdmxFMXZBeDF0NEo1dnN0S2tFdTlpNVF3bjNoRVY2WjE2SkFBNXhzWkVHOFRFOVk3Q2ZZakk?oc=5"
           }
         ]
       },
@@ -141,7 +141,7 @@
           },
           {
             "etiqueta": "Yahoo Finance",
-            "texto": "La acción de Meta se sumergen en territorio sobrevendido a medida que las Meta Plataformas pierden en un ensayo clave de adicción a las redes sociales"
+            "texto": "Las metaplataformas se deslizan a medida que convergen las preocupaciones sobre el veredicto legal y el gasto en IA: lo que los inversores deben saber"
           }
         ],
         "impacto": -7.9594606490539626,
@@ -161,8 +161,8 @@
           {
             "fecha": "2026-03-26",
             "fuente": "Yahoo Finance",
-            "titulo": "META Stock Plunges into Oversold Territory as Meta Platforms Loses in Key Social Media Addiction Trial - Yahoo Finance",
-            "enlace": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPd0d0M1JlVVBKbjcwNVhkTG1QUWlVOGVZSVZ3cDJ3empzVlQwVHJ4SF8xSkxlMFcyX2dZblNxWG15RnhTTzJKZUZBR21QWnZkX1VnUjJrWUNyV01hNnpfZ29vdGxKYTF0Ym1GSy0yWXpCODNxZFpjNk5DbENwX0pLbEhtQTZmZFFuYk5KelpTTkZ4eUZkRXNMdXN3YngxaFZnYWJzUw?oc=5"
+            "titulo": "Meta Platforms Slips as Legal Verdict and AI Spending Concerns Converge: What Investors Need to Know - Yahoo Finance",
+            "enlace": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNb3VQSC1KYXowZjRDd3J1aUJLZXRjMW9pUWhDWTZOaDJHekNxUEktMTl1RnQxV1U2MDBLM2FOd1hYTXFacTN3VHZmTHMya3Y4dFlWSnZ2VWVKLUNDWnI4RGJqQ2tIN25pWDQ3aG14TklUbUhEbnN1YTZpaDJzR3pxR0J0RjJhTmgtc01tcjk4TWEwSzE5cVU5LTg3X1BwOFFy?oc=5"
           }
         ]
       }
@@ -192,9 +192,11 @@
       "v3|Why Is Meta (META) Stock Soaring Today": "¿Por qué las (META) acciones de Meta se disparan hoy?",
       "v3|Trial in the New Mexico Attorney General's case, which has expanded to include various claims related to content moderation issues, is scheduled to begin on September 8, 2026": "El juicio en el caso del Fiscal General de Nuevo México, que se ha ampliado para incluir varias reclamaciones relacionadas con cuestiones de moderación de contenido, está programado para comenzar el 8 de septiembre de 2026",
       "v3|On June 9, 2026, the district court continued the stay and ordered the parties to file a status update due the earlier of 30 days after a decision in the jurisdictional case, or September 8, 2026": "El 9 de junio de 2026, el tribunal de distrito continuó la suspensión y ordenó a las partes que presentaran una actualización de estado antes de 30 días después de una decisión en el caso jurisdiccional, o el 8 de septiembre de 2026",
-      "v3|The next two user bellwether trials are scheduled to begin on October 28, 2026": "Las próximas dos pruebas de referencia para usuarios están programadas para comenzar el 28 de octubre de 2026"
+      "v3|The next two user bellwether trials are scheduled to begin on October 28, 2026": "Las próximas dos pruebas de referencia para usuarios están programadas para comenzar el 28 de octubre de 2026",
+      "v3|Meta Platforms Slips as Legal Verdict and AI Spending Concerns Converge: What Investors Need to Know": "Las metaplataformas se deslizan a medida que convergen las preocupaciones sobre el veredicto legal y el gasto en IA: lo que los inversores deben saber",
+      "v3|Meta building cloud business to sell excess AI capacity, Bloomberg News reports": "Meta crea un negocio en la nube para vender el exceso de capacidad de IA, informa Bloomberg News"
     },
-    "consultado": "2026-08-31T01:46:13"
+    "consultado": "2026-08-31T23:49:53"
   },
   "SHOP": {
     "eventos": [
@@ -208,7 +210,7 @@
           },
           {
             "etiqueta": "Reuters",
-            "texto": "TSX alcanza un nivel récord a medida que Shopify y los mineros de metales aumentan"
+            "texto": "Las acciones de Shopify se disparan, ya que el pronóstico muestra que la IA está impulsando el negocio, no interrumpiendo"
           },
           {
             "etiqueta": "MarketWatch",
@@ -224,8 +226,8 @@
           {
             "fecha": "2026-08-05",
             "fuente": "Reuters",
-            "titulo": "TSX hits record high as Shopify and metal miners surge - Reuters",
-            "enlace": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWjQzR2tSZlJZNDhuWkZ2ZTZGZ183RkxMV0YwT2Uzd1NUbWxoSm0xQnQ2ajhiSjJFa0h0N2tRNDd6Z0xSdHdaR2MzbVJrM2o4N0wzeHdFN2JKM01iT0NhcWlrRWQ2bF9yWXFpM0RMaVFjR04wbVRMZllXZ2M3Z0dTMldiQjZwbXlQVVFGSHpFcXVKQzVIQkRnQQ?oc=5"
+            "titulo": "Shopify shares soar as forecast shows AI is boosting business, not disrupting - Reuters",
+            "enlace": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPS3oxM2ZIMHFhQmM0WU5DTjhDblM3aXF0OUFNRzZKX1lHdDd5UXhtUnNiSGFJWGNmRVQ0dTRDVS1UWURqcGNjcThlSEJkS01Sb3YtMU5HV25KT1Z2WGFrMFItVmFvZE84Y2FIanNNREVkakZidGpTMzdOeHhScDkzVUxoQS1wcnZFUU5MRHN6MmtxRHhvZGYtRElfRHRON2ptaml1eEZSRQ?oc=5"
           },
           {
             "fecha": "2026-08-05",
@@ -248,10 +250,6 @@
           {
             "etiqueta": "Yahoo Finance",
             "texto": "El crecimiento de las suscripciones de Shopify se acelera: ¿más ventajas por delante?"
-          },
-          {
-            "etiqueta": "MarketWatch",
-            "texto": "Las acciones de Shopify Inc. Cl A suben el martes, superan al mercado"
           }
         ],
         "impacto": 11.54285472827954,
@@ -261,12 +259,6 @@
             "fuente": "Yahoo Finance",
             "titulo": "Shopify's Subscription Growth Accelerates: More Upside Ahead? - Yahoo Finance",
             "enlace": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQS2g4Y3RVb2NrQ09VcjlFMk5EVFB4WEpBcXp5QWJJZGlmSzI2eVBXeE5nQWE1dDdyMzRWR1VlSmVNWjZZTERMTE5TanhneEhjemVpTVh5bkQ3UFpDZTlGdGlfTTAtYUNXZlBLV2lPQkFKanJ5ckd5OEROWmY2cTVDcHg5OXlOVmhpamt6dTRUZlZJLU45SjlKeDNHdlR1UHVkZGNKbE5VcDAyQ3pkMkNj?oc=5"
-          },
-          {
-            "fecha": "2026-07-28",
-            "fuente": "MarketWatch",
-            "titulo": "Shopify Inc. Cl A stock rises Tuesday, outperforms market - MarketWatch",
-            "enlace": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOR1ZxNS1nQjBKeUpMSmxJMWFwVHhlY1ZqSHhnNER1UnpGRDQxdXNZVlFINF9YTm96Q3Z4M2Y5SlNmR3hJVUpuLTJVN3lvNmprN2pmaXBFQ05rbW1rWThITk0yTlVveUxkbzJ0TmlyMHcySlVQUkd0ZFFqUkxaY2V5LUdjTk1scjRJMmVpNkJBajFqU1AteDJveXdiWmtmSm90aUdJLThvYjFfX3pmU3RfQjM5aXo5Zw?oc=5"
           }
         ]
       },
@@ -275,27 +267,27 @@
         "tipo": "Movimiento diario superior al 7 %",
         "resumen": [
           {
-            "etiqueta": "Yahoo Finance",
-            "texto": "Por qué las existencias de Shopify (SHOP) están disponibles hoy"
-          },
-          {
             "etiqueta": "MarketWatch",
             "texto": "Las acciones de Shopify Inc. Cl A suben el viernes, superan al mercado"
+          },
+          {
+            "etiqueta": "Yahoo Finance",
+            "texto": "Por qué las existencias de Shopify (SHOP) están disponibles hoy"
           }
         ],
         "impacto": 7.908067941691677,
         "noticias": [
           {
-            "fecha": "2026-05-28",
-            "fuente": "Yahoo Finance",
-            "titulo": "Why Shopify (SHOP) Stock Is Up Today - Yahoo Finance",
-            "enlace": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTGtUUW9rTWl4cjliN2NBVTJUV19heDdJd2NjeHNQbHhDZmhqMXlBeHZvNEpOckpIazZydDV3NmFyOWtjNkstMnZMNHJiU00xUFFEb3pFX3o5c0ZGb0lKcVpsUmlJUmdhb0p0dlAyWDRoQmR3Z19kb0IycnJjS3J0VC1pNzVDbm55NVQ0Y2w4T1hOMkFDTENwVw?oc=5"
-          },
-          {
             "fecha": "2026-05-29",
             "fuente": "MarketWatch",
             "titulo": "Shopify Inc. Cl A stock rises Friday, outperforms market - MarketWatch",
             "enlace": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNUUlSNTVETl9iSEZQR1hjVUc5TXRwNExIcC1sSFBRMVlwdGRnWl9jV3Z6RTRpdmNuWkd4aG9EOUQ2Z19VamUxM0ZlM3k1MDlSX2d4TmFvanhDNWJBWWpQZXBjeXpScGtmWUdMQnhSSjBWdFlkdWI5SDN0RUJDcnFIX2RaNWVhRkhHWkhMcGxXR0RNZVhhQmd1T28zY2NlV3NYS1VXY2hnbW95VURJWXFUUEFzdVY?oc=5"
+          },
+          {
+            "fecha": "2026-05-29",
+            "fuente": "Yahoo Finance",
+            "titulo": "Why Shopify (SHOP) Stock Is Up Today - Yahoo Finance",
+            "enlace": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTGtUUW9rTWl4cjliN2NBVTJUV19heDdJd2NjeHNQbHhDZmhqMXlBeHZvNEpOckpIazZydDV3NmFyOWtjNkstMnZMNHJiU00xUFFEb3pFX3o5c0ZGb0lKcVpsUmlJUmdhb0p0dlAyWDRoQmR3Z19kb0IycnJjS3J0VC1pNzVDbm55NVQ0Y2w4T1hOMkFDTENwVw?oc=5"
           }
         ]
       },
@@ -306,10 +298,6 @@
           {
             "etiqueta": "Yahoo Finance",
             "texto": "Esto es lo que debe saber más allá de por qué Shopify Inc. (SHOP) es una acción de tendencia"
-          },
-          {
-            "etiqueta": "CNBC",
-            "texto": "Jim Cramer echa un vistazo más de cerca a Shopify después de una caída en las acciones"
           }
         ],
         "impacto": -7.127979789464378,
@@ -319,12 +307,6 @@
             "fuente": "Yahoo Finance",
             "titulo": "Here is What to Know Beyond Why Shopify Inc. (SHOP) is a Trending Stock - Yahoo Finance",
             "enlace": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVFRRMWxaVkgwWnpHQlUxcVE2aHBmeGtLdFNTU0dxZy1vZmpnTEI5Ni1Id19qQ0tRQXJmajMwMkJsSm5Kbld5SWdGNzhJV1VVR3hNWkkwQnJfVzkxdEdqVDBWcG1EOTh6MUlaZ2ZZVjhhU1JsX2xkekZxMFFzbWpWQkp0dHNIdU43c1NwbHJkUjNPSkJCZ0lV?oc=5"
-          },
-          {
-            "fecha": "2026-05-12",
-            "fuente": "CNBC",
-            "titulo": "Jim Cramer takes a closer look at Shopify after a decline in the stock - CNBC",
-            "enlace": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQUy1QT29ndE9USTg3WVNNUlotZGV0SnNRTUctU3hZMWF4ejREbFdqU1plMTgzZ3g5bFQwdnlXdzNaRWZ3LWtfVzFFTkVkQ2JrODNjZmhjREZmNngxaEE4TWs3UUpGRHQ5NmhKUG5pTldsMmV3VDc4TVFxTngyTWprcDhsaDJ2em90N0liOVRnc1R1VXRiajZzUE0yb01WZHZxR3cxZWtzREMtM2tjUEtsYTlKNA?oc=5"
           }
         ]
       },
@@ -341,12 +323,12 @@
             "texto": "El lanzamiento de IA de Shopify no logra subir las acciones después de un pronóstico tibio"
           },
           {
-            "etiqueta": "CNBC",
-            "texto": "Harley Finkelstein, presidenta de Shopify: la IA hace que el emprendimiento sea \"dramáticamente más accesible\""
-          },
-          {
             "etiqueta": "WSJ",
             "texto": "Guías de Shopify para una rentabilidad más débil en el segundo trimestre en medio de gastos crecientes"
+          },
+          {
+            "etiqueta": "Barron's",
+            "texto": "Por qué el informe de ganancias de Shopify provocó una venta masiva de acciones"
           }
         ],
         "impacto": -15.617409111512615,
@@ -359,15 +341,15 @@
           },
           {
             "fecha": "2026-05-05",
-            "fuente": "CNBC",
-            "titulo": "Shopify President Harley Finkelstein: AI makes entrepreneurship ‘dramatically more accessible’ - CNBC",
-            "enlace": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNeDFuTWxwbVpqZWdtTWh6dlpwcjRKWU4xVkNEbTNBTGhobWhfY3dkcU9QZ3ZRTjRDZjFiNHJzVUZYTDhNc2lGN1NnQmVqYmxISHFPWEdtNzIzMUMtTHhIeGROeWtIVk4xTUtCU2Y0RUpoM0VRREFtTVE3N0dTV1dBMTFMTzVFVXdQWU5WazN4Z2xnVGRFWnJGQ0lqMUFGcUk5RkR4R0lLYWowNVRtSmtBQ0RHdktqVEtKanBwVzlPT2t2UEVlZ05sVDFhR05kcUU?oc=5"
-          },
-          {
-            "fecha": "2026-05-05",
             "fuente": "WSJ",
             "titulo": "Shopify Guides for Weaker Second-Quarter Profitability Amid Climbing Expenses - WSJ",
             "enlace": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPYV9TRHlsTmM3YWV4WnU4cFQ0eENTazBVWER2dExlS3pYZDMwUmFlY2lLbVpMU25rWXhIQ2xTOTBZSmpJR1RCSWd5dDZNTk5QeF9KU29TVndTLTAxSDZGVkozVk9DVi1WMjhja0hxYWVVTm44UVFJWFFGMTRVU3c4RExQcU1QQmJ5bGYyU2xueFkyWXJyUmtKSGhjdGkwZWN5dGhZ?oc=5"
+          },
+          {
+            "fecha": "2026-05-05",
+            "fuente": "Barron's",
+            "titulo": "Why Shopify’s Earnings Report Sparked a Massive Stock Selloff - Barron's",
+            "enlace": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1XV0JmOEsyUDEzdGxLbEo3RTBTZnFhaDZXMW9zUloxR2k0dG1wU0hNWFZ6MEd6SWQ5Z3pxR3RkWndwTDZ0SGpISzVscDFzLXBpRzBicFhDRXRJTkQ4Y0s2dUI1QmdSQi1NZThxWUJVczRZUC1IcmRHN3lR?oc=5"
           }
         ]
       },
@@ -414,9 +396,11 @@
       "v3|Why Shopify (SHOP) Stock Is Up Today": "Por qué las existencias de Shopify (SHOP) están disponibles hoy",
       "v3|Shopify Inc. Cl A stock rises Friday, outperforms market": "Las acciones de Shopify Inc. Cl A suben el viernes, superan al mercado",
       "v3|Shopify's Subscription Growth Accelerates: More Upside Ahead?": "El crecimiento de las suscripciones de Shopify se acelera: ¿más ventajas por delante?",
-      "v3|Shopify Inc. Cl A stock rises Tuesday, outperforms market": "Las acciones de Shopify Inc. Cl A suben el martes, superan al mercado"
+      "v3|Shopify Inc. Cl A stock rises Tuesday, outperforms market": "Las acciones de Shopify Inc. Cl A suben el martes, superan al mercado",
+      "v3|Shopify shares soar as forecast shows AI is boosting business, not disrupting": "Las acciones de Shopify se disparan, ya que el pronóstico muestra que la IA está impulsando el negocio, no interrumpiendo",
+      "v3|Why Shopify’s Earnings Report Sparked a Massive Stock Selloff": "Por qué el informe de ganancias de Shopify provocó una venta masiva de acciones"
     },
-    "consultado": "2026-08-31T01:46:25"
+    "consultado": "2026-08-31T23:50:02"
   },
   "AAPL": {
     "eventos": [
@@ -433,12 +417,12 @@
             "texto": "Apple decepciona con el pronóstico perseguido por las luchas de la cadena de suministro"
           },
           {
-            "etiqueta": "CNBC",
-            "texto": "Los traders de 'dinero rápido' reaccionan a las ganancias de Apple"
-          },
-          {
             "etiqueta": "WSJ",
             "texto": "Apple espera un crecimiento más lento después de que el auge de la IA eleve los costes"
+          },
+          {
+            "etiqueta": "Fortune",
+            "texto": "Tim Cook firma la última llamada de ganancias de Apple con una advertencia de \"inundación de 100 años\" en los precios de los chips de memoria"
           }
         ],
         "impacto": -7.353864245054432,
@@ -451,15 +435,15 @@
           },
           {
             "fecha": "2026-07-30",
-            "fuente": "CNBC",
-            "titulo": "'Fast Money' traders react to Apple earnings - CNBC",
-            "enlace": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMHBRUFEzWm0tZlBWYjdQVjJSVGxSR2EzcHZUazc5SVFGeUhvR0N1dEpHX1hMQllRbEZKQWgtX2ZyMFZNN1hwcWNIVWZYZUdGSmNiWHA4UEtRTENIOEtZbnpMMjJ0czBZOE42b05xX3g0Wl9fQlpNdEZKU1JlekZHdnpVUFgwY0pUN1pnNnVR?oc=5"
-          },
-          {
-            "fecha": "2026-07-30",
             "fuente": "WSJ",
             "titulo": "Apple Expects Slower Growth After AI Boom Drives Up Costs - WSJ",
             "enlace": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MMnVFUzY0ZmZyaGVfVExYZEVqUUxTN1B3Mm40VFMwbkJUdjdGUFJCRVFXMnA1QkpBNzEyNVl1aU1ZUTcxSHpiTEFtUTd1cloybUMzYzhuczFxZmt2VE1uOVZaVWJ2cFkyM0NhVndQZDVQTWRlanowVmgzbjNaY3M?oc=5"
+          },
+          {
+            "fecha": "2026-07-30",
+            "fuente": "Fortune",
+            "titulo": "Tim Cook signs off on final Apple earnings call with warning of ‘100-year flood’ in memory chip pricing - Fortune",
+            "enlace": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPRkFELWJXT3dxaU5XODlKTFVJRDV1Q2dzcThqcnFRS0JJWXE1clFpSEVQREtTZ09zclBRU1Naakh3Z3V6aVdJM3kzVnpqQmQ1XzhVUTFIUG5yNEUydURBSHRPNVFZTlVCSDY3MndWX05TakxqYzFTOWJvZTZMZXN0bDczTzRkdlFTY0N5LW1kbk9wVk1xeEd5Y19FN2hkSXFyY2NNal9vNUNJV2JjdDhzN05SckxsVG5HeWM4ZTc3aHpnWjN2OW9PbndHUjFJUzhVNEhWc3VTUnZ0MktOS19NQy1hQQ?oc=5"
           }
         ]
       },
@@ -472,12 +456,12 @@
             "texto": "Presentación de resultados trimestrales."
           },
           {
-            "etiqueta": "AP News",
-            "texto": "Apple supera las estimaciones de ganancias con el impulso continuo del iPhone"
+            "etiqueta": "Reuters",
+            "texto": "Las acciones de Apple suben a medida que se pronostican las unidades iPhone 17 y MacBook Neo"
           },
           {
-            "etiqueta": "CNBC",
-            "texto": "La guía de ingresos de Apple supera las estimaciones sobre la creciente demanda de iPhone y Mac"
+            "etiqueta": "AP News",
+            "texto": "Apple supera las estimaciones de ganancias con el impulso continuo del iPhone"
           },
           {
             "etiqueta": "WSJ",
@@ -488,15 +472,15 @@
         "noticias": [
           {
             "fecha": "2026-04-30",
-            "fuente": "AP News",
-            "titulo": "Apple beats out earnings estimates with continued iPhone momentum - AP News",
-            "enlace": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVG5ranl1Q2hSZXZ5bVJEOFF5cnF3VHR4NWptdmVxek1TaEVya3VaNDhfQ3ZxZjdlWG9pak1pLXdPemYzUS0tZk00ZDNDczZMUFA3X3IxZUFtUUZ3a1ZBOWJjNE1HcmxoZi1NOFpUQnNHczNvVnN1SDlTSjM0Y241ZV9td1c4LVVNaEFLbkhRZVJKZEdhTHRJOHN3?oc=5"
+            "fuente": "Reuters",
+            "titulo": "Apple shares rise as iPhone 17 and MacBook Neo drive forecast - Reuters",
+            "enlace": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNeFhoblY1UWhwblhvaHlzbExPYTQ3ZzZnam1ab0ROTHRfQml2TTRWN3c0VFZxejluS0NXc0pZb0twc3BCM2EwbTMzSF8zTDRqUUN0UzFDakpMZW1BTHZNclBLM1R3bVNYRlhzQ1hxazZaWUpkMFJZX2VvN2ZRRFR1MWE4bXUwbFNlb2tSMjd3cnlsMXpwc0VWTTl5NzYxa3RseTJGMWthbTY5dDVpRDhNeUk5YUFNZ1JudUh4Zg?oc=5"
           },
           {
             "fecha": "2026-04-30",
-            "fuente": "CNBC",
-            "titulo": "Apple revenue guidance tops estimates on booming iPhone, Mac demand - CNBC",
-            "enlace": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBsRlh3Y2VBMXRiWlN2T3UwdGxBV3pQZG5VUjNaLVBVX1E3U1JXeWtyeGY0MmxQTjU5ZEcybXNxeDZjSmtOTzdVc2FDVTZkTDYwb3phTzNUZ2NiamRaRnQxUU1iT3NGbnVObllJMUhjNWw0QUt0VkhLYV8wTdIBgAFBVV95cUxOb0NhQTN5VjI3SjV2d0wyUVUwYk5JMEtxa09SRmlfdGRGenJGcFRVZ0w1aVpTQXhBS2RNTVZseHc2Um1oeHdnSW1uNlR1am9YdEJ2UTRSTlNsdHdhY0UxSndUMXB5ZXhzRlM0YXNTR2gzN0JLZnBqT1QxRXZ4RDBBVw?oc=5"
+            "fuente": "AP News",
+            "titulo": "Apple beats out earnings estimates with continued iPhone momentum - AP News",
+            "enlace": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNVG5ranl1Q2hSZXZ5bVJEOFF5cnF3VHR4NWptdmVxek1TaEVya3VaNDhfQ3ZxZjdlWG9pak1pLXdPemYzUS0tZk00ZDNDczZMUFA3X3IxZUFtUUZ3a1ZBOWJjNE1HcmxoZi1NOFpUQnNHczNvVnN1SDlTSjM0Y241ZV9td1c4LVVNaEFLbkhRZVJKZEdhTHRJOHN3?oc=5"
           },
           {
             "fecha": "2026-04-30",
@@ -523,9 +507,11 @@
       "v3|Apple Expects Slower Growth After AI Boom Drives Up Costs": "Apple espera un crecimiento más lento después de que el auge de la IA eleve los costes",
       "v3|Apple beats out earnings estimates with continued iPhone momentum": "Apple supera las estimaciones de ganancias con el impulso continuo del iPhone",
       "v3|Apple revenue guidance tops estimates on booming iPhone, Mac demand": "La guía de ingresos de Apple supera las estimaciones sobre la creciente demanda de iPhone y Mac",
-      "v3|Apple Sees Sales Surge, Powered by iPhone 17 and China": "Apple ve un aumento en las ventas, impulsado por el iPhone 17 y China"
+      "v3|Apple Sees Sales Surge, Powered by iPhone 17 and China": "Apple ve un aumento en las ventas, impulsado por el iPhone 17 y China",
+      "v3|Tim Cook signs off on final Apple earnings call with warning of ‘100-year flood’ in memory chip pricing": "Tim Cook firma la última llamada de ganancias de Apple con una advertencia de \"inundación de 100 años\" en los precios de los chips de memoria",
+      "v3|Apple shares rise as iPhone 17 and MacBook Neo drive forecast": "Las acciones de Apple suben a medida que se pronostican las unidades iPhone 17 y MacBook Neo"
     },
-    "consultado": "2026-08-31T01:46:31"
+    "consultado": "2026-08-31T23:50:07"
   },
   "NVDA": {
     "eventos": [
@@ -546,8 +532,8 @@
             "texto": "Las acciones de Nvidia se fijan para una oscilación de precios de $ 280 mil millones después de las ganancias, muestran las opciones"
           },
           {
-            "etiqueta": "CNBC",
-            "texto": "Así es como los traders piensan que Nvidia se moverá de las ganancias, y en qué dirección"
+            "etiqueta": "WSJ",
+            "texto": "Los inversores se preparan para los resultados de Nvidia menos que perfectos, tiran de las acciones a la baja"
           }
         ],
         "impacto": 8.73795275466771,
@@ -566,9 +552,9 @@
           },
           {
             "fecha": "2026-08-26",
-            "fuente": "CNBC",
-            "titulo": "Here's how much traders think Nvidia will move off earnings — and in which direction - CNBC",
-            "enlace": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdmw1d2ZKTzBOTWNRWjY4ekV5VzJrODFUWEpVMjAzZmdZalhQYV85cHlZMldRSS1vbjdRRFVHalcxZ3NoaUtPdW84b2lXWTJUazIyVTFmNV9WVG9xMVlOb0tVYms2ZkNXUmdDbkdLdFJlRVVUWjBSOERTNDE0dktXclVnRHJ3enQ5Ylk0eXV5Q0diaUFjbnFPMVpOZTRKWk9SemlEdWl2UllJZy1LaFhtai1PWEdQXzRoalHSAb8BQVVfeXFMTi05bmJ3NmZJaXdtb1hnOXJyOWxDc1BGNUxPbU05RUlnaHliaWxXOGVQQ0tfd2JmV3JhYkdLQlBJMXhjcjFnT2FOS20wQ0tQaHRlNDh2WEd4TVVmTkRleDd5TW1BT3g3U2c5QnZHT3psYUwwUWdpU2liZjljcmxkbnpZSEEzTC1ab2I3dDUwSjVuVjdZdVcyYXI2eE1saWdkV1BTZHZyNlRQVTBNMUFYdUlkZjVZbTF1OHBJOGNtWG8?oc=5"
+            "fuente": "WSJ",
+            "titulo": "Investors Brace for Less-Than-Perfect Nvidia Results, Pull Stocks Lower - WSJ",
+            "enlace": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQzBiRmFiNDdidEUxSTZxeExZY1ZRenl0OUdENXBSX2FUWElKSF9fSmlEcTg1alhxOXltcHBPbmhoR0swZWx0TDdLZUxyZm1VZFdSU1pTOXV3OFkzbTY3eDZNUFV6M21yaDY4bFFZREZnUTczUkxfc0RWcTFuOGkxYW1KQWZCTmNQWjBYQkdaZzUwMVBHaEFVbTRSdDFvT3AtYVo3aU14SWZiUlFUYlZGZ1p5Tlk?oc=5"
           }
         ]
       },
@@ -589,8 +575,8 @@
             "texto": "Wall St sube un 1% con el repunte de las acciones de chips antes de los resultados de Nvidia"
           },
           {
-            "etiqueta": "CNBC",
-            "texto": "Las acciones de SoftBank Group se disparan un 20% a medida que las ganancias de Nvidia señalan un fuerte impulso de la IA"
+            "etiqueta": "AP News",
+            "texto": "Los resultados del primer trimestre de Nvidia superan las expectativas de Wall Street gracias a la enorme demanda de chips de IA"
           }
         ],
         "impacto": -0.49862023501757724,
@@ -609,9 +595,9 @@
           },
           {
             "fecha": "2026-05-20",
-            "fuente": "CNBC",
-            "titulo": "SoftBank Group shares soar 20% as Nvidia earnings signal strong AI momentum - CNBC",
-            "enlace": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOLWE3blBGMHNDZlNabE93WnRDRTFKcTk4Zjd1dEV2UkhCdl8xSTBxaEI5Mnl5bE9qQ0Y0ZXRRcG4xOUZNdEowaDBOTG5ROEthdF8teXM1dkJ1UDR5VC1FQ0VHMWJkWlAzZVdpOXFVazhmaDk0RzNlT25ycmg5a1R5SG51ZVnSAYoBQVVfeXFMTXdTZjFHSzNFRGNPeS0yTWZtX3d5YnJMZTlQU1hPN2h6ZWJNVWtMam9wRjlSY1VrS3RLZHlMTXl3dFpKa0xscTY0OVMzSnQ1RENYd292T1A1NjN6T0xfSmxQa1JHRW43Und4TUpGb0otRkVUNjNYZ1VkY1JVdW1aRkZWWkw4N2RON0p3?oc=5"
+            "fuente": "AP News",
+            "titulo": "Nvidia Q1 results surpass Wall Street expectations thanks to massive AI chip demand - AP News",
+            "enlace": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNX3dFQ3p2Qmg3bFJXVHFZOGhIMmg4Sl9ZcDhZWkhaS0QwbzA4SDdFLUpqOG5zcUtNNGhvZ1hfeGVlVUZaWnV6UGQzcUloZWVsYWhXd3dqOEN3YTEwVnJCbWFVSk92bHlmTTN3NnpheE4xZ1ZYYklyanEwVTV4ZzNVOTFET0xaWFpMYVR2Ykg1cw?oc=5"
           }
         ]
       }
@@ -633,9 +619,10 @@
       "v3|NVIDIA Announces Financial Results for First Quarter Fiscal 2027": "NVIDIA anuncia los resultados financieros del primer trimestre fiscal de 2027",
       "v3|Wall St climbs 1% with chip stocks rallying before Nvidia results": "Wall St sube un 1% con el repunte de las acciones de chips antes de los resultados de Nvidia",
       "v3|Nvidia Q1 results surpass Wall Street expectations thanks to massive AI chip demand": "Los resultados del primer trimestre de Nvidia superan las expectativas de Wall Street gracias a la enorme demanda de chips de IA",
-      "v3|SoftBank Group shares soar 20% as Nvidia earnings signal strong AI momentum": "Las acciones de SoftBank Group se disparan un 20% a medida que las ganancias de Nvidia señalan un fuerte impulso de la IA"
+      "v3|SoftBank Group shares soar 20% as Nvidia earnings signal strong AI momentum": "Las acciones de SoftBank Group se disparan un 20% a medida que las ganancias de Nvidia señalan un fuerte impulso de la IA",
+      "v3|Investors Brace for Less-Than-Perfect Nvidia Results, Pull Stocks Lower": "Los inversores se preparan para los resultados de Nvidia menos que perfectos, tiran de las acciones a la baja"
     },
-    "consultado": "2026-08-31T01:46:33"
+    "consultado": "2026-08-31T23:50:11"
   },
   "MSFT": {
     "eventos": [
@@ -652,12 +639,12 @@
             "texto": "Microsoft supera las expectativas de Wall Street con $ 90 mil millones en ingresos"
           },
           {
-            "etiqueta": "CNBC",
-            "texto": "Microsoft aumenta un 8% a medida que impulsa los planes de gasto de capital, citando la demanda"
-          },
-          {
             "etiqueta": "Fortune",
             "texto": "La nube de Microsoft acaba de alcanzar un nuevo hito: Azure supera los $ 100 mil millones en ingresos anuales"
+          },
+          {
+            "etiqueta": "Yahoo Finance",
+            "texto": "Las ganancias de Microsoft ‘no importan’, dice Gene Munster porque 'la batalla con los bots' acaba de comenzar, los analistas suenan como una advertencia de 'trampa de valor'"
           }
         ],
         "impacto": 15.506733300956487,
@@ -670,15 +657,15 @@
           },
           {
             "fecha": "2026-07-29",
-            "fuente": "CNBC",
-            "titulo": "Microsoft jumps 8% as it boosts capital spending plans, citing demand - CNBC",
-            "enlace": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOZU9Obm5HZ1F4R21heXF0SGxzZlNjYVdZTVZGdXAzUzBHN1RUNi1LbnlPNHJicnEwNkxrSC1TTlBGdGhlWnR1YmNJM3dmTllxLUhpd0xmZmxsTzJmOS1WT3Y2ZWJlcXdJR2FialN0bUFaVjVWaUlxUG5BQjctWlZJNA?oc=5"
-          },
-          {
-            "fecha": "2026-07-29",
             "fuente": "Fortune",
             "titulo": "Microsoft’s cloud just hit a new milestone—Azure crosses $100 billion in annual revenue - Fortune",
             "enlace": "https://news.google.com/rss/articles/CBMiogFBVV95cUxObHUwT0w2RlFyNkh1UWZiNURrYXE3UDFBQ3FwMDAzcWg1clplZWNtSTcyY05neWtVT1VBaUZlUmt2dEEwX214Nzk0WFNxM0Z6YThreU9NVnFmcktmOHVCdVV6WHJ5Qk83eDlkSG9Ba2dhR2hkSHpfREVsNk5NZklQcnNhMlI3Z1hIM2MxUWV6UXhhQjhZUkd1UEhPdWxlVnlyZEE?oc=5"
+          },
+          {
+            "fecha": "2026-07-29",
+            "fuente": "Yahoo Finance",
+            "titulo": "Microsoft Earnings ‘Don’t Matter,’ Says Gene Munster Because 'Battle With the Bots' Just Beginning, Analyst Sounds 'Value Trap' Warning - Yahoo Finance",
+            "enlace": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQZjI1OUdtcU90cHFUVmhYMmk5ZGNCWWRaaUJBQ3hseFI1YXd5b0VHMF9vblBoUzhMdDNqOXkwYWZEdEhsV0xRMWVvYkpOOHUzeWJNS0o2ZTB5aEZaYWZjZ0NKUG5XUDlpVm9iUFBaNm5HQlRWV1BhblFPekxmckJJTFl0c3FSTzI0UF9CdGVXZm82UUdldmlZcXIwLXo?oc=5"
           }
         ]
       },
@@ -699,8 +686,8 @@
             "texto": "Microsoft espera un fuerte crecimiento del negocio en la nube, planea un gasto de capital récord"
           },
           {
-            "etiqueta": "CNBC",
-            "texto": "Microsoft pide 190.000 millones de $ en gastos de capital en 2026 por el alza de los precios de la memoria"
+            "etiqueta": "WSJ",
+            "texto": "Microsoft informa de un fuerte crecimiento de la nube, pero persisten las preguntas sobre los retornos de la IA"
           }
         ],
         "impacto": -5.001747517927346,
@@ -719,9 +706,9 @@
           },
           {
             "fecha": "2026-04-29",
-            "fuente": "CNBC",
-            "titulo": "Microsoft calls for $190 billion in 2026 capital spending on soaring memory prices - CNBC",
-            "enlace": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWEhfS2hRWWw2b1RmWEpIZ0w0R3lrZTRFNjNOc21ZY3B6VW90VTI4T1dNVERldXk0aWs4RUJCRm9tdURJdThpaWdPWTNCOFNwTkNRVDZVQ2tmX2FHODFSWXgxNDlvNnI0X04zYVl4dmRxVmVXSVBsZC0tdTBBNkR4btIBhgFBVV95cUxPZGdXSlpScWdsbVZkaGZhajg2RUVPZlA5dG14SGtlOHFPckF6cWQ3Qk9ucEJXWGFqMFMzMlpKUEoyNV9QUEhmbnBzT2t6WEJlU3VsanNQNmFSazBxVm9oNENxV0pvRkc1amR5cUZkZTFEM3c3RDhLZlRReTFqai1HNU5mUXF3dw?oc=5"
+            "fuente": "WSJ",
+            "titulo": "Microsoft Reports Strong Cloud Growth, but Questions About AI Returns Persist - WSJ",
+            "enlace": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNdmRJQkJzYzc5SHI0bFlpWDQ4V3g0X0tmOWFWSlJuZFZ1a0d1bzZuMFIxN0lON2twMVhfRlZfR1ExQjJuWGdqVWVyWjBYX01XU3hzSVkydDZURE0xTkZzc0dFU285VHlFTmVweUF5VWNBOFotMlFSd3BibDRrVlB3MWFmbVZDMm4ycFdGM05Ob3k4a2NZeFE?oc=5"
           }
         ]
       }
@@ -742,9 +729,11 @@
       "v3|Microsoft’s cloud just hit a new milestone—Azure crosses $100 billion in annual revenue": "La nube de Microsoft acaba de alcanzar un nuevo hito: Azure supera los $ 100 mil millones en ingresos anuales",
       "v3|Microsoft earnings press release available on Investor Relations website": "Comunicado de prensa sobre las ganancias de Microsoft disponible en el sitio web de Relaciones con los inversores",
       "v3|Microsoft expects strong cloud business growth, plans record capital spending": "Microsoft espera un fuerte crecimiento del negocio en la nube, planea un gasto de capital récord",
-      "v3|Microsoft calls for $190 billion in 2026 capital spending on soaring memory prices": "Microsoft pide 190.000 millones de $ en gastos de capital en 2026 por el alza de los precios de la memoria"
+      "v3|Microsoft calls for $190 billion in 2026 capital spending on soaring memory prices": "Microsoft pide 190.000 millones de $ en gastos de capital en 2026 por el alza de los precios de la memoria",
+      "v3|Microsoft Earnings ‘Don’t Matter,’ Says Gene Munster Because 'Battle With the Bots' Just Beginning, Analyst Sounds 'Value Trap' Warning": "Las ganancias de Microsoft ‘no importan’, dice Gene Munster porque 'la batalla con los bots' acaba de comenzar, los analistas suenan como una advertencia de 'trampa de valor'",
+      "v3|Microsoft Reports Strong Cloud Growth, but Questions About AI Returns Persist": "Microsoft informa de un fuerte crecimiento de la nube, pero persisten las preguntas sobre los retornos de la IA"
     },
-    "consultado": "2026-08-31T01:46:40"
+    "consultado": "2026-08-31T23:50:18"
   },
   "AMZN": {
     "eventos": [
@@ -758,15 +747,15 @@
           },
           {
             "etiqueta": "Comunicado",
-            "texto": "Ganancias del segundo trimestre: Andy Jassy sobre el crecimiento de las tiendas Amazon, la velocidad de entrega y las compras con IA"
-          },
-          {
-            "etiqueta": "CNBC",
-            "texto": "Amazon aumenta el gasto de capital de 2026 a $ 220 mil millones debido a los mayores costos de memoria"
+            "texto": "Ganancias del segundo trimestre: Andy Jassy explica por qué AWS está en auge y qué significa para los clientes"
           },
           {
             "etiqueta": "WSJ",
             "texto": "Las acciones de Amazon aumentan a medida que las ventas y el gasto en la nube se aceleran"
+          },
+          {
+            "etiqueta": "U.S. News & World Report",
+            "texto": "Amazon eleva sus planes de inversión tras fuertes ventas en la nube; las acciones suben"
           }
         ],
         "impacto": 15.320588778032107,
@@ -774,20 +763,20 @@
           {
             "fecha": "2026-07-30",
             "fuente": "About Amazon",
-            "titulo": "Q2 Earnings: Andy Jassy on Amazon Stores growth, delivery speed, and AI shopping - About Amazon",
-            "enlace": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOa3RkVTZ3QWl3QzZMSGdsdmp2ZGpiX1FjMElOUnViUmVOUXFnbzhYODEzNF94MnZLOGlaeEt5UVVtdE5LSzBrU1pLVEkxUEQxVll4Z1pIcXBhbmNjSDhWWEpZbEczWk9MY3lYSjFjVkJVQVJLaHVkb1laaGJ1cWNTTDZ0a1QwbTdSeGszaURKYmtjbWpYRWVsVjBYdFJsM2theFlEUmFaNE9VUWs2eWY0?oc=5"
-          },
-          {
-            "fecha": "2026-07-30",
-            "fuente": "CNBC",
-            "titulo": "Amazon hikes 2026 capex to $220 billion due to higher memory costs - CNBC",
-            "enlace": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5YU3ZKX2xoamdmZWNkOE52VGdqb3VtQTFUTXl1S0hwdWFZNGlNTE1SMGNjZlR1MXpVN2lINkVwd1VoWEdkTGFmcFItRTlxVFIyUkhwYlJCM3l5T29aYjhUM0tRSjdYNGVZY3c5eHBqVTNpVmR4aEdSTXJtd1HSAYIBQVVfeXFMTVhaMjBSNjI0eXFRb3NsNUxJNzNlalZvUjRUQkpmSFNkMGJtUVVGS19PN1JLdWpmMEdJaVVvR1B4S1dDN0NUM3dpcWRqdmxiZjdDakUzblV0TmU2QVI0UzRWNldDS3F0MC1DWGU2MUEydXV5c0lYYWI5bFA3WlJoSFhSZw?oc=5"
+            "titulo": "Q2 Earnings: Andy Jassy on why AWS is booming and what it means for customers - About Amazon",
+            "enlace": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTTVGLThGNktqWXFGVUhUanRuUE1XYTd4bk5DWHludWFyU2RNWnBjd0ZJTlpYd0VOTjVrZnFhWU1xcElQV0ttNnNvTnM2b05Bdk5HWGg5ZmpEM210bEpVbGtiUE5UckxQYUJ0SGRtTUMzcTlweVpHSlB0bUNLVnBSNFFfbGFRQmhXZkxwLXpwX05KSW9rQ01RNXU1VndxWm53LVdXb1Vn?oc=5"
           },
           {
             "fecha": "2026-07-30",
             "fuente": "WSJ",
             "titulo": "Amazon Shares Jump as Cloud Sales—and Spending—Accelerate - WSJ",
             "enlace": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBDRDVENVllMTNvS05QVHdsMUdKbDB2NjRFRGxTWmNjUkFaYTFfeVBvTDQyN3NSR2lpR0xHejZSX1VtR0wxeTN2S1RKYWlZclI0SkRoY1VBNW1vdXd0dkxxei1RRnlnMkNjMzJZYm01SjBxSURRWmNzTVBEWQ?oc=5"
+          },
+          {
+            "fecha": "2026-07-30",
+            "fuente": "U.S. News & World Report",
+            "titulo": "Amazon Lifts Investment Plans After Strong Cloud Sales; Shares Jump - U.S. News & World Report",
+            "enlace": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQREZzZEpfZWpIbnJLOUI0cC1nVHllVkE4VW1aVTdDQ3o4Y1NCZmpZczQyYVVFZjJQWkc1UVB3RWtNdkoyQjVFRXE5NWhPRnBoZU5raFlfYmtvTU5GTGZrSVVIX01HVi0tdUowS0U0YTZSTzRNTFZnM2pDSGRlWHFiODFRUEpHMVV0dzV2UHJtdkl4SzBQNi1ROE5yd0Q0Y092MHVBWHZ0YlpKekhTTkZKWm5YYUE?oc=5"
           }
         ]
       },
@@ -808,8 +797,8 @@
             "texto": "Los informes de Amazon aumentaron las ganancias del primer trimestre y las ventas netas impulsadas por la demanda de computación en la nube"
           },
           {
-            "etiqueta": "CNBC",
-            "texto": "Las ganancias de Amazon superaron las expectativas con un fuerte crecimiento de la nube"
+            "etiqueta": "WSJ",
+            "texto": "Amazon registra un crecimiento de dos dígitos anclado en el auge de los servicios web"
           }
         ],
         "impacto": 2.0639141700500074,
@@ -828,9 +817,9 @@
           },
           {
             "fecha": "2026-04-29",
-            "fuente": "CNBC",
-            "titulo": "Amazon earnings beat expectations with strong cloud growth - CNBC",
-            "enlace": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5lZDUtSWR6bXNLVllCZktTWGtBcFdMRFFBcXNWUHhDOXRTWHlNNFh3ZXUtdXRwa2RNUHM5aG1wbHNqRFBDajREU0JJcU5qR3ZiaHRDaTh6YXNCREJYVEVqYWZrWWdxUUlUUmZUd25sSFk3MUdfVERpUFpnT3nSAYIBQVVfeXFMTjBSUUw3Yl9hTWd4a0NXdTdjNmcxc2pJYVdWa1d6QkdyMDVqcjhXazhiTmYxUnZUM1FyNWJzR2dOR2hXam1fRVBfVTE1TzNpNkhIeHNDYjFCWUE5aTFMNTEzb3I0SmQ1V2p3VFNNeEhkbVg2eVlpWk44b2FJZngzSmZZUQ?oc=5"
+            "fuente": "WSJ",
+            "titulo": "Amazon Posts Double-Digit Growth Anchored by Booming Web Services - WSJ",
+            "enlace": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbmc2c05mam40c1MwcVBJamJ0OHhfcTFfSHdqcHNzVTVSN3FVY00zeElfTE01MjZheGktcml2S2liaE5xVGVJWEkycHd3Q0RKMkVLZGNWQUhhb2NTbEZXQzZJUGhCVm1FR1pjNXZHbjVNX3QwUGJ0d3JnUDREc2xQQVZTZFBXMG5MVlprN1V4akRhZw?oc=5"
           }
         ]
       }
@@ -851,8 +840,11 @@
       "v3|Amazon Shares Jump as Cloud Sales—and Spending—Accelerate": "Las acciones de Amazon aumentan a medida que las ventas y el gasto en la nube se aceleran",
       "v3|Q1 earnings: Andy Jassy on Amazon Stores growth": "Ganancias del primer trimestre: Andy Jassy en el crecimiento de las tiendas Amazon",
       "v3|Amazon reports increased 1Q profits and net sales fueled by cloud computing demand": "Los informes de Amazon aumentaron las ganancias del primer trimestre y las ventas netas impulsadas por la demanda de computación en la nube",
-      "v3|Amazon earnings beat expectations with strong cloud growth": "Las ganancias de Amazon superaron las expectativas con un fuerte crecimiento de la nube"
+      "v3|Amazon earnings beat expectations with strong cloud growth": "Las ganancias de Amazon superaron las expectativas con un fuerte crecimiento de la nube",
+      "v3|Q2 Earnings: Andy Jassy on why AWS is booming and what it means for customers": "Ganancias del segundo trimestre: Andy Jassy explica por qué AWS está en auge y qué significa para los clientes",
+      "v3|Amazon Lifts Investment Plans After Strong Cloud Sales; Shares Jump": "Amazon eleva sus planes de inversión tras fuertes ventas en la nube; las acciones suben",
+      "v3|Amazon Posts Double-Digit Growth Anchored by Booming Web Services": "Amazon registra un crecimiento de dos dígitos anclado en el auge de los servicios web"
     },
-    "consultado": "2026-08-31T01:46:47"
+    "consultado": "2026-08-31T23:50:24"
   }
 }
