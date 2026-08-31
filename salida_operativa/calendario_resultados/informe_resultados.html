@@ -1,66 +1,7 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Calendario dinámico de eventos V2.4</title><style>
- body { margin:0;color:#202124;background:#fff;font-family:Arial,sans-serif }
- .calendario { max-width:1500px;margin:0 auto;padding:10px }
- h2 { font-size:18px;margin:0 0 4px }
- .leyenda,.nota { color:#5f6368;font-size:11px;margin:4px 0 10px }
- .bloque { border:1px solid #d8dee4;border-radius:9px;padding:10px;margin:12px 0 18px;
-            box-shadow:0 1px 2px rgba(0,0,0,.05) }
- h3 { font-size:18px;margin:0 0 8px;color:#174ea6 }
- h4 { font-size:12px;margin:5px 0;color:#3c4043 } .proximos-titulo { margin-top:12px }
- .tabla-wrap { overflow-x:auto;border:1px solid #e3e7eb;border-radius:6px }
- table { width:100%;border-collapse:collapse;font-size:11px;line-height:1.3 }
- th { background:#f6f8fa;color:#3c4043;text-align:left;padding:7px;
-       border-bottom:1px solid #cfd4da;white-space:nowrap }
- td { padding:7px;border-bottom:1px solid #eceff1;vertical-align:top }
- tbody tr:last-child td { border-bottom:0 } tbody tr:hover { background:#f8fbff }
- .fecha { width:94px;white-space:nowrap;font-weight:600 }
- .resumen { min-width:360px } .resumen div+div { margin-top:4px }
- .impacto { width:100px;white-space:nowrap;font-size:13px;font-weight:800;text-align:center }
- .fuente { min-width:120px } .fuente a { white-space:nowrap }
- .tipo,.certeza { display:inline-block;padding:2px 7px;border-radius:10px;
-                   white-space:nowrap;font-size:10px;font-weight:700 }
- .pasado { color:#3c4043;background:#eef1f4 } .futuro { color:#174ea6;background:#e8f0fe }
- .certeza { color:#8a4b00;background:#fef7e0;white-space:normal }
- .vacio { color:#6b7280;font-style:italic } a { color:#1967d2;text-decoration:none }
- a:hover { text-decoration:underline }
-</style></head><body><div class="calendario">
- <h2>Calendario dinámico de eventos — 31/08/2026</h2>
- <p class="leyenda">Cada valor tiene su propio bloque. El histórico incluye todas las presentaciones
- de resultados y las sesiones cuya variación cierre a cierre superó el 7 %. Los eventos futuros
- pueden tener fecha exacta o aproximada.</p>
-
-      <section class="bloque" title="">
-        <h3>NVDA</h3>
-        <h4>Próximos eventos importantes — dos meses</h4>
-        <div class="tabla-wrap"><table>
-          <thead><tr><th>Fecha prevista</th><th>Tipo</th><th>Evento próximo</th>
-          <th>Precisión</th><th>Fuente</th></tr></thead>
-          <tbody><tr><td colspan="5" class="vacio">No se localizaron eventos importantes publicados para los próximos dos meses.</td></tr></tbody>
-        </table></div>
-        <h4 class="proximos-titulo">Eventos pasados — últimos seis meses</h4>
-        <div class="tabla-wrap"><table>
-          <thead><tr><th>Fecha del evento</th><th>Tipo</th><th>Resumen del evento</th>
-          <th>Impacto bursátil</th><th>Fuentes</th></tr></thead>
-          <tbody>
-          <tr>
-            <td class="fecha">26/08/2026</td>
-            <td><span class="tipo pasado">Presentación de resultados</span></td>
-            <td class="resumen"><div><b>Evento:</b> Presentación de resultados trimestrales.</div><div><b>Comunicado:</b> NVIDIA anuncia los resultados financieros del segundo trimestre fiscal de 2027</div><div><b>Reuters:</b> Las acciones de Nvidia se fijan para una oscilación de precios de $ 280 mil millones después de las ganancias, muestran las opciones</div><div><b>CNBC:</b> Así es como los traders piensan que Nvidia se moverá de las ganancias, y en qué dirección</div></td>
-            <td class="impacto" style="color:#188038" title="Subida">↑ +8.74 %</td>
-            <td class="fuente"><a href="https://news.google.com/rss/articles/CBMiogFBVV95cUxOcjZPeVV6eC01Z2tWOHlyVEhmMG9uZDgyaXdvVTV3MVVMWGdKVVhJdlNiRHBvejd0UnlSNFJfTFA4dXAxUk9fVi1RQ2h2VU1kd2FkSUoydEJheDVMNWRnYUdMa2RFcG8zcTROTl9ZX1lJQ0tRU1VZR2pkQjFRdEtkM0tpUUlOcXhsYTFGcGY5RHFQYWZyNkh6LXVCSmN0Y1J3WWc?oc=5" target="_blank" rel="noopener noreferrer">NVIDIA Newsroom</a> · <a href="https://news.google.com/rss/articles/CBMitAFBVV95cUxPa182VERRNl9ULTg3MXh0Z004aGNnVW9HQW9TLTI3R01YZzRMeWZEMFhramsxeHVLNGE1ZXAwYTRZcWxMbGF5YTB5dkl6OHVyT2FrTks2ODRFdlNPSTNmUE1MM0ZhaF9LT1JRZEdVX1ZJU2NMNlZiQWlQZ0toUWk1WmVSbXdYTWJva3NxTG92LVJrczhfQzVnLTZ4aE1yYTAwVHVucFNQbHRxSDN6OGJZcjZNVHo?oc=5" target="_blank" rel="noopener noreferrer">Reuters</a> · <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxOdmw1d2ZKTzBOTWNRWjY4ekV5VzJrODFUWEpVMjAzZmdZalhQYV85cHlZMldRSS1vbjdRRFVHalcxZ3NoaUtPdW84b2lXWTJUazIyVTFmNV9WVG9xMVlOb0tVYms2ZkNXUmdDbkdLdFJlRVVUWjBSOERTNDE0dktXclVnRHJ3enQ5Ylk0eXV5Q0diaUFjbnFPMVpOZTRKWk9SemlEdWl2UllJZy1LaFhtai1PWEdQXzRoalHSAb8BQVVfeXFMTi05bmJ3NmZJaXdtb1hnOXJyOWxDc1BGNUxPbU05RUlnaHliaWxXOGVQQ0tfd2JmV3JhYkdLQlBJMXhjcjFnT2FOS20wQ0tQaHRlNDh2WEd4TVVmTkRleDd5TW1BT3g3U2c5QnZHT3psYUwwUWdpU2liZjljcmxkbnpZSEEzTC1ab2I3dDUwSjVuVjdZdVcyYXI2eE1saWdkV1BTZHZyNlRQVTBNMUFYdUlkZjVZbTF1OHBJOGNtWG8?oc=5" target="_blank" rel="noopener noreferrer">CNBC</a></td>
-          </tr>
-          <tr>
-            <td class="fecha">20/05/2026</td>
-            <td><span class="tipo pasado">Presentación de resultados</span></td>
-            <td class="resumen"><div><b>Evento:</b> Presentación de resultados trimestrales.</div><div><b>Comunicado:</b> NVIDIA anuncia los resultados financieros del primer trimestre fiscal de 2027</div><div><b>Reuters:</b> Wall St sube un 1% con el repunte de las acciones de chips antes de los resultados de Nvidia</div><div><b>AP News:</b> Los resultados del primer trimestre de Nvidia superan las expectativas de Wall Street gracias a la enorme demanda de chips de IA</div></td>
-            <td class="impacto" style="color:#d93025" title="Bajada">↓ -0.50 %</td>
-            <td class="fuente"><a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxPdC1rUGZycU5DWDhBdkJvNTYyeGl1d0lyV2J2VFlRRkdNZno4d0dWRE1QbHNGc2JOQ1NqUkNQZXA2XzMtTUp6d1hwOVc1RXhsY0p5WnpPX3NCcTFYYjNYS0dOeUlnYXNwWTlBQkNhT016MUZIeUx6b2d5VUJYLTFOSnBIRFY1U2Q2X3hBTmdlY2VwNUlHYlJ1eDJZSFZOZ1RJ?oc=5" target="_blank" rel="noopener noreferrer">NVIDIA Newsroom</a> · <a href="https://news.google.com/rss/articles/CBMirAFBVV95cUxPWVR5TjBBVTlmVVVNanRmaUZVaDVsMFNaR0FTMUE0MlByMXpCdlR5TW9aQ3ZHWVJ6c0l4REtMSkNrWndxc3NqT2FqaklnbVlvb3drZi14RjRiWjZjRU8tSlZTVlJpRXBjaXlnU2I4RE9IdmxPQklVQWVoVlZqbldLQW1Uem9xQ0VFOElmZGRuWlB6LTNnbTRnV2RTTDJ2b2d4UWZYUHM1MlFpT2hH?oc=5" target="_blank" rel="noopener noreferrer">Reuters</a> · <a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxNX3dFQ3p2Qmg3bFJXVHFZOGhIMmg4Sl9ZcDhZWkhaS0QwbzA4SDdFLUpqOG5zcUtNNGhvZ1hfeGVlVUZaWnV6UGQzcUloZWVsYWhXd3dqOEN3YTEwVnJCbWFVSk92bHlmTTN3NnpheE4xZ1ZYYklyanEwVTV4ZzNVOTFET0xaWFpMYVR2Ykg1cw?oc=5" target="_blank" rel="noopener noreferrer">AP News</a></td>
-          </tr></tbody>
-        </table></div>
-      </section>
- <p class="nota">La reacción de resultados compara el cierre anterior con el primer cierre posterior
- al anuncio; los demás impactos son variaciones de cierre a cierre. Una fecha futura no anticipa
- la dirección del movimiento. Verifique siempre la fuente original.</p>
-</div></body></html>
+<div style='font-family:Arial,sans-serif;max-width:850px'>
+<h2>Calendario dinámico de resultados — 31/08/2026</h2>
+<p><span style='color:#c62828'>●</span> 1–5 días &nbsp;
+<span style='color:#1565c0'>●</span> 6–14 días. Las fechas proceden de las webs IR oficiales.</p>
+<div style='background:#fff3cd;color:#664d03;padding:12px 15px;margin:8px 0;border-radius:8px;border:1px solid #d0d0d0'><b>AVGO — ERROR DE CONSULTA</b><br>Fecha: pendiente de anuncio · sin fecha futura detectada<br><a style='color:inherit' href='https://investors.broadcom.com/events-and-presentations' target='_blank'>Fuente oficial IR</a><div style='font-size:12px'>Aviso: The read operation timed out</div></div><div style='background:#fff3cd;color:#664d03;padding:12px 15px;margin:8px 0;border-radius:8px;border:1px solid #d0d0d0'><b>TSLA — ERROR DE CONSULTA</b><br>Fecha: pendiente de anuncio · sin fecha futura detectada<br><a style='color:inherit' href='https://ir.tesla.com/' target='_blank'>Fuente oficial IR</a><div style='font-size:12px'>Aviso: HTTP Error 403: Forbidden</div></div><div style='background:#ffffff;color:#666666;padding:12px 15px;margin:8px 0;border-radius:8px;border:1px solid #d0d0d0'><b>AAPL — SIN FECHA</b><br>Fecha: pendiente de anuncio · sin fecha futura detectada<br><a style='color:inherit' href='https://investor.apple.com/investor-relations/default.aspx' target='_blank'>Fuente oficial IR</a></div><div style='background:#ffffff;color:#666666;padding:12px 15px;margin:8px 0;border-radius:8px;border:1px solid #d0d0d0'><b>AMZN — SIN FECHA</b><br>Fecha: pendiente de anuncio · sin fecha futura detectada<br><a style='color:inherit' href='https://ir.aboutamazon.com/events/' target='_blank'>Fuente oficial IR</a></div><div style='background:#ffffff;color:#666666;padding:12px 15px;margin:8px 0;border-radius:8px;border:1px solid #d0d0d0'><b>GOOGL — SIN FECHA</b><br>Fecha: pendiente de anuncio · sin fecha futura detectada<br><a style='color:inherit' href='https://abc.xyz/investor/' target='_blank'>Fuente oficial IR</a></div><div style='background:#ffffff;color:#666666;padding:12px 15px;margin:8px 0;border-radius:8px;border:1px solid #d0d0d0'><b>META — SIN FECHA</b><br>Fecha: pendiente de anuncio · sin fecha futura detectada<br><a style='color:inherit' href='https://investor.atmeta.com/investor-events/' target='_blank'>Fuente oficial IR</a></div><div style='background:#ffffff;color:#666666;padding:12px 15px;margin:8px 0;border-radius:8px;border:1px solid #d0d0d0'><b>MSFT — SIN FECHA</b><br>Fecha: pendiente de anuncio · sin fecha futura detectada<br><a style='color:inherit' href='https://www.microsoft.com/en-us/investor/default' target='_blank'>Fuente oficial IR</a></div><div style='background:#ffffff;color:#666666;padding:12px 15px;margin:8px 0;border-radius:8px;border:1px solid #d0d0d0'><b>NVDA — SIN FECHA</b><br>Fecha: pendiente de anuncio · sin fecha futura detectada<br><a style='color:inherit' href='https://investor.nvidia.com/events-and-presentations/events-and-presentations/' target='_blank'>Fuente oficial IR</a></div>
+<p style='font-size:11px;color:#666'>Detector automático: revise el enlace oficial antes de tomar decisiones. Las webs pueden cambiar de formato.</p>
+</div>

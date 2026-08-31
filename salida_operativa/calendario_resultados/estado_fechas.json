@@ -2,32 +2,32 @@
   "META": {
     "fecha": null,
     "fuente": "https://investor.atmeta.com/investor-events/",
-    "consultado": "2026-08-27T16:04:57"
+    "consultado": "2026-08-31T21:10:22"
   },
   "NVDA": {
     "fecha": null,
     "fuente": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/",
-    "consultado": "2026-08-27T16:04:58"
+    "consultado": "2026-08-31T21:10:22"
   },
   "MSFT": {
     "fecha": null,
     "fuente": "https://www.microsoft.com/en-us/investor/default",
-    "consultado": "2026-08-27T16:04:59"
+    "consultado": "2026-08-31T21:10:23"
   },
   "AAPL": {
     "fecha": null,
     "fuente": "https://investor.apple.com/investor-relations/default.aspx",
-    "consultado": "2026-08-27T16:05:00"
+    "consultado": "2026-08-31T21:10:24"
   },
   "AMZN": {
     "fecha": null,
     "fuente": "https://ir.aboutamazon.com/events/",
-    "consultado": "2026-08-27T16:05:00"
+    "consultado": "2026-08-31T21:10:24"
   },
   "GOOGL": {
     "fecha": null,
     "fuente": "https://abc.xyz/investor/",
-    "consultado": "2026-08-27T16:05:01"
+    "consultado": "2026-08-31T21:10:24"
   },
   "TSLA": {},
   "AVGO": {}
