@@ -1,0 +1,156 @@
+//@version=6
+indicator("Panel SOLO RSI + Ruptura + Extras", overlay=false, max_bars_back=500)
+
+// Misma familia de calculos que el notebook. No conoce posiciones de IBKR.
+usarRuptura = input.bool(true, "Activar entrada por ruptura", group="Reglas")
+periodoRuptura = input.int(20, "Periodo ruptura y volumen", minval=1, group="Reglas")
+multVol = input.float(1.0, "Multiplicador volumen ruptura", minval=0.01, group="Reglas")
+extraRuptura = input.int(10, "Periodo ruptura EXTRA", minval=1, group="Reglas")
+extraRebote = input.int(5, "Sesiones previas para rebote EXTRA", minval=1, group="Reglas")
+nearRsi = input.float(1.0, "CERCA: puntos RSI", minval=0, group="Proximidad")
+nearPrecio = input.float(1.0, "CERCA: distancia precio / medias (%)", minval=0, group="Proximidad") / 100
+nearVol = input.float(5.0, "CERCA: volumen por debajo del exigido (%)", minval=0, maxval=100, group="Proximidad") / 100
+avisarSi = input.bool(true, "Avisar condiciones SI", group="Alertas")
+avisarCerca = input.bool(false, "Avisar tambien condiciones CERCA", group="Alertas")
+
+if not timeframe.isdaily or timeframe.multiplier != 1
+    runtime.error("Usa velas diarias de 1D para reproducir las reglas del notebook.")
+
+delta = ta.change(close)
+up = ta.sma(math.max(delta, 0), 14)
+down = ta.sma(math.max(-delta, 0), 14)
+rsi = up == 0 and down == 0 ? na : down == 0 ? 100.0 : 100 - 100 / (1 + up / down)
+sma20 = ta.sma(close, 20)
+bbDesv = ta.stdev(close, 20, false) // Desviacion muestral, como pandas.std().
+bbLower = sma20 - 2 * bbDesv
+sma50 = ta.sma(close, 50)
+// ewm(adjust=False): semilla en el primer dato, igual que pandas.
+var float ema10 = na
+ema10 := na(ema10[1]) ? close : (2.0 / 11) * close + (9.0 / 11) * ema10[1]
+tr = ta.tr(true)
+var float atr14 = na
+atr14 := na(atr14[1]) ? tr : tr / 14 + atr14[1] * 13 / 14
+min20 = ta.lowest(low, periodoRuptura)[1]
+vol20 = ta.sma(volume, periodoRuptura)[1]
+minExtra = ta.lowest(low, extraRuptura)[1]
+rebote = ta.highest(close > ema10 ? 1.0 : 0.0, extraRebote)[1] > 0
+dosSobreEma = close > ema10 and close[1] > ema10[1]
+listo = not na(rsi) and not na(bbLower) and not na(sma50) and not na(vol20) and not na(min20) and not na(minExtra)
+
+// Estado: 2 SI, 1 CERCA, 0 NO, -1 N/D.
+estado(bool cumple, bool cerca) => cumple ? 2 : cerca ? 1 : 0
+texto(int s) => s == 2 ? "SI" : s == 1 ? "CERCA" : s == 0 ? "NO" : "N/D"
+colorEstado(int s) => s == 2 ? color.rgb(0, 125, 50) : s == 1 ? color.rgb(190, 95, 0) : s == 0 ? color.black : color.gray
+bajoCerca(float x, float limite) => x <= limite + math.abs(limite) * nearPrecio
+sobreCerca(float x, float limite) => x >= limite - math.abs(limite) * nearPrecio
+fmt(float x) => na(x) ? "N/D" : str.tostring(x, "#.00")
+
+longSi = rsi < 30 and close <= bbLower
+shortRsiSi = rsi > 70
+rupturaSi = usarRuptura and close < min20 and volume > vol20 * multVol
+shortBase = shortRsiSi or rupturaSi
+extraSi = close < minExtra and rebote and close < sma50 and sma20 < sma50 and volume > vol20 and not shortBase
+eLong = listo ? estado(longSi, rsi <= 30 + nearRsi and bajoCerca(close, bbLower)) : -1
+eShort = listo ? estado(shortRsiSi, rsi >= 70 - nearRsi) : -1
+eRuptura = not usarRuptura ? 0 : listo ? estado(rupturaSi, bajoCerca(close, min20) and volume >= vol20 * multVol * (1 - nearVol)) : -1
+eExtra = listo ? estado(extraSi, not shortBase and rebote and bajoCerca(close, minExtra) and bajoCerca(close, sma50) and bajoCerca(sma20, sma50) and volume >= vol20 * (1 - nearVol)) : -1
+sLong = listo ? estado(rsi >= 65, rsi >= 65 - nearRsi) : -1
+sShort = listo ? estado(rsi < 50, rsi <= 50 + nearRsi) : -1
+sExtraRsi = listo ? estado(rsi < 35, rsi <= 35 + nearRsi) : -1
+sExtraEma = listo ? estado(dosSobreEma, sobreCerca(close, ema10) and sobreCerca(close[1], ema10[1])) : -1
+prioridadSi = longSi or shortBase
+sPrioridad = listo ? estado(prioridadSi, eLong == 1 or eShort == 1 or eRuptura == 1) : -1
+
+// Tres franjas para mantener legibles las columnas de indicadores y condiciones.
+var table panel = table.new(position.top_center, 13, 11, bgcolor=color.white, frame_color=color.gray, frame_width=1, border_color=color.silver, border_width=1)
+celda(int col, int row, string t, color bg, color fg) =>
+    table.cell(panel, col, row, t, bgcolor=bg, text_color=fg, text_size=size.small)
+cab(int col, int row, string t) => celda(col, row, t, color.rgb(225, 232, 240), color.black)
+valor(int col, int row, string t) => celda(col, row, t, color.white, color.black)
+senal(int col, int row, int s) =>
+    table.cell(panel, col, row, texto(s), bgcolor=color.white, text_color=colorEstado(s), text_size=s > 0 ? size.large : size.small, text_formatting=s > 0 ? text.format_bold : text.format_none)
+seccion(int row, string flecha, color colorFlecha, string titulo, string detalle) =>
+    table.cell(panel, 0, row, flecha, bgcolor=color.rgb(225, 232, 240), text_color=colorFlecha, text_size=size.large, text_formatting=text.format_bold)
+    table.cell(panel, 1, row, titulo, bgcolor=color.rgb(225, 232, 240), text_color=color.black, text_size=size.large, text_formatting=text.format_bold, text_halign=text.align_left)
+    cab(4, row, detalle)
+
+if barstate.isfirst
+    table.merge_cells(panel, 0, 0, 12, 0)
+    table.merge_cells(panel, 1, 3, 3, 3)
+    table.merge_cells(panel, 4, 3, 12, 3)
+    table.merge_cells(panel, 1, 6, 3, 6)
+    table.merge_cells(panel, 4, 6, 12, 6)
+    table.merge_cells(panel, 0, 9, 12, 9)
+    table.merge_cells(panel, 0, 10, 12, 10)
+
+if barstate.islast
+    // En vela abierta se muestra el ultimo cierre confirmado, nunca una senal provisional.
+    k = barstate.isconfirmed ? 0 : 1
+    cab(0, 0, syminfo.ticker + " | 1D | Cierre evaluado: " + str.format_time(time[k], "yyyy-MM-dd", syminfo.timezone))
+    nombres = array.from("Cierre", "RSI SMA 14", "SMA20 / BB centro", "Desv. 20", "BB inferior", "EMA10", "SMA50", "ATR14", "Min. previo ruptura", "Volumen", "Vol. medio previo", "Min. previo EXTRA", "Rebote previo")
+    valores = array.from(fmt(close[k]), fmt(rsi[k]), fmt(sma20[k]), fmt(bbDesv[k]), fmt(bbLower[k]), fmt(ema10[k]), fmt(sma50[k]), fmt(atr14[k]), fmt(min20[k]), str.tostring(volume[k], format.volume), str.tostring(vol20[k], format.volume), fmt(minExtra[k]), listo[k] ? (rebote[k] ? "SI" : "NO") : "N/D")
+    for j = 0 to 12
+        cab(j, 1, array.get(nombres, j))
+        valor(j, 2, array.get(valores, j))
+    senal(12, 2, listo[k] ? (rebote[k] ? 2 : 0) : -1)
+    seccion(3, "↓", color.rgb(0, 125, 50), "ENTRADAS", "Condiciones independientes de tu posicion | RSI 30 / 70; BB 20 x 2; volumen ruptura x " + str.tostring(multVol))
+    entradas = array.from("LONG\nRSI < 30 + BB", "SHORT\nRSI > 70", "SHORT\nRuptura", "SHORT\nEXTRA")
+    estadosE = array.from(eLong[k], eShort[k], eRuptura[k], eExtra[k])
+    for j = 0 to 3
+        cab(j, 4, array.get(entradas, j))
+        senal(j, 5, array.get(estadosE, j))
+    seccion(6, "↑", color.red, "SALIDAS", "Se evaluan aunque no tengas posicion; pueden coincidir con entradas")
+    salidas = array.from("LONG\nRSI >= 65", "SHORT base\nRSI < 50", "SHORT EXTRA\nRSI < 35", "SHORT EXTRA\n2 cierres > EMA10", "SHORT EXTRA\nPrioridad original", "LONG\nStop 7%", "SHORT\nStop 7%", "SHORT EXTRA\nStop 5% / trailing 2 ATR", "SHORT EXTRA\n15 sesiones", "Cierre\nfin backtest")
+    estadosS = array.from(sLong[k], sShort[k], sExtraRsi[k], sExtraEma[k], sPrioridad[k], -1, -1, -1, -1, -1)
+    for j = 0 to 9
+        cab(j, 7, array.get(salidas, j))
+        senal(j, 8, array.get(estadosS, j))
+    valor(0, 9, "CERCA: RSI " + str.tostring(nearRsi) + " puntos | Precio/medias " + str.tostring(nearPrecio * 100) + "% | Volumen " + str.tostring(nearVol * 100) + "% | NO: negro; SI: verde; CERCA: naranja")
+    valor(0, 10, "N/D: sin historial suficiente o requiere una operacion. Stops/trailing/dias no se evaluan sin posicion. Fin backtest no es una senal de mercado.")
+
+linea(string nombre, int s) =>
+    (s == 2 and avisarSi) or (s == 1 and avisarCerca) ? nombre + ": " + texto(s) + "\n" : ""
+
+instruccionesEntrada(string nombre, int s, string tipo) =>
+    string aviso = linea(nombre, s)
+    if s == 2 and avisarSi
+        bool esLong = tipo == "LONG"
+        bool esExtra = tipo == "EXTRA"
+        float factorStop = esLong ? 0.93 : esExtra ? 1.05 : 1.07
+        string nivel = str.tostring(math.round_to_mintick(close * factorStop), format.mintick)
+        aviso += "INSTRUCCIONES:\n"
+        aviso += esLong ? "1. Si decides aplicar esta entrada, comprar en la apertura siguiente.\n" : "1. Si decides aplicar esta entrada, vender en corto en la apertura siguiente.\n"
+        aviso += "2. Configurar orden STOP de " + (esLong ? "VENTA" : "COMPRA") + " para cerrar la misma cantidad de acciones. Nivel ORIENTATIVO: " + nivel + " " + syminfo.currency + " (calculado con el cierre de hoy).\n"
+        aviso += "   Nivel definitivo: precio REAL de ejecucion x " + str.tostring(factorStop, "#.00") + ". Ajustar al incremento de precio admitido; mantener el stop vigente mientras siga abierta la operacion.\n"
+        if esLong
+            aviso += "3. Esperar la alerta SALIDA LONG: RSI >= 65 al cierre. Si sigues dentro, vender en la apertura siguiente. La senal no garantiza ganancias.\n"
+        else if not esExtra
+            aviso += "3. Esperar la alerta SALIDA SHORT BASE: RSI < 50 al cierre. Si sigues dentro, recomprar las acciones en la apertura siguiente. La senal no garantiza ganancias.\n"
+        else
+            aviso += "3. Gestionar manualmente el trailing: al cierre, minimo de cierres desde entrada + 2 ATR14; solo bajar el stop, nunca subirlo, y aplicar el nuevo nivel desde la sesion siguiente. El motor inicializa ese minimo con el precio real de entrada. No equivale a un trailing fijo del broker.\n"
+            aviso += "4. Cerrar recomprando en la apertura siguiente si llega SALIDA SHORT EXTRA por RSI < 35, dos cierres sobre EMA10 o prioridad de una senal original. Tambien cerrar al alcanzar 15 sesiones posteriores a la entrada, segun el contador del modelo.\n"
+            aviso += "   Sin estado de posicion, este indicador NO calcula tu trailing ni avisa del vencimiento de 15 sesiones: debes controlarlos tu.\n"
+        aviso += "Al cerrar por otra via, cancelar el stop pendiente. Si ya salto el stop, no repetir el cierre. Una alerta repetida no implica aumentar la posicion.\n\n"
+    else if s == 1 and avisarCerca
+        aviso += "Solo proximidad: todavia no se cumple esta entrada.\n\n"
+    aviso
+
+// Un mensaje combinado conserva TODAS las coincidencias del cierre, sin perder
+// SALIDA LONG cuando tambien se activa ENTRADA SHORT. Se repite cada dia valido.
+if barstate.isconfirmed and listo
+    string msg = ""
+    msg += instruccionesEntrada("ENTRADA LONG (RSI + Bollinger)", eLong, "LONG")
+    msg += instruccionesEntrada("ENTRADA SHORT RSI", eShort, "BASE")
+    msg += instruccionesEntrada("ENTRADA SHORT RUPTURA", eRuptura, "BASE")
+    msg += instruccionesEntrada("ENTRADA SHORT EXTRA", eExtra, "EXTRA")
+    msg += linea("SALIDA LONG RSI", sLong)
+    msg += linea("SALIDA SHORT BASE RSI", sShort)
+    msg += linea("SALIDA SHORT EXTRA RSI", sExtraRsi)
+    msg += linea("SALIDA SHORT EXTRA DOS CIERRES SOBRE EMA10", sExtraEma)
+    msg += linea("SALIDA SHORT EXTRA POR PRIORIDAD ORIGINAL", sPrioridad)
+    if str.length(msg) > 0
+        alert(syminfo.tickerid + " | Cierre diario " + str.format_time(time, "yyyy-MM-dd", syminfo.timezone) + "\n" + msg + "RSI=" + fmt(rsi) + " | BB inferior=" + fmt(bbLower) + " | Cierre=" + fmt(close) + "\nAvisos de condiciones; no son ordenes ni verifican posiciones. Ejecucion del modelo: apertura siguiente.", alert.freq_once_per_bar_close)
+
+// Valores accesibles tambien desde la ventana de datos.
+plot(rsi, "RSI media simple", display=display.data_window)
+plot(bbLower, "Bollinger inferior muestral", display=display.data_window)
